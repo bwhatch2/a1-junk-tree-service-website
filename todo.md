@@ -1,39 +1,24 @@
-# Full Build TODO
+# Update TODO — Landscaping/Demo Services + JSON-LD
 
-## Routing & Navigation
-- [ ] Set up React Router with all routes in App.tsx
-- [ ] Build mega-menu navigation with all 100+ services organized into categories
-- [ ] Ensure mobile-responsive mega-menu
+## Phase 1: Pull landscaping and demolition services from GBP
+- [ ] Navigate to GBP and extract all landscaping services
+- [ ] Navigate to GBP and extract all demolition services
+- [ ] Document the full list of new services to add
 
-## Core Pages
-- [ ] Homepage (already built - update navigation)
-- [ ] About Us page
-- [ ] Free Estimate / Contact page
-- [ ] Reviews page
-- [ ] Service Areas hub page
-- [ ] FAQ page (empty, ready for user's curated content)
-- [ ] Help Wanted page
+## Phase 2: Integrate new services into site
+- [ ] Add new landscaping services to services-data.ts
+- [ ] Add new demolition services to services-data.ts
+- [ ] Update navigation mega-menu categories if needed
+- [ ] Verify all new pages render correctly
 
-## Junk Removal Service Pages
-- [ ] Junk Removal hub page
-- [ ] Individual service pages for all 100+ junk removal services
-- [ ] Service page template component
+## Phase 3: Add JSON-LD structured data
+- [ ] Add LocalBusiness schema to homepage
+- [ ] Add Service schema to service pages
+- [ ] Add FAQ schema to FAQ page
+- [ ] Add BreadcrumbList schema to all pages
 
-## Tree Service Pages
-- [ ] Tree Service hub page
-- [ ] Individual tree service pages (tree removal, trimming, stump grinding, etc.)
-
-## Service Area Pages
-- [ ] Individual pages for each service area (Omaha, Bellevue, Papillion, etc.)
-
-## SEO & Technical
-- [ ] Structured data (LocalBusiness, Service schema)
-- [ ] Internal linking between related services
-- [ ] Meta tags on every page
-- [ ] Footer breadcrumb: "formerly A1 Junk Removal of Omaha"
-
-## Documents to Deliver
-- [ ] Full sitemap
-- [ ] Page outlines
-- [ ] Photo list with locations
-- [ ] Internal linking plan
+## Phase 4: Test and deliver
+- [ ] Test new service pages
+- [ ] Test structured data
+- [ ] Save checkpoint
+- [ ] Deliver to user

@@ -7,8 +7,9 @@ export default function SitemapPage() {
     document.title = "Sitemap | A1 Junk Removal and Tree Service";
   }, []);
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service");
+  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service" && c.slug !== "landscaping");
   const treeCategory = serviceCategories.find(c => c.slug === "tree-service");
+  const landscapingCategory = serviceCategories.find(c => c.slug === "landscaping");
 
   return (
     <div>
@@ -35,6 +36,7 @@ export default function SitemapPage() {
                   { href: "/", label: "Home" },
                   { href: "/services", label: "Junk Removal Services" },
                   { href: "/tree-service", label: "Tree Service" },
+                  { href: "/landscaping", label: "Landscaping" },
                   { href: "/service-areas", label: "Service Areas" },
                   { href: "/reviews", label: "Reviews" },
                   { href: "/about", label: "About Us" },
@@ -73,6 +75,20 @@ export default function SitemapPage() {
                 {treeCategory?.services.map((svc) => (
                   <li key={svc.slug}>
                     <Link href={`/tree-service/${svc.slug}`} className="text-gray-700 hover:text-[#7A9E7E] text-sm transition-colors">
+                      {svc.h1}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Landscaping Services */}
+            <div>
+              <h2 className="font-display text-xl text-[#7A9E7E] font-bold mb-4">Landscaping Services</h2>
+              <ul className="space-y-2">
+                {landscapingCategory?.services.map((svc) => (
+                  <li key={svc.slug}>
+                    <Link href={`/landscaping/${svc.slug}`} className="text-gray-700 hover:text-[#7A9E7E] text-sm transition-colors">
                       {svc.h1}
                     </Link>
                   </li>

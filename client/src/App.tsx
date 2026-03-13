@@ -22,6 +22,8 @@ import Contact from "./pages/Contact";
 import SitemapPage from "./pages/Sitemap";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import Landscaping from "./pages/Landscaping";
+import LandscapingDetail from "./pages/LandscapingDetail";
 
 function Router() {
   return (
@@ -36,6 +38,10 @@ function Router() {
         {/* Tree Services */}
         <Route path="/tree-service" component={TreeServiceHub} />
         <Route path="/tree-service/:slug" component={ServiceDetail} />
+        
+        {/* Landscaping */}
+        <Route path="/landscaping" component={Landscaping} />
+        <Route path="/landscaping/:slug" component={LandscapingDetail} />
         
         {/* Service Areas */}
         <Route path="/service-areas" component={ServiceAreas} />

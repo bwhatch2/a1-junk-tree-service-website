@@ -101,6 +101,32 @@
 | /tree-service/shrub-hedge-trimming | shrub trimming Omaha |
 | /tree-service/brush-chipping | brush chipping Omaha |
 
+### Landscaping Service Pages (12 pages under /landscaping/)
+| URL | Target Keyword |
+|---|---|
+| /landscaping/lawn-care-mowing | lawn care Omaha |
+| /landscaping/lawn-maintenance | lawn maintenance Omaha |
+| /landscaping/mulching | mulching services Omaha |
+| /landscaping/sod-installation | sod installation Omaha |
+| /landscaping/leaf-removal | leaf removal Omaha |
+| /landscaping/seasonal-cleanup | seasonal yard cleanup Omaha |
+| /landscaping/weed-control | weed control Omaha |
+| /landscaping/yard-grading-leveling | yard grading Omaha |
+| /landscaping/flower-bed-maintenance | flower bed maintenance Omaha |
+| /landscaping/yard-cleanup-landscaping | yard cleanup Omaha |
+| /landscaping/gutter-cleaning | gutter cleaning Omaha |
+| /landscaping/pressure-washing | pressure washing Omaha |
+
+### Additional Demolition Pages (6 pages under /services/)
+| URL | Target Keyword |
+|---|---|
+| /services/kitchen-demolition | kitchen demolition Omaha |
+| /services/garage-demolition | garage demolition Omaha |
+| /services/pool-demolition | pool demolition Omaha |
+| /services/driveway-removal | driveway removal Omaha |
+| /services/interior-demolition | interior demolition Omaha |
+| /services/small-structure-demolition | small structure demolition Omaha |
+
 ### Service Area Pages (15 pages under /service-areas/)
 | URL | Target Keyword |
 |---|---|
@@ -120,7 +146,7 @@
 | /service-areas/springfield | junk removal Springfield NE |
 | /service-areas/plattsmouth | junk removal Plattsmouth NE |
 
-**Total Pages: ~100**
+**Total Pages: ~118**
 
 ---
 
@@ -130,8 +156,9 @@
 
 **Main Navigation:**
 - Home
-- Junk Removal (mega-menu dropdown with all 63 services organized by 6 categories)
+- Junk Removal (mega-menu dropdown with all 69 services organized by 7 categories)
 - Tree Service (dropdown with all 7 tree services)
+- Landscaping (dropdown with all 12 landscaping services)
 - Service Areas
 - Reviews
 - About
@@ -141,7 +168,8 @@
 - Column 1: Brand info, phone, email, "formerly A1 Junk Removal of Omaha"
 - Column 2: Top 8 Junk Removal services + "View All Services" link
 - Column 3: All 7 Tree Services
-- Column 4: Quick Links (Free Estimate, Service Areas, Reviews, About, FAQ, Help Wanted, Contact)
+- Column 4: Top 6 Landscaping Services + "View All Landscaping" link
+- Column 5: Quick Links (Free Estimate, Service Areas, Reviews, About, FAQ, Help Wanted, Contact)
 - Column 5: Top 8 Service Areas
 - Bottom: Privacy Policy, Terms of Service, Sitemap
 
@@ -156,6 +184,7 @@ The internal linking strategy is built around **topical clusters** with the home
 **Homepage** links to:
 - /services (Junk Removal hub)
 - /tree-service (Tree Service hub)
+- /landscaping (Landscaping hub)
 - /free-estimate (primary CTA)
 - /reviews
 - /service-areas
@@ -170,6 +199,13 @@ The internal linking strategy is built around **topical clusters** with the home
 - All 7 individual tree service pages
 - /free-estimate
 - /services (cross-link)
+- /landscaping (cross-link)
+
+**Landscaping Hub (/landscaping)** links to:
+- All 12 individual landscaping service pages
+- /free-estimate
+- /services (cross-link)
+- /tree-service (cross-link)
 
 **Each Individual Service Page** links to:
 - Parent hub (/services or /tree-service) via breadcrumb

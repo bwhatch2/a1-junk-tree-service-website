@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { PHONE, PHONE_LINK } from "@/lib/services-data";
 import { Phone, HelpCircle } from "lucide-react";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 
 export default function FAQ() {
   useEffect(() => {
@@ -12,6 +13,10 @@ export default function FAQ() {
 
   return (
     <div>
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "/" },
+        { name: "FAQ", url: "/faq" },
+      ]} />
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="container py-3">
           <nav className="flex items-center gap-2 text-sm text-gray-500">

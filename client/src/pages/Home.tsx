@@ -19,6 +19,7 @@ import {
   PLACEHOLDER_IMG,
   BUSINESS_NAME,
 } from "@/lib/services-data";
+import { WebSiteSchema, BreadcrumbSchema } from "@/components/StructuredData";
 import {
   Phone,
   ArrowRight,
@@ -30,6 +31,7 @@ import {
   CheckCircle,
   Truck,
   TreePine,
+  Leaf,
 } from "lucide-react";
 
 export default function Home() {
@@ -39,12 +41,15 @@ export default function Home() {
     if (meta) meta.setAttribute("content", "Omaha's trusted junk removal and tree service. 40-60% less than national companies. 253+ five-star reviews. Same-day service. Call (402) 612-2373 for a free estimate.");
   }, []);
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service");
+  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service" && c.slug !== "landscaping");
   const treeCategory = serviceCategories.find(c => c.slug === "tree-service");
+  const landscapingCategory = serviceCategories.find(c => c.slug === "landscaping");
   const topJunkServices = junkCategories.flatMap(c => c.services).slice(0, 6);
 
   return (
     <div>
+      <WebSiteSchema />
+      <BreadcrumbSchema items={[{ name: "Home", url: "/" }]} />
       {/* ─── HERO ─── */}
       <section className="relative min-h-[85vh] flex items-center bg-[#0A1628] overflow-hidden">
         <div className="absolute inset-0">
@@ -114,12 +119,12 @@ export default function Home() {
       <section className="py-16 lg:py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <p className="text-[#E8611A] font-bold text-sm uppercase tracking-wider mb-2">Two Services, One Call</p>
+            <p className="text-[#E8611A] font-bold text-sm uppercase tracking-wider mb-2">Three Services, One Call</p>
             <h2 className="font-display text-3xl lg:text-5xl text-[#0A1628] font-bold">
               WHAT WE DO
             </h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Junk Removal Card */}
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-[2/1] overflow-hidden">
@@ -182,6 +187,39 @@ export default function Home() {
                   className="inline-flex items-center gap-2 text-[#7A9E7E] font-bold hover:underline"
                 >
                   View All Tree Services <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Landscaping Card */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-[2/1] overflow-hidden bg-[#7A9E7E]/10 flex items-center justify-center">
+                <img src={PLACEHOLDER_IMG} alt="Landscaping service" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-[#7A9E7E]/10 rounded-lg flex items-center justify-center">
+                    <Leaf className="w-5 h-5 text-[#7A9E7E]" />
+                  </div>
+                  <h3 className="font-display text-2xl text-[#0A1628] font-bold">LANDSCAPING</h3>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Lawn care, mulching, sod installation, seasonal cleanups, and more.
+                  Keep your property looking its best year-round.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {landscapingCategory?.services.slice(0, 4).map((svc) => (
+                    <li key={svc.slug} className="flex items-center gap-2 text-sm text-gray-700">
+                      <CheckCircle className="w-4 h-4 text-[#7A9E7E]" />
+                      {svc.h1.replace(" in Omaha", "")}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/landscaping"
+                  className="inline-flex items-center gap-2 text-[#7A9E7E] font-bold hover:underline"
+                >
+                  View All Landscaping Services <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

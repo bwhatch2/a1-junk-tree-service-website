@@ -122,6 +122,32 @@ Each service page has a hero background that uses the placeholder image. Below i
 | Shrub & Hedge Trimming | Shrubs being neatly trimmed |
 | Brush Chipping | Chipper processing branches |
 
+### Landscaping Services
+| Service | Photo Description |
+|---|---|
+| Lawn Care & Mowing | Freshly mowed residential lawn with clean stripes |
+| Lawn Maintenance | Crew performing lawn edging and maintenance |
+| Mulching Services | Fresh mulch being spread in garden beds |
+| Sod Installation | New sod being laid on a prepared lawn |
+| Leaf Removal | Fall leaf cleanup with blower or raking |
+| Seasonal Yard Cleanup | Spring or fall yard cleanup in progress |
+| Weed Control | Weed-free lawn and garden beds |
+| Yard Grading & Leveling | Yard being graded with equipment |
+| Flower Bed Maintenance | Well-maintained flower bed with fresh mulch |
+| Yard Cleanup & Landscaping | Complete yard transformation |
+| Gutter Cleaning | Gutters being cleaned out on a residential home |
+| Pressure Washing | Driveway or deck being pressure washed |
+
+### Additional Demolition Services
+| Service | Photo Description |
+|---|---|
+| Kitchen Demolition | Kitchen cabinets and counters being torn out |
+| Garage Demolition | Garage structure being demolished |
+| Pool Demolition | In-ground pool being filled in or removed |
+| Driveway Removal | Concrete driveway being broken up and removed |
+| Interior Demolition | Interior walls and fixtures being demolished |
+| Small Structure Demolition | Small outbuilding being torn down |
+
 ## Other Pages
 
 | Page | Location | Photo Description |
@@ -132,7 +158,7 @@ Each service page has a hero background that uses the placeholder image. Below i
 | Service Areas | Map or aerial | Omaha metro area aerial or map |
 | Help Wanted | Team photo | Crew working together, positive atmosphere |
 
-## Total Photos Needed: ~85-90
+## Total Photos Needed: ~105-110
 
 When you provide photos, I will:
 1. Match each photo to the most appropriate location

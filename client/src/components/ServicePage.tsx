@@ -27,16 +27,19 @@ import {
   Shield,
   DollarSign,
 } from "lucide-react";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 interface ServicePageProps {
   service: ServiceItem;
   isTreeService?: boolean;
+  serviceType?: "junk" | "tree" | "landscaping";
 }
 
-export default function ServicePage({ service, isTreeService = false }: ServicePageProps) {
+export default function ServicePage({ service, isTreeService = false, serviceType }: ServicePageProps) {
   const relatedServices = getRelatedServices(service.relatedSlugs);
-  const accentColor = isTreeService ? "#7A9E7E" : "#E8611A";
-  const basePath = isTreeService ? "/tree-service" : "/services";
+  const resolvedType = serviceType || (isTreeService ? "tree" : "junk");
+  const accentColor = resolvedType === "junk" ? "#E8611A" : "#7A9E7E";
+  const basePath = resolvedType === "tree" ? "/tree-service" : resolvedType === "landscaping" ? "/landscaping" : "/services";
 
   // Set page title and meta
   useEffect(() => {
@@ -52,8 +55,16 @@ export default function ServicePage({ service, isTreeService = false }: ServiceP
     }
   }, [service]);
 
+  const breadcrumbLabel = resolvedType === "tree" ? "Tree Service" : resolvedType === "landscaping" ? "Landscaping" : "Junk Removal";
+
   return (
     <div>
+      <ServiceSchema service={service} />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "/" },
+        { name: breadcrumbLabel, url: basePath },
+        { name: service.h1.replace(" in Omaha", ""), url: `${basePath}/${service.slug}` },
+      ]} />
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="container py-3">
@@ -61,7 +72,7 @@ export default function ServicePage({ service, isTreeService = false }: ServiceP
             <Link href="/" className="hover:text-[#0A1628]">Home</Link>
             <span>/</span>
             <Link href={basePath} className="hover:text-[#0A1628]">
-              {isTreeService ? "Tree Service" : "Junk Removal"}
+              {resolvedType === "tree" ? "Tree Service" : resolvedType === "landscaping" ? "Landscaping" : "Junk Removal"}
             </Link>
             <span>/</span>
             <span className="text-[#0A1628] font-medium">{service.h1.replace(" in Omaha", "")}</span>
@@ -207,7 +218,9 @@ export default function ServicePage({ service, isTreeService = false }: ServiceP
                           href={
                             rs.categorySlug === "tree-service"
                               ? `/tree-service/${rs.slug}`
-                              : `/services/${rs.slug}`
+                              : rs.categorySlug === "landscaping"
+                                ? `/landscaping/${rs.slug}`
+                                : `/services/${rs.slug}`
                           }
                           className="flex items-center gap-2 text-gray-700 hover:text-[#E8611A] text-sm transition-colors group"
                         >
