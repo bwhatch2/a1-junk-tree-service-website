@@ -13,7 +13,7 @@ This document lists every photo needed for the website, organized by page and lo
 
 | Location | Description | Current Image |
 |---|---|---|
-| Hero Background | Crew loading junk into truck, residential setting | AI-generated hero image |
+| Hero Background | **PRIORITY** — Real photo of A1 crew loading junk into truck with correct A1 branding (old AI image removed because it showed "Omaha Haulers" branding) | Placeholder (nopicture.jpg) |
 | Junk Removal Card | Crew working on a junk removal job | AI-generated hero image (reused) |
 | Tree Service Card | Crew trimming or removing a tree | AI-generated tree service image |
 | About/Team Photo | Bryan and crew posing or working | AI-generated team image |
