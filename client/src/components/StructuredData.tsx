@@ -16,16 +16,16 @@ export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://a1junkremovalandtreeservice.com/#business",
+    "@id": "https://a1junkremovalandtreeserviceofomaha.com/#business",
     name: BUSINESS_NAME,
     alternateName: "A1 Junk Removal of Omaha",
     description:
       "Omaha's trusted junk removal, tree service, and landscaping company. Locally owned and operated. 40-60% less than national companies. 253+ five-star reviews.",
-    url: "https://a1junkremovalandtreeservice.com",
+    url: "https://a1junkremovalandtreeserviceofomaha.com",
     telephone: PHONE,
     email: "a1aborservice@gmail.com",
     priceRange: "$$",
-    image: "https://a1junkremovalandtreeservice.com/og-image.jpg",
+    image: "https://a1junkremovalandtreeserviceofomaha.com/og-image.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Omaha",
@@ -120,13 +120,13 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: BUSINESS_NAME,
-    url: "https://a1junkremovalandtreeservice.com",
+    url: "https://a1junkremovalandtreeserviceofomaha.com",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
         urlTemplate:
-          "https://a1junkremovalandtreeservice.com/services?q={search_term_string}",
+          "https://a1junkremovalandtreeserviceofomaha.com/services?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -150,7 +150,7 @@ export function ServiceSchema({ service }: { service: ServiceItem }) {
     description: service.metaDescription,
     provider: {
       "@type": "LocalBusiness",
-      "@id": "https://a1junkremovalandtreeservice.com/#business",
+      "@id": "https://a1junkremovalandtreeserviceofomaha.com/#business",
       name: BUSINESS_NAME,
     },
     areaServed: serviceAreas.map((area) => ({
@@ -196,7 +196,7 @@ export function BreadcrumbSchema({
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://a1junkremovalandtreeservice.com${item.url}`,
+      item: `https://a1junkremovalandtreeserviceofomaha.com${item.url}`,
     })),
   };
 
