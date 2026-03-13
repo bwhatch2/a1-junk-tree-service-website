@@ -1,0 +1,5 @@
+# Netlify Redirects for A1 Junk Removal and Tree Service
+# This file ensures client-side routing works correctly on Netlify
+
+# SPA fallback — serve index.html for all routes
+/*    /index.html   200
