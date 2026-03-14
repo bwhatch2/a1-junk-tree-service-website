@@ -4,10 +4,11 @@
 
 # Domain-specific redirects for the old domain
 # This forces a true 301 redirect to the new domain instead of just serving content on the alias
-https://a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
-http://a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
-https://www.a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
-http://www.a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
+# We use the homepage as the fallback for any page that doesn't exist on the new site
+https://a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
+http://a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
+https://www.a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
+http://www.a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
 
 # Old site core page redirects
 /services-1    /services    301
