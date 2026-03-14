@@ -135,13 +135,54 @@ export default function ServicePage({ service, isTreeService = false, serviceTyp
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 <p>{service.description}</p>
-                <p>
-                  At {BUSINESS_NAME}, we're not a franchise and we don't have a call center.
-                  When you call us, you talk to Bryan — the owner. We show up when we say we will,
-                  charge a fair price, and get the job done right. That's how we've earned over 253
-                  five-star reviews from customers across the Omaha metro.
-                </p>
+                {!service.richContent && (
+                  <p>
+                    At {BUSINESS_NAME}, we're not a franchise and we don't have a call center.
+                    When you call us, you talk to Bryan — the owner. We show up when we say we will,
+                    charge a fair price, and get the job done right. That's how we've earned over 253
+                    five-star reviews from customers across the Omaha metro.
+                  </p>
+                )}
               </div>
+
+              {/* Rich Content Sections from Gemini rewrites */}
+              {service.richContent && service.richContent.length > 0 && (
+                <div className="mt-8 space-y-8">
+                  {service.richContent.map((section, idx) => (
+                    <div key={idx}>
+                      <h3 className="font-display text-xl lg:text-2xl text-[#0A1628] font-bold mb-4">
+                        {section.heading}
+                      </h3>
+                      {section.body && (
+                        <p className="text-gray-700 leading-relaxed mb-4">{section.body}</p>
+                      )}
+                      {section.bullets && section.bullets.length > 0 && (
+                        <ul className="space-y-3">
+                          {section.bullets.map((bullet, bIdx) => {
+                            const colonIdx = bullet.indexOf(':');
+                            const hasLabel = colonIdx > 0 && colonIdx < 50;
+                            return (
+                              <li key={bIdx} className="flex items-start gap-3">
+                                <CheckCircle className="w-5 h-5 mt-0.5 flex-shrink-0" style={{ color: accentColor }} />
+                                <span className="text-gray-700">
+                                  {hasLabel ? (
+                                    <>
+                                      <strong className="text-[#0A1628]">{bullet.substring(0, colonIdx)}:</strong>
+                                      {bullet.substring(colonIdx + 1)}
+                                    </>
+                                  ) : (
+                                    bullet
+                                  )}
+                                </span>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Why Choose Us */}
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
