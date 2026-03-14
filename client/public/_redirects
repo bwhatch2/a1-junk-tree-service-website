@@ -2,7 +2,7 @@
 # 301 redirects from old site URLs (a1junkremovalofomaha.com) to new site structure
 # These activate when the old domain is added as a domain alias in Netlify
 
-# Domain-specific redirects for the old domain
+# Domain-specific redirects for the old domain (PRIORITIZED)
 # This forces a true 301 redirect to the new domain instead of just serving content on the alias
 # We use the homepage as the fallback for any page that doesn't exist on the new site
 https://a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
