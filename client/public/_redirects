@@ -2,6 +2,13 @@
 # 301 redirects from old site URLs (a1junkremovalofomaha.com) to new site structure
 # These activate when the old domain is added as a domain alias in Netlify
 
+# Domain-specific redirects for the old domain
+# This forces a true 301 redirect to the new domain instead of just serving content on the alias
+https://a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
+http://a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
+https://www.a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
+http://www.a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/:splat  301!
+
 # Old site core page redirects
 /services-1    /services    301
 /tree-trimming    /tree-service    301
