@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { PHONE, PHONE_LINK, EMAIL, BUSINESS_NAME } from "@/lib/services-data";
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, Send, Loader2, CheckCircle } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Contact() {
   useEffect(() => {
@@ -9,6 +10,36 @@ export default function Contact() {
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", "Contact A1 Junk Removal and Tree Service in Omaha. Call (402) 612-2373 or email us. Open 7 days a week. Free estimates available.");
   }, []);
+
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        toast.success("Message sent! We'll get back to you shortly.");
+      } else {
+        toast.error("Something went wrong. Please try again or call us directly.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <div>
@@ -101,8 +132,78 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Contact Form */}
+          <div className="mt-12 bg-white border-2 border-gray-200 rounded-xl p-8">
+            <h2 className="font-display text-2xl text-[#0A1628] font-bold mb-2 text-center">
+              SEND US A MESSAGE
+            </h2>
+            <p className="text-gray-600 text-center mb-6">
+              Have a question? Drop us a message and we'll get back to you.
+            </p>
+
+            {submitted ? (
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+                <CheckCircle className="w-10 h-10 text-green-500 mx-auto mb-3" />
+                <h3 className="font-display text-xl text-[#0A1628] font-bold mb-1">MESSAGE SENT!</h3>
+                <p className="text-gray-600 text-sm">
+                  We'll get back to you shortly. For faster service, call Bryan directly at{" "}
+                  <a href={PHONE_LINK} className="text-[#E8611A] font-bold">{PHONE}</a>.
+                </p>
+              </div>
+            ) : (
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-4"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                    <input type="text" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="Your name" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                    <input type="tel" name="phone" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="(402) 555-0000" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <input type="email" name="email" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="you@email.com" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                  <textarea name="message" required rows={4} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none resize-none" placeholder="How can we help you?" />
+                </div>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full bg-[#E8611A] hover:bg-[#d4570f] text-white py-3 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                >
+                  {submitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      SENDING...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5" />
+                      SEND MESSAGE
+                    </>
+                  )}
+                </button>
+              </form>
+            )}
+          </div>
+
           {/* Free Estimate CTA */}
-          <div className="mt-12 bg-[#0A1628] rounded-xl p-8 text-center">
+          <div className="mt-8 bg-[#0A1628] rounded-xl p-8 text-center">
             <h2 className="font-display text-2xl text-white font-bold mb-2">
               NEED A FREE ESTIMATE?
             </h2>
