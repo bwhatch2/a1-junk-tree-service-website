@@ -1,0 +1,28 @@
+[[redirects]]
+  from = "https://a1junkremovalofomaha.com/*"
+  to = "https://www.a1junkremovalandtreeserviceofomaha.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://a1junkremovalofomaha.com/*"
+  to = "https://www.a1junkremovalandtreeserviceofomaha.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.a1junkremovalofomaha.com/*"
+  to = "https://www.a1junkremovalandtreeserviceofomaha.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.a1junkremovalofomaha.com/*"
+  to = "https://www.a1junkremovalandtreeserviceofomaha.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
