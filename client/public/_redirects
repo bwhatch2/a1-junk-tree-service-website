@@ -1,20 +1,12 @@
 # Netlify Redirects for A1 Junk Removal and Tree Service
 # 301 redirects from old site URLs (a1junkremovalofomaha.com) to new site structure
-# These activate when the old domain is added as a domain alias in Netlify
 
-# Domain-specific redirects for the old domain (EXPLICIT HOMEPAGE FALLBACK)
-# This forces a true 301 redirect to the new domain instead of just serving content on the alias
-# We use the homepage as the fallback for any page that doesn't exist on the new site
-https://a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-http://a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-https://www.a1junkremovalofomaha.com/*  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-http://www.a1junkremovalofomaha.com/*   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-
-# Explicit homepage redirects for Google Search Console
-https://a1junkremovalofomaha.com/  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-http://a1junkremovalofomaha.com/   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-https://www.a1junkremovalofomaha.com/  https://www.a1junkremovalandtreeserviceofomaha.com/  301!
-http://www.a1junkremovalofomaha.com/   https://www.a1junkremovalandtreeserviceofomaha.com/  301!
+# Domain-level redirects: old domain → new primary domain (non-www)
+# These use 301! (forced) so they fire even if a matching file/page exists
+https://a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
+http://a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
+https://www.a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
+http://www.a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
 
 # Old site core page redirects
 /services-1    /services    301
