@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { PHONE, PHONE_LINK, EMAIL, BUSINESS_NAME } from "@/lib/services-data";
-import { Phone, Mail, Clock, MapPin, CheckCircle, Send } from "lucide-react";
+import { Phone, Mail, Clock, MapPin, CheckCircle, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
 export default function FreeEstimate() {
@@ -12,11 +12,33 @@ export default function FreeEstimate() {
   }, []);
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    toast.success("Thank you! We'll get back to you shortly.");
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        toast.success("Thank you! We'll get back to you shortly.");
+      } else {
+        toast.error("Something went wrong. Please try again or call us directly.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -56,24 +78,35 @@ export default function FreeEstimate() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form
+                  name="free-estimate"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  className="space-y-4"
+                >
+                  <input type="hidden" name="form-name" value="free-estimate" />
+                  <p className="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
-                      <input type="text" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="Your name" />
+                      <input type="text" name="name" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="Your name" />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
-                      <input type="tel" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="(402) 555-0000" />
+                      <input type="tel" name="phone" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="(402) 555-0000" />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="you@email.com" />
+                    <input type="email" name="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="you@email.com" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Service Needed *</label>
-                    <select required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none bg-white">
+                    <select name="service" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none bg-white">
                       <option value="">Select a service</option>
                       <option value="junk-removal">Junk Removal</option>
                       <option value="cleanout">Cleanout Service</option>
@@ -89,18 +122,28 @@ export default function FreeEstimate() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Address / Location</label>
-                    <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="Street address or general area" />
+                    <input type="text" name="address" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none" placeholder="Street address or general area" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Tell Us About Your Project *</label>
-                    <textarea required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none resize-none" placeholder="Describe what you need removed, how much there is, and any access issues we should know about..." />
+                    <textarea name="message" required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#E8611A] focus:border-transparent outline-none resize-none" placeholder="Describe what you need removed, how much there is, and any access issues we should know about..." />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#E8611A] hover:bg-[#d4570f] text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2"
+                    disabled={submitting}
+                    className="w-full bg-[#E8611A] hover:bg-[#d4570f] text-white py-4 rounded-lg font-bold text-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    <Send className="w-5 h-5" />
-                    SUBMIT REQUEST
+                    {submitting ? (
+                      <>
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                        SENDING...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        SUBMIT REQUEST
+                      </>
+                    )}
                   </button>
                   <p className="text-gray-400 text-xs text-center">
                     By submitting, you agree to be contacted about your estimate. We never share your information.
