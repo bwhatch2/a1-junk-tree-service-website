@@ -134,14 +134,22 @@ export default function ServicePage({ service, isTreeService = false, serviceTyp
                 {service.h1.replace("in Omaha", "— Done Right")}
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p>{service.description}</p>
-                {!service.richContent && (
-                  <p>
-                    At {BUSINESS_NAME}, we're not a franchise and we don't have a call center.
-                    When you call us, you talk to Bryan — the owner. We show up when we say we will,
-                    charge a fair price, and get the job done right. That's how we've earned over 253
-                    five-star reviews from customers across the Omaha metro.
-                  </p>
+                {service.richContent ? (
+                  /* For Gemini-rewritten pages, only show the part of description not already in the hero shortDescription */
+                  <p>{service.description.startsWith(service.shortDescription)
+                    ? service.description.slice(service.shortDescription.length).trim()
+                    : service.description
+                  }</p>
+                ) : (
+                  <>
+                    <p>{service.description}</p>
+                    <p>
+                      At {BUSINESS_NAME}, we're not a franchise and we don't have a call center.
+                      When you call us, you talk to Bryan — the owner. We show up when we say we will,
+                      charge a fair price, and get the job done right. That's how we've earned over 253
+                      five-star reviews from customers across the Omaha metro.
+                    </p>
+                  </>
                 )}
               </div>
 
