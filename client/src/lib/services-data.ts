@@ -442,16 +442,43 @@ const junkHauling: ServiceItem[] = [
     relatedSlugs: ["basement-cleanout", "residential-junk-removal", "declutter-service"],
     photoNeeded: "Worker carrying boxes down from an attic"
   },
-  {
+    {
     slug: "declutter-service",
-    title: "Declutter Service Omaha | A1 Junk Removal",
+    title: "Declutter Service Omaha | A1 Junk Removal and Tree Service",
     category: "Junk Removal & Hauling",
     categorySlug: "junk-removal",
-    keywords: ["declutter service Omaha", "decluttering help", "home decluttering"],
+    keywords: ["declutter service Omaha", "decluttering help near me", "home decluttering Omaha"],
     metaDescription: "Overwhelmed by clutter? A1 Junk Removal helps Omaha homeowners declutter fast. We haul away what you don't need. Call (402) 612-2373.",
     h1: "Declutter Service in Omaha",
-    shortDescription: "Take back your space — we haul away the clutter.",
-    description: "Sometimes you just need a fresh start. If your home is overflowing with stuff you no longer need, we can help. Walk us through your space, tell us what goes, and we'll have it out of there fast. It's amazing how much better a room feels when the junk is gone.",
+    shortDescription: "Feeling overwhelmed by clutter in your home? **A1 Junk Removal and Tree Service** can help you take back your space. Our professional **declutter service in Omaha** makes it easy to get rid of unwanted items and enjoy a cleaner, more organized home.",
+    description: "Feeling overwhelmed by clutter in your home? **A1 Junk Removal and Tree Service** can help you take back your space. Our professional **declutter service in Omaha** makes it easy to get rid of unwanted items and enjoy a cleaner, more organized home. We help homeowners in **Papillion**, **La Vista**, and across the Omaha area. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust our local team to get the job done right.",
+    richContent: {
+    section1_heading: "How We Help You Declutter",
+    section1_body: [
+    {
+    label: "Initial Consultation:",
+    description: "We'll walk through your home with you to understand your goals and identify what needs to go."
+    },
+    {
+    label: "Sorting & Organizing:",
+    description: "Our team can assist with sorting items for donation, recycling, or disposal."
+    },
+    {
+    label: "Efficient Removal:",
+    description: "We quickly and carefully remove all the junk and unwanted items from your property."
+    },
+    {
+    label: "No Hidden Fees:",
+    description: "You'll receive a clear, upfront quote with no surprises."
+    },
+    {
+    label: "Stress-Free Process:",
+    description: "We handle all the heavy lifting so you can relax and enjoy your newly decluttered space."
+    }
+    ],
+    section2_heading: "Need Tree Work Done?",
+    section2_body: "Once your home is clear, what about the yard? A1 doesn't just handle junk. We also offer professional, affordable tree services, from trimming and pruning to complete tree removal. Let Bryan and the team keep your property looking its best inside and out. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    },
     relatedSlugs: ["residential-junk-removal", "full-service-junk-removal", "house-cleanout"],
     photoNeeded: "Cluttered room being cleared out"
   },
@@ -632,42 +659,137 @@ const cleanouts: ServiceItem[] = [
     relatedSlugs: ["property-cleanouts", "yard-waste-removal", "backyard-cleanup"],
     photoNeeded: "Photo needed for property cleanup"
   },
-  {
+    {
     slug: "apartment-cleanouts",
-    title: "Apartment Cleanout Service Omaha | A1 Junk Removal",
+    title: "Apartment Cleanout Service Omaha | A1 Junk Removal and Tree Service",
     category: "Cleanout Services",
     categorySlug: "cleanouts",
-    keywords: ["apartment cleanout Omaha", "apartment junk removal", "apartment clean out service"],
-    metaDescription: "Apartment cleanout services in Omaha. A1 Junk Removal clears out apartments for tenants, landlords, and property managers. Call (402) 612-2373.",
+    keywords: ["apartment cleanout Omaha", "apartment junk removal near me", "apartment clean out service Omaha"],
+    metaDescription: "Need a fast and affordable apartment cleanout in Omaha? A1 Junk Removal and Tree Service clears out apartments for tenants, landlords, and property managers. Call (402) 612-2373 for a free quote.",
     h1: "Apartment Cleanout Service in Omaha",
-    shortDescription: "Complete apartment cleanouts for tenants, landlords, and managers.",
-    description: "Moving out of an apartment or managing a property that needs clearing? We handle complete apartment cleanouts — furniture, appliances, trash, everything. We work fast so you can get the unit turned around and ready for the next tenant.",
+    shortDescription: "Whether you're a tenant moving out or a landlord clearing a unit, **A1 Junk Removal and Tree Service** handles complete **apartment cleanouts Omaha** from top to bottom. We get the job done fast so you can move on.",
+    description: "Whether you're a tenant moving out or a landlord clearing a unit, **A1 Junk Removal and Tree Service** handles complete **apartment cleanouts Omaha** from top to bottom. We get the job done fast so you can move on. We're proud to serve our neighbors in **La Vista**, **Council Bluffs**, and the surrounding areas. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust our local team to provide friendly, professional service every time.",
+    richContent: {
+    section1: {
+    heading: "What An Apartment Cleanout Includes",
+    bullets: [
+    {
+    label: "Furniture Removal:",
+    description: "We haul away old couches, beds, dressers, tables, and any other unwanted furniture."
+    },
+    {
+    label: "Appliance Disposal:",
+    description: "Safely removing refrigerators, ovens, washers, dryers, and other heavy appliances."
+    },
+    {
+    label: "General Junk & Trash:",
+    description: "Clearing out leftover clothes, dishes, boxes, and any other household clutter."
+    },
+    {
+    label: "Carpet & Flooring:",
+    description: "We can even tear out and dispose of old, stained carpets to get the unit ready for a refresh."
+    },
+    {
+    label: "Full Property Sweep:",
+    description: "Ensuring the entire apartment, including closets and storage areas, is completely empty."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Property Care",
+    body: "Beyond junk removal, our team offers comprehensive tree services to keep your property safe and looking its best. From tree trimming and pruning to emergency removal of hazardous limbs, we handle it all. Winston and the crew are equipped for any job, big or small. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["house-cleanout", "property-cleanouts", "furniture-removal"],
     photoNeeded: "Empty apartment after cleanout"
   },
-  {
+    {
     slug: "basement-cleanout",
-    title: "Basement Cleanout Omaha | A1 Junk Removal",
+    title: "Basement Cleanout Omaha | A1 Junk Removal and Tree Service",
     category: "Cleanout Services",
     categorySlug: "cleanouts",
-    keywords: ["basement cleanout Omaha", "basement junk removal", "basement cleanup"],
-    metaDescription: "Basement full of junk? A1 Junk Removal provides basement cleanout services across Omaha. We do the heavy lifting. Call (402) 612-2373.",
+    keywords: ["basement cleanout Omaha", "basement junk removal near me", "basement cleanup Omaha"],
+    metaDescription: "Need a basement cleanout in Omaha? A1 Junk Removal and Tree Service offers fast, affordable basement junk removal. Get your space back! Call (402) 612-2373.",
     h1: "Basement Cleanout in Omaha",
-    shortDescription: "We clear out basements so you can reclaim your space.",
-    description: "Basements are where stuff goes to be forgotten. Old exercise equipment, holiday decorations from 10 years ago, boxes you haven't opened since you moved in. We'll haul it all up and out. You'll be amazed at how much space you actually have down there.",
+    shortDescription: "Is your basement overflowing with old furniture, forgotten boxes, and clutter? **A1 Junk Removal and Tree Service** can help. We clear out basements so you can reclaim your space.",
+    description: "Is your basement overflowing with old furniture, forgotten boxes, and clutter? **A1 Junk Removal and Tree Service** can help. We clear out basements so you can reclaim your space. We provide fast, friendly **basement cleanout Omaha** services in **Elkhorn**, **Boys Town**, and the surrounding areas. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust our local team to get the job done right.",
+    richContent: {
+    sections: [
+    {
+    heading: "What We Take",
+    body: [
+    {
+    label: "Old Furniture:",
+    description: "Couches, chairs, tables, and mattresses."
+    },
+    {
+    label: "Stored Items:",
+    description: "Boxes, bins, and forgotten belongings."
+    },
+    {
+    label: "Appliances:",
+    description: "Washers, dryers, and old refrigerators."
+    },
+    {
+    label: "Construction Debris:",
+    description: "Leftover materials from remodeling projects."
+    },
+    {
+    label: "General Junk:",
+    description: "Anything else you need gone!"
+    }
+    ]
+    },
+    {
+    heading: "Complete Property Cleanouts",
+    body: "Once your basement is clear, you might notice other areas of your home that need attention. From single-item appliance removal to full house cleanouts, our team can handle any size job. We also offer tree trimming and removal to keep your property safe and looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["attic-junk-removal", "garage-cleanout", "house-cleanout"],
     photoNeeded: "Cluttered basement being cleared"
   },
-  {
+    {
     slug: "garage-cleanout",
-    title: "Garage Cleanout Omaha | A1 Junk Removal",
+    title: "Garage Cleanout Omaha | A1 Junk Removal and Tree Service",
     category: "Cleanout Services",
     categorySlug: "cleanouts",
-    keywords: ["garage cleanout Omaha", "garage junk removal", "garage cleanup service"],
-    metaDescription: "Garage cleanout services in Omaha. A1 Junk Removal clears out your garage so you can actually park in it. Call (402) 612-2373.",
+    keywords: ["garage cleanout Omaha", "garage junk removal near me", "garage cleanup service Omaha"],
+    metaDescription: "Need a garage cleanout in Omaha? A1 Junk Removal and Tree Service clears out your garage fast. Get a free quote today! Call (402) 612-2373.",
     h1: "Garage Cleanout in Omaha",
-    shortDescription: "Clear out the garage and actually park your car in it again.",
-    description: "Can't park in your garage anymore? You're not alone. Garages become storage units real fast. We'll come out, clear the junk, and give you your garage back. Most garage cleanouts take us just a couple of hours.",
+    shortDescription: "Is your garage so full of junk you can't even park your car in it? You're not alone. **A1 Junk Removal and Tree Service** can help you reclaim your space with a professional **garage cleanout Omaha**.",
+    description: "Is your garage so full of junk you can't even park your car in it? You're not alone. **A1 Junk Removal and Tree Service** can help you reclaim your space with a professional **garage cleanout Omaha**. We serve the entire Omaha area, including **Council Bluffs** and **La Vista**, and have earned **253+ five-star reviews** by offering prices **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "What We Take",
+    bullets: [
+    {
+    label: "Old Furniture",
+    description: "Couches, chairs, tables, and mattresses."
+    },
+    {
+    label: "Broken Appliances",
+    description: "Refrigerators, freezers, washers, and dryers."
+    },
+    {
+    label: "Boxes of Junk",
+    description: "Old clothes, toys, books, and general clutter."
+    },
+    {
+    label: "Yard Waste",
+    description: "Bags of leaves, branches, and old planters."
+    },
+    {
+    label: "Construction Debris",
+    description: "Scrap wood, drywall, and old carpeting."
+    }
+    ]
+    },
+    section2: {
+    heading: "Need Tree Work Done?",
+    body: "Once your garage is clear, you might notice other parts of your property need attention. From overgrown trees to unsightly stumps, our tree service division can handle it all. We offer everything from tree trimming and removal to stump grinding to keep your yard looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["basement-cleanout", "residential-junk-removal", "declutter-service"],
     photoNeeded: "Before/after of a garage cleanout"
   },
@@ -729,17 +851,36 @@ const cleanouts: ServiceItem[] = [
     relatedSlugs: ["house-cleanout", "garage-cleanout", "basement-cleanout", "storage-unit-cleanouts"],
     photoNeeded: "General cleanout in progress"
   },
-  {
+    {
     slug: "fall-cleanouts",
-    title: "Fall Cleanout Services Omaha | A1 Junk Removal",
+    title: "Fall Cleanout Services Omaha | A1 Junk Removal and Tree Service",
     category: "Cleanout Services",
     categorySlug: "cleanouts",
-    keywords: ["fall cleanout Omaha", "fall cleanup service", "seasonal cleanout"],
-    metaDescription: "Get your property ready for winter with fall cleanout services from A1 Junk Removal in Omaha. Call (402) 612-2373.",
+    keywords: ["fall cleanout Omaha", "fall cleanup near me", "autumn yard cleanup Omaha"],
+    metaDescription: "Get your property ready for winter with our expert fall cleanouts Omaha. A1 Junk Removal and Tree Service offers fast, affordable service. Call (402) 612-2373.",
     h1: "Fall Cleanout Services in Omaha",
-    shortDescription: "Get your property cleaned up before winter hits.",
-    description: "Fall is the perfect time to clear out the junk before winter sets in. Yard debris, old patio furniture, that pile of stuff in the garage — let us haul it all away so you can button up your property for the cold months ahead.",
-    relatedSlugs: ["yard-waste-removal", "garage-cleanout", "backyard-cleanup"],
+    shortDescription: "As the leaves change and the air gets crisp, it's time to think about getting your yard and property ready for the winter ahead. Our **fall cleanouts Omaha** service handles all the raking, bagging, and hauling, so you don't have to. We'll get your space cleared out and looking sharp before the snow flies.",
+    description: "As the leaves change and the air gets crisp, it's time to think about getting your yard and property ready for the winter ahead. Our **fall cleanouts Omaha** service handles all the raking, bagging, and hauling, so you don't have to. We'll get your space cleared out and looking sharp before the snow flies. We're proud to serve customers in **Boys Town** and **Carter Lake**, and our **253+ five-star reviews** show our commitment to great work. Plus, our prices are often **40-60% less than national companies**.",
+    richContent: {
+    headings: ["What We Handle During a Fall Cleanout", "Need More Than a Cleanup?"],
+    sections: [
+    {
+    type: "bullets",
+    content: [
+    "Leaf Raking & Removal: We'll rake up all the fallen leaves from your lawn, garden beds, and walkways.",
+    "Yard Debris Cleanup: We clear away branches, twigs, and other accumulated yard waste.",
+    "Gutter Cleaning: We can clear leaves and debris from your gutters to ensure proper drainage.",
+    "Patio & Deck Clearing: We'll haul away old furniture, dead plants, and other clutter from your outdoor living spaces.",
+    "Final Mow & Tidy: We can provide a final lawn mowing to keep things neat throughout the winter."
+    ]
+    },
+    {
+    type: "paragraph",
+    content: "While we're taking care of your fall cleanup, maybe you've noticed a tree that looks a little overgrown or a stump that's been an eyesore for too long. A1 also offers professional tree trimming, tree removal, and stump grinding services to get your entire property in top shape. Let Bryan and the team handle all your yard needs in one go. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
+    relatedSlugs: ["yard-waste-removal", "garage-cleanout", "gutter-cleaning"],
     photoNeeded: "Fall yard cleanup with leaves and debris"
   },
   {
@@ -948,45 +1089,76 @@ const construction: ServiceItem[] = [
     relatedSlugs: ["construction-waste-removal", "remodeling-debris-removal", "drywall-removal"],
     photoNeeded: "Construction debris pile being loaded into truck"
   },
-  {
+    {
     slug: "construction-waste-removal",
-    title: "Construction Waste Removal Omaha | A1 Junk Removal",
+    title: "Construction Waste Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["construction waste removal Omaha", "construction cleanup", "building waste disposal"],
-    metaDescription: "Construction waste removal services in Omaha. A1 Junk Removal handles all construction waste. Call (402) 612-2373 for a free estimate.",
+    keywords: ["construction waste removal Omaha", "construction debris removal near me", "job site cleanup Omaha"],
+    metaDescription: "Need reliable construction waste removal in Omaha? A1 Junk Removal and Tree Service offers fast, affordable job site cleanup. Call (402) 612-2373 for a free quote!",
     h1: "Construction Waste Removal in Omaha",
-    shortDescription: "Complete construction waste removal for contractors and homeowners.",
-    description: "From small bathroom remodels to large commercial builds, construction creates a lot of waste. We handle all of it — wood, metal, concrete, drywall, insulation, you name it. We work with contractors on regular pickups or one-time cleanouts.",
+    shortDescription: "Got a mess on your hands from a recent project? Don't let piles of debris slow you down. **A1 Junk Removal and Tree Service** offers fast and reliable **construction waste removal in Omaha** to keep your job site clean and safe.",
+    description: "Got a mess on your hands from a recent project? Don't let piles of debris slow you down. **A1 Junk Removal and Tree Service** offers fast and reliable **construction waste removal in Omaha** to keep your job site clean and safe. We're proud to serve our neighbors in **Gretna** and **Bellevue**. With **253+ five-star reviews**, you can trust our team to get the job done right. Plus, our services are often **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "What We Haul Away",
+    bullets: [
+    {
+    label: "Wood & Lumber:",
+    description: "From framing scraps to old pallets, we take all types of wood debris."
+    },
+    {
+    label: "Concrete & Masonry:",
+    description: "Broken concrete, bricks, and asphalt are no problem for our crew."
+    },
+    {
+    label: "Drywall & Plaster:",
+    description: "We'll handle the dusty job of removing and disposing of drywall sheets."
+    },
+    {
+    label: "Metals:",
+    description: "We recycle scrap metal, including steel beams, pipes, and wiring."
+    },
+    {
+    label: "Roofing Materials:",
+    description: "Shingles, flashing, and other roofing waste are cleared out quickly."
+    }
+    ]
+    },
+    section2: {
+    heading: "Need More Than Just Cleanup?",
+    body: "If your project involves more than just hauling away debris, A1 is here to help. We also offer selective interior and exterior demolition services. Whether you're tearing out a kitchen or taking down a shed, our team can handle the teardown and the cleanup from start to finish. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["construction-debris-removal", "building-material-removal", "demolition-contractor"],
     photoNeeded: "Mixed construction waste in a pile"
   },
   {
     slug: "concrete-removal",
-    title: "Concrete Hauling Omaha | A1 Junk Removal and Tree Service",
+    title: "Concrete Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["concrete removal Omaha", "concrete hauling", "broken concrete removal"],
-    metaDescription: "Concrete removal and hauling in Omaha. A1 Junk Removal handles driveways, patios, foundations, and more. Call (402) 612-2373.",
-    h1: "Fast Concrete Hauling Omaha",
-    shortDescription: "Broken concrete is heavy, dangerous, and requires a heavy-duty truck to move. If you need **concrete hauling near me**, A1 is the most affordable choice. We provide **concrete hauling Omaha NE**, loading and removing old sidewalk chunks, patio pieces, and rubble.",
-    description: "Broken concrete is heavy, dangerous, and requires a heavy-duty truck to move. If you need **concrete hauling near me**, A1 is the most affordable choice. We provide **concrete hauling Omaha NE**, loading and removing old sidewalk chunks, patio pieces, and rubble. Our local crew has earned **253+ five-star reviews** for being the hardest workers in town. Our prices are **40-60% less than national companies**, serving clients in **Carter Lake** and **Elkhorn**. We take the heavy weight off your property so you can finish your project.",
+    keywords: ["concrete removal Omaha", "concrete demolition Omaha", "concrete breakup and removal"],
+    metaDescription: "Concrete removal in Omaha. A1 Junk Removal breaks up and removes old driveways, patios, sidewalks, and foundations. Call (402) 612-2373.",
+    h1: "Professional Concrete Removal Omaha NE",
+    shortDescription: "Old, cracked concrete doesn't just look bad — it's a tripping hazard and a barrier to your next project. When you need **concrete removal Omaha**, **A1 Junk Removal and Tree Service** handles the full job from breakup to haul-off. We bring the equipment to demolish slabs, foundations, and footings so you don't have to rent anything or figure it out yourself.",
+    description: "Old, cracked concrete doesn't just look bad — it's a tripping hazard and a barrier to your next project. When you need **concrete removal Omaha**, **A1 Junk Removal and Tree Service** handles the full job from breakup to haul-off. We bring the equipment to demolish slabs, foundations, and footings so you don't have to rent anything or figure it out yourself. Whether it's a crumbling driveway in **Gretna** or an old garage pad in **Bennington**, we break it up, load it out, and leave the site ready for whatever comes next. Our **253+ five-star reviews** and prices **40-60% less than national companies** make us the go-to crew for concrete demo in the Omaha metro.",
     richContent: [
-          {
-            heading: "What We Remove",
-            bullets: [
-              "Patio & Driveway Debris: Large, heavy concrete sections.",
-              "Sidewalk Chunks: Smaller, manageable masonry pieces.",
-              "Brick & Block Rubble: We haul away all types of masonry.",
-              "Reinforced Concrete: Handling pieces with rebar or wire mesh.",
-              "Final Site Sweep: We make sure no small pebbles or dust are left behind.",
-            ],
-          },
-          {
-            heading: "Exterior Renovation Help",
-            body: "After the concrete is gone, we can help with **landscaping** debris removal to help you prep the site for new grass, a deck, or a garden. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
-          },
+      {
+        heading: "Concrete We Break Up and Remove",
+        bullets: [
+          "Driveways & Garage Pads: Full slab demolition and removal.",
+          "Sidewalks & Walkways: Breaking out old paths for replacement or regrading.",
+          "Foundations & Footings: Removing old structural concrete for new construction.",
+          "Retaining Walls: Tearing down failing block and poured walls.",
+          "Rebar & Wire Mesh: We handle reinforced concrete — not just plain slabs.",
         ],
+      },
+      {
+        heading: "From Demo to Done",
+        body: "Most concrete removal projects are the first step in a bigger plan. Once the old slab is gone, we can also help with **landscaping** site prep, grading, and debris removal so your contractor can start fresh. One crew, one call. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["concrete-patio-removal", "broken-concrete-haul-away", "brick-block-concrete-removal"],
     photoNeeded: "Breaking up and removing concrete driveway"
   },
@@ -1135,55 +1307,164 @@ const construction: ServiceItem[] = [
     relatedSlugs: ["shed-removal", "gazebo-removal", "concrete-patio-removal"],
     photoNeeded: "Tearing down an old wooden deck"
   },
-  {
+    {
     slug: "demolition-contractor",
-    title: "Demolition Contractor Omaha | A1 Junk Removal",
+    title: "Demolition Contractor Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["demolition contractor Omaha", "light demolition", "interior demolition"],
-    metaDescription: "Light demolition services in Omaha. A1 Junk Removal handles interior demo, structure removal, and debris hauling. Call (402) 612-2373.",
+    keywords: ["demolition contractor Omaha", "light demolition near me", "interior demolition Omaha"],
+    metaDescription: "Reliable and affordable light demolition services in Omaha, NE. A1 Junk Removal and Tree Service handles everything from interior tear-outs to small structure removal. Call us at (402) 612-2373 for a free quote.",
     h1: "Demolition Contractor in Omaha",
-    shortDescription: "Light demolition for interiors, structures, and more.",
-    description: "Need something torn down? We handle light demolition projects — interior walls, bathroom tear-outs, kitchen demo, sheds, barns, and more. We do the demo AND haul away all the debris, so you're not left with a pile of rubble.",
+    shortDescription: "Taking on a demolition project yourself can be a massive headache, from the mess to the risk of damaging your property. **A1 Junk Removal and Tree Service** offers professional **demolition contractor Omaha** services to handle the tough stuff for you, safely and efficiently.",
+    description: "Taking on a demolition project yourself can be a massive headache, from the mess to the risk of damaging your property. **A1 Junk Removal and Tree Service** offers professional **demolition contractor Omaha** services to handle the tough stuff for you, safely and efficiently. We're proud to serve our neighbors in **Carter Lake** and **Papillion**. With **253+ five-star reviews**, you can trust our team to get the job done right, and our prices are often **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "What Our Demolition Service Includes",
+    bullets: [
+    {
+    label: "Interior Demolition",
+    description: "We handle kitchen, bathroom, and basement tear-outs, including the removal of drywall, flooring, and fixtures."
+    },
+    {
+    label: "Structural Removal",
+    description: "Our team can safely dismantle and remove sheds, decks, fences, and other small outdoor structures."
+    },
+    {
+    label: "Site Preparation",
+    description: "We clear the way for your renovation or construction project by removing non-load-bearing walls and features."
+    },
+    {
+    label: "Concrete & Asphalt",
+    description: "Need a driveway or patio removed? We have the equipment to break up and haul away old concrete and asphalt."
+    },
+    {
+    label: "Complete Debris Hauling",
+    description: "We don't just tear it down; we clean it up. All demolition debris is loaded and hauled away, leaving you with a clean slate."
+    }
+    ]
+    },
+    section2: {
+    heading: "Don't Forget the Cleanup",
+    body: "A demolition project generates a surprising amount of waste. Instead of letting it pile up, let our junk removal team take care of it. We can haul away everything from construction debris and scrap metal to old furniture and appliances, making your cleanup process completely hassle-free. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["bathroom-demolition", "barn-removal", "shed-removal"],
     photoNeeded: "Interior demolition in progress"
   },
-  {
+    {
     slug: "bathroom-demolition",
-    title: "Bathroom Demolition Omaha | A1 Junk Removal",
+    title: "Bathroom Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["bathroom demolition Omaha", "bathroom tear out", "bathroom remodel demo"],
-    metaDescription: "Bathroom demolition services in Omaha. A1 Junk Removal handles tear-outs and debris removal for your remodel. Call (402) 612-2373.",
+    keywords: ["bathroom demolition Omaha", "bathroom demolition near me", "bathroom tear out Omaha", "bathroom remodel demo"],
+    metaDescription: "Ready to remodel your bathroom? A1 Junk Removal and Tree Service offers fast and affordable bathroom demolition in Omaha, Ralston, and Council Bluffs. Call (402) 612-2373.",
     h1: "Bathroom Demolition in Omaha",
-    shortDescription: "Bathroom remodel? We handle the tear-out and debris removal.",
-    description: "Remodeling your bathroom? We'll handle the demolition — tearing out the old tub, toilet, vanity, tile, and drywall. Then we haul all the debris away so your contractor can start fresh.",
+    shortDescription: "Planning a bathroom remodel? The first step is getting rid of the old stuff. Instead of dealing with the mess and hassle yourself, let **A1 Junk Removal and Tree Service** handle the dirty work. We provide complete **bathroom demolition Omaha** services to get your space ready for its transformation.",
+    description: "Planning a bathroom remodel? The first step is getting rid of the old stuff. Instead of dealing with the mess and hassle yourself, let **A1 Junk Removal and Tree Service** handle the dirty work. We provide complete **bathroom demolition Omaha** services to get your space ready for its transformation. Bryan and his team serve homeowners and contractors throughout the area, including **Ralston** and **Council Bluffs**. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust us to do the job right.",
     relatedSlugs: ["demolition-contractor", "bathtub-removal", "drywall-removal", "remodeling-debris-removal"],
-    photoNeeded: "Bathroom being demolished for remodel"
+    photoNeeded: "Bathroom being demolished for remodel",
+    richContent: {
+    section1: {
+    heading: "What Our Bathroom Demolition Includes",
+    bullets: [
+    {
+    label: "Vanity & Countertop Removal:",
+    description: "We safely detach and haul away old vanities and countertops."
+    },
+    {
+    label: "Toilet & Tub Removal:",
+    description: "We'll disconnect and remove old toilets, bathtubs, and shower inserts."
+    },
+    {
+    label: "Tile & Flooring Tear-Out:",
+    description: "We handle the dusty work of tearing out old floor and wall tiles."
+    },
+    {
+    label: "Drywall & Fixture Removal:",
+    description: "We take down old drywall, light fixtures, and medicine cabinets."
+    },
+    {
+    label: "Complete Debris Cleanup:",
+    description: "We sweep up and haul away every last bit of demolition debris."
+    }
+    ]
+    },
+    section2: {
+    heading: "Need More Than Just Demolition?",
+    body: "Once your bathroom is a clean slate, you might notice other clutter around the house. From old furniture in the basement to yard waste piling up, **A1 Junk Removal and Tree Service** can help you reclaim your space. We handle all types of junk hauling, big and small. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    }
   },
-  {
+    {
     slug: "drywall-removal",
-    title: "Drywall Removal Omaha | A1 Junk Removal",
+    title: "Drywall Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["drywall removal Omaha", "drywall disposal", "drywall demolition"],
-    metaDescription: "Drywall removal and disposal in Omaha. A1 Junk Removal handles demo and hauling. Call (402) 612-2373.",
+    keywords: ["drywall removal Omaha", "drywall disposal near me", "sheetrock removal Omaha"],
+    metaDescription: "Fast and affordable drywall removal in Omaha. A1 Junk Removal and Tree Service handles demolition, cleanup, and disposal. Call (402) 612-2373 for a free quote.",
     h1: "Drywall Removal in Omaha",
-    shortDescription: "Drywall demolition and disposal for remodels and renovations.",
-    description: "Drywall creates a huge mess when it comes down. We'll tear it out, bag it up, and haul it away. Whether it's a single wall or a whole floor, we handle the dusty work so you don't have to.",
+    shortDescription: "Tearing out drywall for a remodel or repair is a messy job. Between the dust, the heavy lifting, and the cleanup, it's a project most people would rather avoid. That's where **A1 Junk Removal and Tree Service** comes in. We handle all the tough parts of **drywall removal Omaha**, from the initial demolition to hauling away every last piece, so you can focus on your renovation.",
+    description: "Tearing out drywall for a remodel or repair is a messy job. Between the dust, the heavy lifting, and the cleanup, it's a project most people would rather avoid. That's where **A1 Junk Removal and Tree Service** comes in. We handle all the tough parts of **drywall removal Omaha**, from the initial demolition to hauling away every last piece, so you can focus on your renovation. We're proud to serve customers in **La Vista**, **Gretna**, and the surrounding areas. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust our local team to get the job done right.",
     relatedSlugs: ["bathroom-demolition", "remodeling-debris-removal", "construction-debris-removal"],
-    photoNeeded: "Removing drywall during renovation"
+    photoNeeded: "Removing drywall during renovation",
+    richContent: {
+    section1: {
+    heading: "What We Handle",
+    bullets: [
+    {
+    label: "Demolition:",
+    description: "We carefully tear down existing drywall walls and ceilings."
+    },
+    {
+    label: "Bagging:",
+    description: "All debris is bagged up securely to control the fine, white dust."
+    },
+    {
+    label: "Hauling:",
+    description: "Our team loads everything into our trucks so you don't have to lift a thing."
+    },
+    {
+    label: "Disposal:",
+    description: "We handle the responsible disposal of all drywall and construction waste."
+    },
+    {
+    label: "Cleanup:",
+    description: "We sweep the area clean, leaving your space ready for the next step."
+    }
+    ]
+    },
+    section2: {
+    heading: "Need More Than Just Demo?",
+    body: "Once the old drywall is gone, you might be looking at a bigger project. Whether it's a full garage cleanout to make room for supplies or hauling away old furniture and fixtures, we've got you covered. Our junk removal services are perfect for clearing out any unwanted items cluttering up your home or renovation site. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    }
   },
   {
     slug: "remodeling-debris-removal",
-    title: "Remodeling Debris Removal Omaha | A1 Junk Removal",
+    title: "Remodeling Debris Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["remodeling debris removal Omaha", "renovation cleanup", "remodel junk removal"],
-    metaDescription: "Remodeling debris removal in Omaha. A1 Junk Removal cleans up after your renovation. Call (402) 612-2373.",
+    keywords: ["remodeling debris removal Omaha", "renovation cleanup Omaha", "remodel junk removal near me"],
+    metaDescription: "Remodeling debris removal in Omaha. A1 Junk Removal hauls away cabinets, tile, drywall, and fixtures after your renovation. Call (402) 612-2373.",
     h1: "Remodeling Debris Removal in Omaha",
-    shortDescription: "We clean up the mess your remodel leaves behind.",
-    description: "Renovations are exciting until you're staring at a mountain of old cabinets, tile, drywall, and fixtures. We come in after the demo and haul everything away so the real work can begin.",
+    shortDescription: "Renovations are exciting until you're staring at a mountain of old cabinets, tile, drywall, and fixtures piled up in your garage or driveway. If you need **remodeling debris removal Omaha**, **A1 Junk Removal and Tree Service** comes in after the demo and hauls everything away so the real work can begin.",
+    description: "Renovations are exciting until you're staring at a mountain of old cabinets, tile, drywall, and fixtures piled up in your garage or driveway. If you need **remodeling debris removal Omaha**, **A1 Junk Removal and Tree Service** comes in after the demo and hauls everything away so the real work can begin. We work with homeowners and contractors across **Elkhorn** and **Gretna** who need a reliable crew to keep the job site clear between phases. With **253+ five-star reviews** and rates **40-60% less than national companies**, we're the cleanup crew that keeps your remodel on schedule.",
+    richContent: [
+      {
+        heading: "What We Haul From Remodels",
+        bullets: [
+          "Cabinets & Countertops: Kitchen and bathroom tearouts, including granite and laminate.",
+          "Drywall & Plaster: Broken sheets, dust, and old wall material.",
+          "Tile & Flooring: Ceramic, vinyl, hardwood, and carpet padding.",
+          "Fixtures & Hardware: Sinks, toilets, light fixtures, and old plumbing.",
+          "Trim & Molding: Baseboards, crown molding, and door frames.",
+        ],
+      },
+      {
+        heading: "Contractor-Friendly Scheduling",
+        body: "We know remodels run on tight timelines. Whether you need a one-time haul or recurring pickups throughout a multi-week project, we'll work around your schedule. Nick and the crew can usually get there same-day or next-day. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["construction-debris-removal", "bathroom-demolition", "drywall-removal"],
     photoNeeded: "Pile of remodeling debris"
   },
@@ -1216,83 +1497,277 @@ const construction: ServiceItem[] = [
     relatedSlugs: ["shed-removal", "demolition-contractor", "land-clearing"],
     photoNeeded: "Old barn being demolished"
   },
-  {
+    {
     slug: "kitchen-demolition",
-    title: "Kitchen Demolition Omaha | A1 Junk Removal",
+    title: "Kitchen Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["kitchen demolition Omaha", "kitchen tear out", "kitchen remodel demo"],
-    metaDescription: "Kitchen demolition services in Omaha. A1 Junk Removal handles tear-outs and debris removal for your kitchen remodel. Call (402) 612-2373.",
+    keywords: ["kitchen demolition Omaha", "kitchen demolition near me", "kitchen tear out Omaha"],
+    metaDescription: "Local kitchen demolition services in Omaha, NE. A1 Junk Removal and Tree Service handles complete tear-outs and debris removal for your kitchen remodel.",
     h1: "Kitchen Demolition in Omaha",
-    shortDescription: "Kitchen remodel? We handle the tear-out and haul away the debris.",
-    description: "Remodeling your kitchen? We'll rip out the old cabinets, countertops, backsplash, flooring, and appliances. Then we haul all the debris away so your contractor can start with a clean space. We're careful around plumbing and electrical so nothing gets damaged that shouldn't.",
+    shortDescription: "Planning a kitchen remodel? The first step is getting rid of the old stuff. **A1 Junk Removal and Tree Service** handles the entire tear-out, from cabinets and countertops to flooring and appliances, making sure your space is ready for the next phase.",
+    description: "Planning a kitchen remodel? The first step is getting rid of the old stuff. **A1 Junk Removal and Tree Service** handles the entire tear-out, from cabinets and countertops to flooring and appliances, making sure your space is ready for the next phase. We're proud to serve homeowners in **Gretna** and **Papillion**, helping them start their renovation projects on the right foot. With **253+ five-star reviews**, you can trust our team to do the job right. Plus, our services are often **40-60% less than national companies**. For professional **kitchen demolition Omaha**, we're the local team to call.",
+    richContent: {
+    section1: {
+    heading: "Our Kitchen Demolition Process",
+    bullets: [
+    {
+    label: "Cabinet Removal:",
+    description: "We carefully dismantle and remove all upper and lower kitchen cabinets."
+    },
+    {
+    label: "Countertop & Backsplash:",
+    description: "Old countertops, whether they're laminate or granite, and tile backsplashes are no problem for us."
+    },
+    {
+    label: "Appliance Disconnection:",
+    description: "We can safely disconnect and haul away old stoves, dishwashers, and refrigerators."
+    },
+    {
+    label: "Flooring Tear-Out:",
+    description: "We'll pull up old vinyl, tile, or wood flooring to expose the subfloor for your contractors."
+    },
+    {
+    label: "Debris Haul-Away:",
+    description: "After the demolition, we load up all the debris and junk, leaving you with a completely clean slate."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Remodeling Cleanup",
+    body: "Once your kitchen is cleared out, you might be thinking about the rest of the project. Our junk removal services are perfect for handling all construction and remodeling debris, not just from the kitchen. We can keep your project site clean from start to finish. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["bathroom-demolition", "demolition-contractor", "remodeling-debris-removal", "appliance-removal"],
     photoNeeded: "Kitchen being demolished for remodel"
   },
-  {
+    {
     slug: "garage-demolition",
-    title: "Garage Demolition Omaha | A1 Junk Removal",
+    title: "Garage Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["garage demolition Omaha", "garage tear down", "old garage removal"],
-    metaDescription: "Garage demolition in Omaha. A1 Junk Removal tears down old garages and hauls away all debris. Call (402) 612-2373.",
+    keywords: ["garage demolition Omaha", "garage tear down near me", "old garage removal Omaha"],
+    metaDescription: "Need an old garage torn down in the Omaha area? A1 Junk Removal and Tree Service offers fast and affordable garage demolition. Call (402) 612-2373 for a free quote.",
     h1: "Garage Demolition in Omaha",
-    shortDescription: "Old garage needs to come down? We demolish and haul it away.",
-    description: "Whether it's a detached garage that's falling apart or you need to clear the space for a new build, we handle the full demolition. We tear it down, load up the debris, and leave you with a clean lot. Concrete slab removal available too.",
+    shortDescription: "Got an old, unstable, or just plain ugly garage that needs to go? **A1 Junk Removal and Tree Service** can help. We handle the entire **garage demolition Omaha** process, from the initial tear-down to hauling away every last bit of debris.",
+    description: "Got an old, unstable, or just plain ugly garage that needs to go? **A1 Junk Removal and Tree Service** can help. We handle the entire **garage demolition Omaha** process, from the initial tear-down to hauling away every last bit of debris. We're proud to serve customers in **Bellevue**, **Bennington**, and the surrounding areas. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust our local team to get the job done right. We'll leave you with a clean, clear space, ready for whatever you have planned next.",
+    richContent: {
+    sections: [
+    {
+    heading: "What Our Garage Demolition Service Includes",
+    bullets: [
+    {
+    label: "Full Teardown:",
+    description: "We safely dismantle the entire garage structure, whether it's wood, metal, or cinder block."
+    },
+    {
+    label: "Debris Removal:",
+    description: "All demolition waste, including wood, shingles, siding, and nails, is loaded and hauled away."
+    },
+    {
+    label: "Site Cleanup:",
+    description: "We sweep and rake the area to ensure no hazardous materials are left behind."
+    },
+    {
+    label: "Concrete Slab Removal:",
+    description: "We can break up and remove the old concrete foundation for an additional fee."
+    },
+    {
+    label: "Licensed & Insured:",
+    description: "Our team is fully insured for your peace of mind during the entire process."
+    }
+    ]
+    },
+    {
+    heading: "Need More Than Just Demolition?",
+    body: "Once the garage is gone, you might be looking at a yard that needs a little love. A1 also offers complete tree services, from trimming and pruning to full tree removal and stump grinding. We can help you get your entire property looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["demolition-contractor", "barn-removal", "shed-removal", "concrete-removal"],
     photoNeeded: "Demolishing an old garage"
   },
-  {
+    {
     slug: "pool-demolition",
-    title: "Pool Demolition Omaha | A1 Junk Removal",
+    title: "Pool Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["pool demolition Omaha", "pool removal", "swimming pool tear out"],
-    metaDescription: "Pool demolition and removal in Omaha. A1 Junk Removal handles in-ground and above-ground pool removal. Call (402) 612-2373.",
+    keywords: ["pool demolition Omaha", "pool removal near me", "swimming pool tear out Omaha"],
+    metaDescription: "Ready to reclaim your backyard? A1 Junk Removal and Tree Service offers complete pool demolition and removal in the Omaha area. Call us at (402) 612-2373 for a free estimate.",
     h1: "Pool Demolition in Omaha",
-    shortDescription: "In-ground or above-ground pool removal and fill-in.",
-    description: "Tired of maintaining that old pool? We handle both in-ground and above-ground pool demolition. We break up the concrete, remove the liner and equipment, fill in the hole, and haul away all the debris. Your backyard gets a fresh start.",
+    shortDescription: "That old, unused swimming pool isn't just an eyesore — it's a safety hazard and a money pit. **A1 Junk Removal and Tree Service** is here to help you reclaim your yard with our professional **pool demolition Omaha** service. We handle everything from start to finish, whether you have an in-ground or above-ground pool.",
+    description: "That old, unused swimming pool isn't just an eyesore — it's a safety hazard and a money pit. **A1 Junk Removal and Tree Service** is here to help you reclaim your yard with our professional **pool demolition Omaha** service. We handle everything from start to finish, whether you have an in-ground or above-ground pool. We're proud to serve customers in **Bennington**, **La Vista**, and across the Omaha metro. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust our local team to get the job done right.",
+    richContent: {
+    sections: [
+    {
+    heading: "What Our Pool Demolition Service Includes",
+    bullets: [
+    {
+    label: "Complete Demolition:",
+    description: "We safely and efficiently break down the entire pool structure, including concrete, vinyl liners, and fiberglass walls."
+    },
+    {
+    label: "Debris Removal:",
+    description: "All materials, including rebar, plumbing, and old equipment, are loaded up and hauled away. We never leave a mess."
+    },
+    {
+    label: "Site Clearing:",
+    description: "Our team removes every last bit of the old pool, ensuring your property is clean and clear."
+    },
+    {
+    label: "Backfilling & Grading:",
+    description: "We fill in the empty space with clean dirt and grade the area to ensure proper drainage and a level surface."
+    },
+    {
+    label: "Final Touches:",
+    description: "Your yard will be left tidy and ready for its next chapter, whether that's a new lawn, a garden, or a patio."
+    }
+    ]
+    },
+    {
+    heading: "Beyond the Pool: Complete Yard Restoration",
+    body: "Once the pool is gone, what's next? Don't just stop at demolition. Our team also offers comprehensive landscaping and yard cleanup services to completely transform your new space. We can help with everything from laying new sod and planting shrubs to creating beautiful new flower beds. Let us turn that old pool area into the backyard of your dreams. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["hot-tub-removal", "demolition-contractor", "concrete-removal"],
     photoNeeded: "Pool being demolished and filled in"
   },
-  {
+    {
     slug: "driveway-removal",
-    title: "Driveway Removal Omaha | A1 Junk Removal",
+    title: "Driveway Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["driveway removal Omaha", "driveway demolition", "concrete driveway removal"],
-    metaDescription: "Driveway removal in Omaha. A1 Junk Removal breaks up and hauls away old concrete and asphalt driveways. Call (402) 612-2373.",
+    keywords: ["driveway removal Omaha", "driveway demolition", "concrete driveway removal", "asphalt driveway removal", "driveway removal near me"],
+    metaDescription: "Fast and affordable driveway removal in Omaha, NE. A1 Junk Removal and Tree Service breaks up and hauls away old concrete and asphalt driveways. Call (402) 612-2373.",
     h1: "Driveway Removal in Omaha",
-    shortDescription: "We break up and haul away old driveways.",
-    description: "Cracked, heaving, or just ugly — when your driveway needs to go, we handle the full job. We break up the concrete or asphalt, load it into our trucks, and haul it away. We leave you with a clean, level surface ready for a new pour.",
+    shortDescription: "Got an old, busted driveway you need gone? **A1 Junk Removal and Tree Service** offers fast and affordable **driveway removal in Omaha**. We handle everything from breaking up the concrete to hauling it away, leaving you with a clean slate.",
+    description: "Got an old, busted driveway you need gone? **A1 Junk Removal and Tree Service** offers fast and affordable **driveway removal in Omaha**. We handle everything from breaking up the concrete to hauling it away, leaving you with a clean slate. We're proud to serve customers in **Bennington**, **Elkhorn**, and across the Omaha area. With **253+ five-star reviews**, you can trust our team to do the job right, and our prices are often **40-60% less than national companies**.",
+    richContent: {
+    sections: [
+    {
+    heading: "Our Driveway Removal Process",
+    bullets: [
+    {
+    label: "Free Quote",
+    description: "We start by providing a clear, no-obligation quote for your specific project."
+    },
+    {
+    label: "Demolition",
+    description: "Our team uses the right equipment to safely break up the old concrete or asphalt."
+    },
+    {
+    label: "Debris Loading",
+    description: "We load every last bit of the broken driveway material into our heavy-duty trucks."
+    },
+    {
+    label: "Haul-Away",
+    description: "All debris is hauled away from your property for proper disposal and recycling."
+    },
+    {
+    label: "Final Cleanup",
+    description: "We leave the site clean and tidy, giving you a fresh surface ready for whatever's next."
+    }
+    ]
+    },
+    {
+    heading: "Complete Yard Transformation",
+    body: "Once the old driveway is gone, you might be thinking about what's next for your yard. Whether it's clearing out overgrown trees and brush, grading the land for a new project, or hauling away years of accumulated junk, we can help you reclaim your outdoor space. Our junk removal and tree service teams can handle any size job. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["concrete-removal", "concrete-patio-removal", "demolition-contractor"],
     photoNeeded: "Breaking up an old concrete driveway"
   },
-  {
+    {
     slug: "interior-demolition",
-    title: "Interior Demolition Omaha | A1 Junk Removal",
+    title: "Interior Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["interior demolition Omaha", "interior demo service", "gut renovation demo"],
+    keywords: ["interior demolition Omaha", "selective demolition near me", "gut renovation Omaha"],
     metaDescription: "Interior demolition in Omaha. A1 Junk Removal guts interiors for renovations and hauls away all debris. Call (402) 612-2373.",
     h1: "Interior Demolition in Omaha",
-    shortDescription: "Full interior gut-outs for renovations and remodels.",
-    description: "Planning a major renovation? We handle the interior demolition — tearing out walls, ceilings, flooring, cabinets, fixtures, and everything else that needs to go. We work carefully around structural elements and utilities, and we haul away every bit of debris.",
+    shortDescription: "Planning a major home or business remodel? When you need a space taken back to the studs, **A1 Junk Removal and Tree Service** provides fast and safe **interior demolition Omaha** services. We handle the tough job of gutting the space so you can get started on your renovation.",
+    description: "Planning a major home or business remodel? When you need a space taken back to the studs, **A1 Junk Removal and Tree Service** provides fast and safe **interior demolition Omaha** services. We handle the tough job of gutting the space so you can get started on your renovation. We serve the entire Omaha metro, including **Council Bluffs** and **Bennington**. With **253+ five-star reviews** and pricing that's often **40-60% less than national companies**, you can trust our local team to do the job right.",
+    richContent: {
+    sections: [
+    {
+    heading: "What Our Demolition Service Includes",
+    bullets: [
+    {
+    label: "Wall & Ceiling Removal:",
+    description: "We safely tear out non-load-bearing walls, drywall, plaster, and ceiling panels."
+    },
+    {
+    label: "Flooring & Tile Tear-Outs:",
+    description: "We remove old carpet, hardwood, laminate, vinyl, and ceramic tile down to the subfloor."
+    },
+    {
+    label: "Cabinet & Fixture Removal:",
+    description: "Kitchen cabinets, bathroom vanities, built-in shelving, and light fixtures are no problem."
+    },
+    {
+    label: "Appliance Disconnection:",
+    description: "We can disconnect and remove old appliances as part of the interior gutting process."
+    },
+    {
+    label: "Debris Hauling:",
+    description: "Our service always includes loading up and hauling away all the demolition debris."
+    }
+    ]
+    },
+    {
+    heading: "Complete Property Cleanouts",
+    body: "Beyond demolition, our team specializes in junk removal for any situation. Whether you're cleaning out a garage, basement, or an entire estate, we can clear out all the unwanted items, furniture, and clutter, leaving you with a clean space. We handle all the lifting, loading, and disposal. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["demolition-contractor", "bathroom-demolition", "kitchen-demolition", "drywall-removal"],
     photoNeeded: "Interior of a building being gutted"
   },
-  {
+    {
     slug: "small-structure-demolition",
-    title: "Small Structure Demolition Omaha | A1 Junk Removal",
+    title: "Small Structure Demolition Omaha | A1 Junk Removal and Tree Service",
     category: "Construction & Demolition",
     categorySlug: "construction",
-    keywords: ["small structure demolition Omaha", "outbuilding removal", "structure tear down"],
-    metaDescription: "Small structure demolition in Omaha. A1 Junk Removal tears down sheds, carports, gazebos, and more. Call (402) 612-2373.",
+    keywords: ["small structure demolition Omaha", "shed demolition near me", "gazebo removal Omaha", "outbuilding removal"],
+    metaDescription: "Fast and affordable small structure demolition in the Omaha area. A1 Junk Removal and Tree Service tears down sheds, carports, gazebos, and more. Call (402) 612-2373.",
     h1: "Small Structure Demolition in Omaha",
-    shortDescription: "Sheds, carports, gazebos, and other small structures torn down and hauled away.",
-    description: "Got an old carport, storage building, playhouse, or other small structure that needs to go? We tear it down and haul away every piece. No structure is too awkward or too old for our crew to handle.",
+    shortDescription: "Got an old shed, carport, or gazebo that's seen better days? **A1 Junk Removal and Tree Service** can help. We offer professional **small structure demolition in Omaha**, tearing down and hauling away unwanted outbuildings quickly and safely.",
+    description: "Got an old shed, carport, or gazebo that's seen better days? **A1 Junk Removal and Tree Service** can help. We offer professional **small structure demolition in Omaha**, tearing down and hauling away unwanted outbuildings quickly and safely. We're proud to serve our neighbors in **Elkhorn** and **Council Bluffs**, and our **253+ five-star reviews** show our commitment to customer satisfaction. Plus, our prices are typically **40-60% less than national companies**.",
     relatedSlugs: ["shed-removal", "gazebo-removal", "barn-removal", "deck-removal"],
-    photoNeeded: "Tearing down a small outbuilding"
+    photoNeeded: "Tearing down a small outbuilding",
+    richContent: {
+    section1: {
+    heading: "What We Demolish and Remove",
+    bullets: [
+    {
+    label: "Sheds & Storage Buildings:",
+    description: "We safely dismantle and remove old, rotting, or unwanted sheds."
+    },
+    {
+    label: "Carports & Garages:",
+    description: "We can tear down detached carports and single-car garages."
+    },
+    {
+    label: "Gazebos & Pergolas:",
+    description: "We'll remove that old gazebo or pergola to open up your yard."
+    },
+    {
+    label: "Playsets & Swing Sets:",
+    description: "We handle the demolition and disposal of old wooden or metal playsets."
+    },
+    {
+    label: "Decks & Patios:",
+    description: "We can remove old, unsafe decks and small concrete patios."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Property Cleanup",
+    body: "Once the structure is gone, you might be left with a messy yard. Don't worry, we can handle that too! Our team can clear out any remaining junk, branches, or debris to leave your property looking clean and spacious. We offer full-service junk removal and yard cleanup to take care of everything at once. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    }
   },
 ];
 
@@ -1626,14 +2101,30 @@ const specializedItems: ServiceItem[] = [
   },
   {
     slug: "basketball-hoop-removal",
-    title: "Basketball Hoop Removal Omaha | A1 Junk Removal",
+    title: "Basketball Hoop Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Specialized Item Removal",
     categorySlug: "specialized",
-    keywords: ["basketball hoop removal Omaha", "basketball goal removal", "in-ground hoop removal"],
+    keywords: ["basketball hoop removal Omaha", "basketball goal removal Omaha", "in-ground hoop removal near me"],
     metaDescription: "Basketball hoop and goal removal in Omaha. A1 Junk Removal handles in-ground and portable hoops. Call (402) 612-2373.",
     h1: "Basketball Hoop Removal in Omaha",
-    shortDescription: "In-ground or portable — we remove basketball hoops and goals.",
-    description: "Kids grew up and nobody uses the hoop anymore? We'll take it down — even in-ground poles set in concrete. We dig them out, break down the backboard, and haul everything away.",
+    shortDescription: "Kids grew up and nobody uses the hoop anymore? When you need **basketball hoop removal Omaha**, **A1 Junk Removal and Tree Service** takes the whole thing down — even in-ground poles set in concrete. We dig them out, break down the backboard, and haul everything away.",
+    description: "Kids grew up and nobody uses the hoop anymore? When you need **basketball hoop removal Omaha**, **A1 Junk Removal and Tree Service** takes the whole thing down — even in-ground poles set in concrete. We dig them out, break down the backboard, and haul everything away. In-ground hoops are one of those things homeowners put off because the pole is cemented three feet into the ground. Our crew in **Bellevue** and **La Vista** handles these all the time — we bring the right tools to cut, dig, and extract the whole setup. With **253+ five-star reviews** and rates **40-60% less than national companies**, there's no reason to keep staring at that rusty rim.",
+    richContent: [
+      {
+        heading: "What We Handle",
+        bullets: [
+          "In-Ground Poles: Digging out cemented posts and filling the hole.",
+          "Portable Hoops: Draining the base, breaking down the frame, and hauling it off.",
+          "Backboard & Rim: Removing glass, acrylic, or polycarbonate backboards safely.",
+          "Concrete Footings: Extracting or breaking up the buried concrete base.",
+          "Full Cleanup: Filling holes, raking the area, and leaving your driveway or yard clean.",
+        ],
+      },
+      {
+        heading: "Other Outdoor Gear We Remove",
+        body: "While we're there, we can also take down old **swing sets**, **trampolines**, and other backyard equipment your family has outgrown. One trip, everything gone. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["swing-set-removal", "trampoline-removal", "gym-equipment-removal"],
     photoNeeded: "Removing a basketball hoop from driveway"
   },
@@ -1958,14 +2449,30 @@ const specializedItems: ServiceItem[] = [
   },
   {
     slug: "spa-removal",
-    title: "Spa Removal Omaha | A1 Junk Removal",
+    title: "Spa Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Specialized Item Removal",
     categorySlug: "specialized",
-    keywords: ["spa removal Omaha", "spa disposal", "spa hauling"],
-    metaDescription: "Spa removal in Omaha. A1 Junk Removal dismantles and hauls away old spas. Call (402) 612-2373.",
+    keywords: ["spa removal Omaha", "spa disposal Omaha", "spa hauling near me"],
+    metaDescription: "Spa removal in Omaha. A1 Junk Removal dismantles and hauls away old spas and hot tubs. Call (402) 612-2373.",
     h1: "Spa Removal in Omaha",
-    shortDescription: "We dismantle and haul away old spas.",
-    description: "Spas and hot tubs take up a lot of space and are a pain to get rid of on your own. We'll cut it apart if needed, load it up, and haul it away. Your backyard will look a lot bigger without it.",
+    shortDescription: "That old spa sitting on your deck or patio isn't getting any lighter. When you need **spa removal Omaha**, **A1 Junk Removal and Tree Service** handles the full job — disconnect, dismantle, load, and haul. No need to figure out how to cut it apart yourself.",
+    description: "That old spa sitting on your deck or patio isn't getting any lighter. When you need **spa removal Omaha**, **A1 Junk Removal and Tree Service** handles the full job — disconnect, dismantle, load, and haul. No need to figure out how to cut it apart yourself. We've removed spas from tight backyards, elevated decks, and indoor sunrooms across **Papillion** and **Ralston**. Most units are too heavy and bulky for regular trash pickup, but our crew has the tools and muscle to break them down on-site and get them out of your way. With **253+ five-star reviews** and rates **40-60% less than national companies**, we make spa removal simple and affordable.",
+    richContent: [
+      {
+        heading: "Our Spa Removal Process",
+        bullets: [
+          "On-Site Assessment: We check access points, deck conditions, and electrical connections.",
+          "Safe Disconnection: Capping lines and ensuring no water or power hazards remain.",
+          "Demolition & Breakdown: Cutting the shell into manageable sections with a reciprocating saw.",
+          "Loading & Hauling: Getting every piece off your property — shell, frame, cover, and hardware.",
+          "Site Cleanup: Sweeping the area so it's ready for whatever you have planned next.",
+        ],
+      },
+      {
+        heading: "Reclaim Your Backyard",
+        body: "Once the spa is gone, you'll be surprised how much space you get back. If the area underneath needs cleanup, we also handle **backyard cleanup** and can haul away old decking, pavers, or fencing in the same trip. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["hot-tub-removal", "jacuzzi-removal", "backyard-cleanup"],
     photoNeeded: "Removing an old spa"
   },
@@ -2235,14 +2742,30 @@ const yardOutdoor: ServiceItem[] = [
   },
   {
     slug: "landscape-waste-removal",
-    title: "Landscape Waste Removal Omaha | A1 Junk Removal",
+    title: "Landscape Waste Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Yard & Outdoor",
     categorySlug: "yard-outdoor",
-    keywords: ["landscape waste removal Omaha", "landscaping debris", "landscape cleanup"],
-    metaDescription: "Landscape waste removal in Omaha. A1 Junk Removal hauls away landscaping debris and old materials. Call (402) 612-2373.",
+    keywords: ["landscape waste removal Omaha", "landscaping debris removal", "landscape cleanup Omaha NE"],
+    metaDescription: "Landscape waste removal in Omaha. A1 Junk Removal hauls away old mulch, sod, rocks, pavers, and plant material. Call (402) 612-2373.",
     h1: "Landscape Waste Removal in Omaha",
-    shortDescription: "Landscaping debris and old materials hauled away.",
-    description: "Landscaping projects create a lot of waste — old mulch, sod, rocks, pavers, soil, and plant material. We haul it all away so your new landscape can shine.",
+    shortDescription: "Every landscaping project leaves behind a mess — old mulch, torn-out sod, broken pavers, dirt piles, and dead plant material. If you need **landscape waste removal Omaha**, **A1 Junk Removal and Tree Service** hauls it all away so your new yard can take shape without the clutter.",
+    description: "Every landscaping project leaves behind a mess — old mulch, torn-out sod, broken pavers, dirt piles, and dead plant material. If you need **landscape waste removal Omaha**, **A1 Junk Removal and Tree Service** hauls it all away so your new yard can take shape without the clutter. We work with homeowners and landscaping contractors across **La Vista** and **Elkhorn** who need a fast, affordable crew to clear the job site. With **253+ five-star reviews** and prices **40-60% less than national companies**, we make the cleanup part of your project painless.",
+    richContent: [
+      {
+        heading: "What We Haul Away",
+        bullets: [
+          "Old Mulch & Soil: Removing spent material to make room for fresh beds.",
+          "Sod & Turf: Hauling away torn-out grass from regrading or redesign projects.",
+          "Rocks, Gravel & Pavers: Clearing old hardscape materials by the truckload.",
+          "Dead Plants & Shrubs: Removing root balls, stumps, and dried-out vegetation.",
+          "Edging & Landscape Fabric: Taking out old borders, weed barriers, and plastic sheeting.",
+        ],
+      },
+      {
+        heading: "Pair It With Tree Service",
+        body: "Redoing your landscape often means dealing with overgrown trees and shrubs too. We offer **tree trimming**, removal, and **brush chipping** so you can handle the whole yard in one visit. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["yard-waste-removal", "backyard-cleanup", "concrete-patio-removal"],
     photoNeeded: "Pile of landscaping debris"
   },
@@ -2396,30 +2919,30 @@ const yardOutdoor: ServiceItem[] = [
 const commercial: ServiceItem[] = [
   {
     slug: "commercial-waste-management",
-    title: "Commercial Waste Removal Omaha | A1 Junk Removal and Tree Service",
+    title: "Commercial Waste Management Omaha | A1 Junk Removal and Tree Service",
     category: "Commercial Services",
     categorySlug: "commercial",
-    keywords: ["commercial waste management Omaha", "business junk removal", "office cleanout"],
-    metaDescription: "Commercial waste management in Omaha. A1 Junk Removal handles office cleanouts, warehouse clearing, and business junk removal. Call (402) 612-2373.",
-    h1: "Affordable Commercial Waste Removal Omaha NE",
-    shortDescription: "Omaha businesses need a waste partner that is both reliable and cost-effective. If you are looking for **commercial waste removal near me**, we have the equipment to haul it away. We provide expert **commercial waste removal Omaha**, taking office furniture, retail debris, and warehouse waste.",
-    description: "Omaha businesses need a waste partner that is both reliable and cost-effective. If you are looking for **commercial waste removal near me**, we have the equipment to haul it away. We provide expert **commercial waste removal Omaha**, taking office furniture, retail debris, and warehouse waste. Join our happy customers behind **253+ five-star reviews**. Being local means we are **40-60% less than national companies** and can often offer faster service in **Ralston** and **Council Bluffs**. We do the heavy loading so you can focus on running your business.",
+    keywords: ["commercial waste management Omaha", "business waste management", "commercial junk service Omaha"],
+    metaDescription: "Commercial waste management in Omaha. A1 Junk Removal provides ongoing waste solutions for offices, retail, and warehouses. Call (402) 612-2373.",
+    h1: "Commercial Waste Management Omaha NE",
+    shortDescription: "Running a business in Omaha means waste never stops piling up. Whether it's a restaurant remodel, a retail store turnover, or a warehouse that needs regular clearing, you need **commercial waste management Omaha** you can count on week after week. **A1 Junk Removal and Tree Service** works directly with business owners to build a waste plan that fits your schedule and budget.",
+    description: "Running a business in Omaha means waste never stops piling up. Whether it's a restaurant remodel, a retail store turnover, or a warehouse that needs regular clearing, you need **commercial waste management Omaha** you can count on week after week. **A1 Junk Removal and Tree Service** works directly with business owners to build a waste plan that fits your schedule and budget. We handle everything from one-time cleanouts to recurring pickups for businesses across **Papillion** and **Bellevue**. With **253+ five-star reviews** and rates **40-60% less than national companies**, we're the local partner Omaha businesses trust to keep their properties clean and compliant.",
     richContent: [
-          {
-            heading: "What\'s Included",
-            bullets: [
-              "Office Furniture Removal: Desks, chairs, and filing cabinets.",
-              "Retail Debris Hauling: Shelving, displays, and cardboard.",
-              "Warehouse Cleanouts: Removing pallets and industrial scrap.",
-              "Property Management Support: Fast cleanouts for new tenants.",
-              "Responsible Recycling: Prioritizing eco-friendly disposal for all materials.",
-            ],
-          },
-          {
-            heading: "Complete Property Care",
-            body: "If your commercial property has overgrown trees blocking signage, we also offer professional **tree service** and trimming to keep your business looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
-          },
+      {
+        heading: "Industries We Serve",
+        bullets: [
+          "Restaurants & Bars: Kitchen equipment, grease traps, and renovation debris.",
+          "Retail Stores: Fixture teardowns, display removals, and seasonal cleanouts.",
+          "Offices & Coworking Spaces: Old furniture, electronics, and file purges.",
+          "Warehouses & Distribution Centers: Pallet disposal, damaged inventory, and scrap.",
+          "Property Management Companies: Tenant turnover cleanouts and common area maintenance.",
         ],
+      },
+      {
+        heading: "Ongoing Waste Partnerships",
+        body: "Unlike the big national franchises, we build real relationships with the businesses we serve. Need us every Tuesday? We'll be there. Got a surprise cleanout before an inspection? Call Bryan directly and we'll work you in. We also offer **tree service** and landscaping maintenance to keep your commercial property looking sharp from the curb to the back lot. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["property-cleanouts", "construction-debris-removal", "waste-management-services"],
     photoNeeded: "Commercial cleanout of an office space"
   },
@@ -2428,159 +2951,393 @@ const commercial: ServiceItem[] = [
 // ─── LANDSCAPING SERVICES ───
 
 const landscaping: ServiceItem[] = [
-  {
+    {
     slug: "lawn-care-mowing",
     title: "Lawn Care & Mowing Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["lawn care Omaha", "lawn mowing service Omaha", "grass cutting Omaha"],
-    metaDescription: "Lawn care and mowing services in Omaha. A1 Junk Removal and Tree Service keeps your lawn looking sharp. Call (402) 612-2373.",
+    keywords: ["lawn care Omaha", "lawn mowing service Omaha", "grass cutting near me"],
+    metaDescription: "Reliable lawn care and mowing services in Omaha. A1 Junk Removal and Tree Service keeps your lawn looking sharp. Call (402) 612-2373 for a free quote.",
     h1: "Lawn Care & Mowing in Omaha",
-    shortDescription: "Regular lawn mowing and maintenance to keep your yard looking great.",
-    description: "A well-maintained lawn makes your whole property look better. We offer regular mowing, edging, and trimming services for residential and commercial properties across Omaha. Whether you need weekly service or a one-time cleanup, we've got you covered.",
+    shortDescription: "Is your lawn getting a little out of control? **A1 Junk Removal and Tree Service** offers reliable **lawn care and mowing in Omaha** to keep your property looking its best. We handle the hard work so you can enjoy your weekends.",
+    description: "Is your lawn getting a little out of control? **A1 Junk Removal and Tree Service** offers reliable **lawn care and mowing in Omaha** to keep your property looking its best. We handle the hard work so you can enjoy your weekends. We're proud to serve our neighbors in **Boys Town** and **Elkhorn**. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust our local team to do the job right.",
+    richContent: {
+    section1: {
+    heading: "What Our Lawn Care Service Includes",
+    bullets: [
+    {
+    label: "Mowing:",
+    description: "We cut your grass to the perfect height, promoting healthy growth."
+    },
+    {
+    label: "Edging:",
+    description: "We create clean, sharp lines along driveways, sidewalks, and flower beds."
+    },
+    {
+    label: "Trimming:",
+    description: "We trim around obstacles like trees, fences, and posts for a finished look."
+    },
+    {
+    label: "Cleanup:",
+    description: "We blow all grass clippings off hard surfaces, leaving your property spotless."
+    },
+    {
+    label: "Flexible Scheduling:",
+    description: "We offer weekly, bi-weekly, or one-time mows to fit your needs."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Yard Transformation",
+    body: "A great-looking lawn is just the start. If your yard is cluttered with old playsets, fallen branches, or other debris, our junk removal team can haul it all away. We also offer complete tree services, from trimming and pruning to full removal, to keep your property safe and beautiful. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["lawn-maintenance", "leaf-removal", "seasonal-cleanup", "weed-control"],
     photoNeeded: "Freshly mowed residential lawn"
   },
-  {
+    {
     slug: "lawn-maintenance",
     title: "Lawn Maintenance Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["lawn maintenance Omaha", "lawn service Omaha NE", "yard maintenance"],
+    keywords: ["lawn maintenance Omaha", "lawn service Omaha NE", "yard maintenance near me", "lawn mowing Omaha"],
     metaDescription: "Full lawn maintenance in Omaha. A1 handles mowing, edging, fertilizing, and more. Call (402) 612-2373 for a free estimate.",
     h1: "Lawn Maintenance in Omaha",
-    shortDescription: "Complete lawn maintenance — mowing, edging, fertilizing, and more.",
-    description: "Keeping a lawn healthy takes more than just mowing. We handle the full picture — regular mowing, edging, fertilizing, aeration, and seasonal treatments. Your neighbors will wonder what your secret is.",
+    shortDescription: "Keeping your lawn looking its best is a lot of work. **A1 Junk Removal and Tree Service** offers complete **lawn maintenance Omaha** to handle the mowing, edging, fertilizing, and seasonal treatments that keep your yard healthy and green.",
+    description: "Keeping your lawn looking its best is a lot of work. **A1 Junk Removal and Tree Service** offers complete **lawn maintenance Omaha** to handle the mowing, edging, fertilizing, and seasonal treatments that keep your yard healthy and green. We're proud to serve our neighbors in **Bellevue** and **Ralston**. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust our local team to get the job done right. Your neighbors will wonder what your secret is.",
+    richContent: {
+    main: {
+    heading: "Our Lawn Maintenance Services",
+    bullets: [
+    {
+    label: "Mowing & Edging:",
+    description: "We provide regular, professional mowing and crisp edging for a clean, manicured look."
+    },
+    {
+    label: "Fertilizing:",
+    description: "Our team applies the right nutrients at the right time to promote strong roots and vibrant color."
+    },
+    {
+    label: "Aeration:",
+    description: "We relieve soil compaction, allowing air, water, and nutrients to reach the grassroots."
+    },
+    {
+    label: "Weed Control:",
+    description: "Say goodbye to pesky weeds that compete with your grass for resources."
+    },
+    {
+    label: "Seasonal Treatments:",
+    description: "From spring prep to fall cleanup, we ensure your lawn is ready for every season."
+    }
+    ]
+    },
+    crossSell: {
+    heading: "Need a Full Yard Makeover?",
+    description: "A great lawn is just the beginning. If you have overgrown trees, unsightly stumps, or need a complete yard cleanup, our tree service and junk removal teams can help. We handle everything from tree trimming and removal to hauling away any yard debris, giving you a completely refreshed outdoor space. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["lawn-care-mowing", "weed-control", "seasonal-cleanup", "mulching"],
     photoNeeded: "Well-maintained green lawn with edging"
   },
-  {
+    {
     slug: "mulching",
     title: "Mulching Services Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["mulching Omaha", "mulch installation", "mulch delivery Omaha"],
-    metaDescription: "Mulching services in Omaha. A1 delivers and installs fresh mulch for your garden beds. Call (402) 612-2373.",
+    keywords: ["mulching Omaha", "mulch installation near me", "mulch delivery Omaha"],
+    metaDescription: "Fresh mulch delivery and installation in Omaha. A1 Junk Removal and Tree Service keeps your garden beds looking great. Call for a free quote!",
     h1: "Mulching Services in Omaha",
-    shortDescription: "Fresh mulch delivered and installed for your garden beds.",
-    description: "Mulch does more than look good — it retains moisture, suppresses weeds, and protects your plants. We deliver and spread mulch across your garden beds, around trees, and along walkways. We also remove old mulch if needed.",
+    shortDescription: "Tired of looking at faded, patchy mulch? **A1 Junk Removal and Tree Service** delivers and installs high-quality **mulching Omaha** to give your landscaping a fresh, clean look.",
+    description: "Tired of looking at faded, patchy mulch? **A1 Junk Removal and Tree Service** delivers and installs high-quality **mulching Omaha** to give your landscaping a fresh, clean look. We’re proud to serve our neighbors in **Gretna** and **Ralston**. With **253+ five-star reviews**, you can trust our team to do the job right, and our prices are often **40-60% less than national companies**.",
+    richContent: {
+    headings: ["What Fresh Mulch Can Do For You", "Complete Yard Transformation"],
+    sections: [
+    {
+    type: "bullets",
+    content: [
+    "Weed Control: A thick layer of mulch is a natural barrier, stopping weeds from sprouting.",
+    "Moisture Retention: Mulch helps your soil hold onto water, so you don't have to water as often.",
+    "Temperature Regulation: It keeps soil cooler in the summer and warmer in the winter, protecting plant roots.",
+    "Improved Curb Appeal: Fresh mulch instantly makes your entire property look cleaner and more professional.",
+    "Soil Health: As organic mulch breaks down, it adds valuable nutrients back into your soil."
+    ]
+    },
+    {
+    type: "paragraph",
+    content: "Is an overgrown tree or unsightly stump ruining your otherwise beautiful yard? Beyond mulching, our team offers complete tree services, from trimming and pruning to full tree and stump removal. We can handle any tree, big or small, to get your entire property looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["flower-bed-maintenance", "brush-chipping", "landscape-waste-removal"],
     photoNeeded: "Fresh mulch being spread in garden beds"
   },
-  {
+    {
     slug: "sod-installation",
     title: "Sod Installation Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["sod installation Omaha", "new sod laying", "sod replacement Omaha"],
-    metaDescription: "Sod installation in Omaha. A1 Junk Removal and Tree Service installs fresh sod for a green lawn fast. Call (402) 612-2373.",
+    keywords: ["sod installation Omaha", "sod installation near me", "lawn sodding Omaha"],
+    metaDescription: "Fresh sod installation in the Omaha area. Get an instant green lawn. We handle soil prep, grading, and installation. Call for a free quote!",
     h1: "Sod Installation in Omaha",
-    shortDescription: "New sod installed for an instant green lawn.",
-    description: "Want a green lawn without waiting months for seed to grow? We install fresh sod that gives you an instant, beautiful lawn. We prep the soil, lay the sod, and make sure it's watered and ready to root.",
+    shortDescription: "Tired of waiting for grass seed to grow? **A1 Junk Removal and Tree Service** can give you a beautiful, green lawn right away by installing fresh, high-quality sod.",
+    description: "Tired of waiting for grass seed to grow? **A1 Junk Removal and Tree Service** can give you a beautiful, green lawn right away by installing fresh, high-quality **sod installation Omaha**. Whether you're in **Papillion** or **Bellevue**, we've got your lawn covered. With **253+ five-star reviews**, you can trust our quality, and we're often **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "Our Sod Installation Process",
+    bullets: [
+    {
+    label: "Site Preparation:",
+    description: "We start by clearing the area of old grass, weeds, and debris to create a clean slate."
+    },
+    {
+    label: "Soil Grading:",
+    description: "Our team will level and grade the soil to ensure proper drainage and a smooth surface for your new lawn."
+    },
+    {
+    label: "Fresh Sod Delivery:",
+    description: "We source high-quality, locally-grown sod that's ready to take root in your yard."
+    },
+    {
+    label: "Professional Installation:",
+    description: "We lay the sod carefully, ensuring tight seams and no gaps for a uniform, carpet-like appearance."
+    },
+    {
+    label: "Initial Watering:",
+    description: "We give your new lawn its first watering and provide instructions on how to care for it as it gets established."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Yard Transformation",
+    body: "A perfect lawn is just the beginning. If your yard needs more work, like getting rid of old sheds, overgrown brush, or general junk, our junk removal service can clear it all out. We handle the heavy lifting so you can enjoy your entire outdoor space. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["lawn-care-mowing", "grading-leveling", "yard-cleanup-landscaping"],
     photoNeeded: "Laying fresh sod on a prepared lawn"
   },
-  {
+    {
     slug: "leaf-removal",
     title: "Leaf Removal Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["leaf removal Omaha", "fall leaf cleanup", "leaf hauling Omaha"],
-    metaDescription: "Leaf removal services in Omaha. A1 clears and hauls away fall leaves from your property. Call (402) 612-2373.",
+    keywords: ["leaf removal Omaha", "leaf removal near me", "fall leaf cleanup Omaha"],
+    metaDescription: "Tired of raking? A1 provides professional leaf removal services in Omaha. We clear and haul away fall leaves from your property. Call (402) 612-2373 for a free quote.",
     h1: "Leaf Removal in Omaha",
-    shortDescription: "Fall leaf cleanup and hauling for residential properties.",
-    description: "Omaha falls are beautiful, but the leaves pile up fast. We rake, blow, bag, and haul away leaves from your yard, gutters, and flower beds. Don't spend your weekends raking — let us handle it.",
+    shortDescription: "When your yard is buried in autumn leaves, it can feel like a never-ending chore. Instead of spending your weekends raking, let **A1 Junk Removal and Tree Service** handle the **leaf removal Omaha** so you can enjoy your fall.",
+    description: "When your yard is buried in autumn leaves, it can feel like a never-ending chore. Instead of spending your weekends raking, let **A1 Junk Removal and Tree Service** handle the **leaf removal Omaha** so you can enjoy your fall. We offer fast and affordable leaf cleanup for our neighbors in **Elkhorn** and **Bennington**. With **253+ five-star reviews**, you can trust our team to do the job right. Best of all, our services are often **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "Our Fall Leaf Cleanup Process",
+    bullets: [
+    {
+    label: "Yard Assessment:",
+    description: "We start by evaluating the size of your property and the amount of leaf cover to create an efficient cleanup plan."
+    },
+    {
+    label: "Raking and Blowing:",
+    description: "Our crew uses professional-grade blowers and rakes to gather all the leaves from your lawn, garden beds, and walkways into manageable piles."
+    },
+    {
+    label: "Gutter Check:",
+    description: "While we're there, we can also inspect and clear any leaves clogging your gutters to prevent water damage."
+    },
+    {
+    label: "Bagging and Removal:",
+    description: "We bag all the collected leaves and debris for you, leaving your yard looking pristine."
+    },
+    {
+    label: "Hauling Away:",
+    description: "Finally, we load up all the bags and haul them away, so you don't have to deal with overflowing yard waste bins."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Tree and Yard Care",
+    body: "Leaf removal is just the beginning. If you have overgrown trees, unsightly stumps, or need a full yard overhaul, our tree service experts can help. From trimming and pruning to complete tree removal, we have the equipment and experience to handle any job safely and efficiently. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["seasonal-cleanup", "yard-waste-removal", "gutter-cleaning"],
     photoNeeded: "Raking and bagging fall leaves"
   },
-  {
-    slug: "seasonal-cleanup",
-    title: "Seasonal Yard Cleanup Omaha | A1 Junk Removal and Tree Service",
-    category: "Landscaping",
-    categorySlug: "landscaping",
-    keywords: ["seasonal cleanup Omaha", "spring cleanup Omaha", "fall yard cleanup"],
-    metaDescription: "Seasonal yard cleanup in Omaha. A1 handles spring and fall cleanups to keep your property looking great. Call (402) 612-2373.",
-    h1: "Seasonal Yard Cleanup in Omaha",
-    shortDescription: "Spring and fall cleanups to keep your property in top shape.",
-    description: "Every spring and fall, your yard needs a thorough cleanup. We handle it all — clearing dead plants, raking leaves, trimming back overgrowth, cleaning out beds, and hauling away all the debris. Start each season with a clean slate.",
-    relatedSlugs: ["leaf-removal", "backyard-cleanup", "yard-waste-removal", "flower-bed-maintenance"],
-    photoNeeded: "Spring yard cleanup in progress"
-  },
-  {
-    slug: "weed-control",
-    title: "Weed Control Omaha | A1 Junk Removal and Tree Service",
-    category: "Landscaping",
-    categorySlug: "landscaping",
-    keywords: ["weed control Omaha", "weed removal service", "weed treatment Omaha"],
-    metaDescription: "Weed control services in Omaha. A1 keeps your lawn and beds weed-free. Call (402) 612-2373.",
-    h1: "Weed Control in Omaha",
-    shortDescription: "Keep your lawn and garden beds weed-free.",
-    description: "Weeds are relentless, but so are we. We provide weed control treatments for lawns, garden beds, driveways, and walkways. Whether it's dandelions taking over your lawn or weeds choking your flower beds, we'll get them under control.",
-    relatedSlugs: ["lawn-maintenance", "flower-bed-maintenance", "mulching"],
-    photoNeeded: "Treating weeds in a lawn"
-  },
-  {
+    {slug:"seasonal-cleanup",title:"Seasonal Yard Cleanup Omaha | A1 Junk Removal and Tree Service",category:"Landscaping",categorySlug:"landscaping",keywords:["seasonal cleanup Omaha","spring cleanup Omaha","fall yard cleanup","seasonal cleanup near me"],metaDescription:"Seasonal yard cleanup in Omaha. A1 handles spring and fall cleanups to keep your property looking great. Call (402) 612-2373.",h1:"Seasonal Yard Cleanup in Omaha",shortDescription:"Whether it's spring awakening or autumn shutdown, your yard needs a major reset. **A1 Junk Removal and Tree Service** handles the heavy lifting of **seasonal cleanup in Omaha**, clearing out debris and getting your property ready for the coming months.",description:"Whether it's spring awakening or autumn shutdown, your yard needs a major reset. **A1 Junk Removal and Tree Service** handles the heavy lifting of **seasonal cleanup in Omaha**, clearing out debris and getting your property ready for the coming months. We're proud to serve our neighbors in **Ralston** and **Gretna**. With **253+ five-star reviews**, you can trust our team to do the job right, and our prices are often **40-60% less than national companies**.",richContent:{section1:{heading:"What A Seasonal Cleanup Includes",bullets:[{label:"Leaf & Debris Removal",description:"We rake, bag, and haul away all the fallen leaves, twigs, and other yard debris."},{label:"Garden Bed Tidy-Up",description:"We'll clean out old annuals, cut back perennials, and remove weeds from your flower beds."},{label:"Overgrowth Pruning",description:"Trimming back overgrown shrubs and branches to promote healthy growth and a neat appearance."},{label:"Gutter Clearing",description:"We can clear out leaves and debris from your gutters to ensure proper drainage before the next season's rain."},{label:"Final Haul-Away",description:"All yard waste is loaded up and hauled away, leaving you with a perfectly clean and refreshed property."}]},section2:{heading:"Need More Than a Cleanup?",body:"A clean yard is just the start. Often, a big seasonal cleanup uncovers other things you need gone, like an old playset, a forgotten pile of wood, or just general junk that's been sitting around. Our junk removal service can take care of that for you, clearing out any unwanted items from your property at the same time. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."}},relatedSlugs:["leaf-removal","backyard-cleanup","yard-waste-removal","flower-bed-maintenance"],photoNeeded:"Spring yard cleanup in progress"},
+    {slug:"weed-control",title:"Weed Control Omaha | A1 Junk Removal and Tree Service",category:"Landscaping",categorySlug:"landscaping",keywords:["weed control Omaha","weed removal service near me","weed treatment Omaha"],metaDescription:"Professional weed control services in Omaha, Papillion, and Gretna. A1 keeps your lawn and beds weed-free. Call (402) 612-2373 for a free quote.",h1:"Weed Control in Omaha",shortDescription:"Are weeds taking over your lawn and garden beds? **A1 Junk Removal and Tree Service** offers professional **weed control Omaha** to reclaim your yard.",description:"Are weeds taking over your lawn and garden beds? **A1 Junk Removal and Tree Service** offers professional **weed control Omaha** to reclaim your yard. We serve homeowners in **Papillion**, **Gretna**, and the surrounding areas. With **253+ five-star reviews**, you can trust our team to get the job done right, and our prices are often **40-60% less than national companies**.",richContent:{section1:{heading:"What Our Weed Control Service Includes",bullets:[{label:"Assessment",text:"We identify the types of weeds and the extent of the problem to create a targeted plan."},{label:"Targeted Treatment",text:"We use safe and effective treatments to eliminate weeds without harming your lawn or desirable plants."},{label:"Lawn Application",text:"We treat your entire lawn to prevent broadleaf weeds like dandelions from spreading."},{label:"Bed & Border Care",text:"We carefully clear weeds from your flower beds, walkways, and driveway cracks."},{label:"Preventative Advice",text:"We offer tips on proper mowing and watering to help keep weeds from coming back."}]},section2:{heading:"Complete Yard Maintenance",body:"A weed-free yard is just the beginning. A1 also offers comprehensive landscaping and tree services to keep your entire property looking its best, from regular lawn mowing and shrub trimming to complete tree removal. Let Bryan and the team handle all your yard care needs. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."}},relatedSlugs:["lawn-maintenance","flower-bed-maintenance","mulching"],photoNeeded:"Treating weeds in a lawn"},
+    {
     slug: "grading-leveling",
     title: "Yard Grading & Leveling Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["yard grading Omaha", "yard leveling", "lawn grading service"],
-    metaDescription: "Yard grading and leveling in Omaha. A1 fixes drainage issues and levels your yard. Call (402) 612-2373.",
+    keywords: ["yard grading Omaha", "yard leveling near me", "lawn grading service Omaha"],
+    metaDescription: "Need expert yard grading and leveling in Omaha? A1 fixes drainage issues and creates a perfect, even lawn. Get a free quote today! Call (402) 612-2373.",
     h1: "Yard Grading & Leveling in Omaha",
-    shortDescription: "Fix drainage issues and level your yard for a better lawn.",
-    description: "Uneven yards cause drainage problems, standing water, and make mowing a pain. We grade and level your yard to fix these issues. Whether you need to redirect water away from your foundation or just want a flat, even lawn, we've got the equipment to do it right.",
+    shortDescription: "Is your yard bumpy, uneven, or causing drainage headaches? A lumpy lawn isn't just ugly—it can lead to water pooling near your foundation. At **A1 Junk Removal and Tree Service**, we specialize in professional **yard grading Omaha** to create a smooth, level surface that's perfect for a healthy lawn.",
+    description: "Is your yard bumpy, uneven, or causing drainage headaches? A lumpy lawn isn't just ugly—it can lead to water pooling near your foundation. At **A1 Junk Removal and Tree Service**, we specialize in professional **yard grading Omaha** to create a smooth, level surface that's perfect for a healthy lawn. We're proud to serve our neighbors in **Bellevue** and **Carter Lake**, helping them get the functional, beautiful yards they deserve. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust our local team to do the job right.",
+    richContent: {
+    sections: [
+    {
+    heading: "What We Fix With Grading",
+    body: [
+    {
+    label: "Poor Drainage:",
+    description: "We reshape your yard to ensure water flows away from your home's foundation."
+    },
+    {
+    label: "Bumps and Hills:",
+    description: "Our equipment smooths out uneven terrain for a flat, usable lawn."
+    },
+    {
+    label: "Patchy Grass:",
+    description: "Leveling creates an ideal seedbed for new sod or grass to grow evenly."
+    },
+    {
+    label: "Mowing Difficulties:",
+    description: "A smooth surface makes lawn mowing faster, safer, and more effective."
+    },
+    {
+    label: "New Construction Prep:",
+    description: "We prepare the ground for new landscaping, patios, or shed installations."
+    }
+    ]
+    },
+    {
+    heading: "More Than Just Grading",
+    body: "Once your yard is perfectly graded, why stop there? Our team can help with complete landscape transformations, from installing fresh sod to clearing out overgrown areas. We also offer full-service junk removal to haul away any debris from your project, leaving you with a clean, refreshed space. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ]
+    },
     relatedSlugs: ["sod-installation", "land-clearing", "landscape-waste-removal"],
     photoNeeded: "Grading equipment leveling a yard"
   },
-  {
+    {
     slug: "flower-bed-maintenance",
     title: "Flower Bed Maintenance Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["flower bed maintenance Omaha", "garden bed cleanup", "flower bed weeding"],
-    metaDescription: "Flower bed maintenance in Omaha. A1 keeps your garden beds clean, mulched, and weed-free. Call (402) 612-2373.",
+    keywords: ["flower bed maintenance Omaha", "flower bed cleanup near me", "garden weeding service Omaha"],
+    metaDescription: "Tired of weeding? A1 offers expert flower bed maintenance in Omaha, Bellevue, and Boys Town. Get a free quote on mulching, edging, and cleanup. Call (402) 612-2373.",
     h1: "Flower Bed Maintenance in Omaha",
-    shortDescription: "Keep your garden beds clean, mulched, and looking beautiful.",
-    description: "Flower beds need regular attention — weeding, mulching, edging, and seasonal planting. We keep your beds looking sharp so your landscaping investment pays off. We also remove old plants and refresh beds with new mulch.",
+    shortDescription: "Are your flower beds looking a little wild? Overgrown beds can make your whole property look messy. **A1 Junk Removal and Tree Service** offers professional **flower bed maintenance Omaha** to handle the weeding, edging, and mulching, keeping your landscaping looking sharp and clean.",
+    description: "Are your flower beds looking a little wild? Overgrown beds can make your whole property look messy. **A1 Junk Removal and Tree Service** offers professional **flower bed maintenance Omaha** to handle the weeding, edging, and mulching, keeping your landscaping looking sharp and clean. We proudly serve customers in **Bellevue**, **Boys Town**, and the entire Omaha metro, backed by our **253+ five-star reviews**. As a local team, our services often cost **40-60% less than national companies**.",
+    richContent: {
+    section1: {
+    heading: "What Our Flower Bed Service Includes",
+    bullets: [
+    {
+    label: "Weeding & Cleanup:",
+    description: "We'll pull all existing weeds and clear out any dead plants or debris."
+    },
+    {
+    label: "Fresh Edging:",
+    description: "We create clean, defined edges around your beds for a professional look."
+    },
+    {
+    label: "New Mulch Application:",
+    description: "We lay down a fresh layer of mulch to prevent future weeds and retain moisture."
+    },
+    {
+    label: "Shrub & Plant Trimming:",
+    description: "Light trimming of existing perennials and shrubs to encourage healthy growth."
+    },
+    {
+    label: "Seasonal Refresh:",
+    description: "We can remove old annuals and prepare beds for new seasonal plantings."
+    }
+    ]
+    },
+    section2: {
+    heading: "Complete Yard Transformation",
+    body: "Once your flower beds are looking pristine, you might notice other parts of your yard that need attention. Overgrown trees or unsightly stumps can detract from your beautiful landscaping. Our team also specializes in professional tree trimming, tree removal, and stump grinding to enhance your property's safety and curb appeal. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    },
     relatedSlugs: ["mulching", "weed-control", "seasonal-cleanup"],
     photoNeeded: "Well-maintained flower bed with fresh mulch"
   },
-  {
+    {
     slug: "yard-cleanup-landscaping",
     title: "Yard Cleanup & Landscaping Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["yard cleanup Omaha", "landscaping cleanup", "property cleanup service"],
-    metaDescription: "Yard cleanup and landscaping services in Omaha. A1 clears, cleans, and improves your outdoor space. Call (402) 612-2373.",
+    keywords: ["yard cleanup Omaha", "landscaping cleanup near me", "yard waste removal Omaha"],
+    metaDescription: "From overgrown yards to seasonal debris, A1 offers complete yard cleanup and landscaping services in Omaha, Ralston, and Bellevue. Call (402) 612-2373.",
     h1: "Yard Cleanup & Landscaping in Omaha",
-    shortDescription: "Complete yard cleanup and basic landscaping services.",
-    description: "Whether your yard has been neglected for a while or you just need a fresh start, we handle the full cleanup — clearing overgrowth, removing debris, trimming, and basic landscaping to get your outdoor space back in shape.",
+    shortDescription: "Is your yard looking a little wild? Whether it's from a recent storm, a season of neglect, or just feeling overgrown, **A1 Junk Removal and Tree Service** is here to help you reclaim your outdoor space. We handle everything from basic tidying to full-scale **yard cleanup Omaha** to get your property looking its best.",
+    description: "Is your yard looking a little wild? Whether it's from a recent storm, a season of neglect, or just feeling overgrown, **A1 Junk Removal and Tree Service** is here to help you reclaim your outdoor space. We handle everything from basic tidying to full-scale **yard cleanup Omaha** to get your property looking its best. We're proud to serve our neighbors in **Ralston** and **Bellevue**, offering the friendly, reliable service you can only get from a local team. With **253+ five-star reviews** and prices often **40-60% less than national companies**, you can trust us to do the job right without breaking the bank.",
     relatedSlugs: ["backyard-cleanup", "seasonal-cleanup", "lawn-maintenance", "shrub-hedge-trimming"],
-    photoNeeded: "Before and after yard cleanup"
+    photoNeeded: "Before and after yard cleanup",
+    richContent: {
+    show: true,
+    section1: {
+    heading: "What Our Yard Cleanup Covers",
+    bullets: [
+    {
+    label: "Overgrowth & Brush:",
+    description: "We’ll tame the jungle, clearing out overgrown bushes, weeds, and tangled vines."
+    },
+    {
+    label: "Fallen Branches & Debris:",
+    description: "From small twigs to large limbs, we gather and haul away all storm and seasonal debris."
+    },
+    {
+    label: "Leaf & Yard Waste:",
+    description: "We can collect and remove piles of leaves, grass clippings, and other organic waste."
+    },
+    {
+    label: "Basic Landscaping Tidying:",
+    description: "This includes edging, trimming, and generally neatening up your garden and lawn areas."
+    },
+    {
+    label: "General Junk & Clutter:",
+    description: "If you've got old planters, broken furniture, or other junk cluttering your yard, we’ll take that too."
+    }
+    ]
+    },
+    section2: {
+    heading: "Need More Than a Cleanup?",
+    body: "If your yard needs a more significant overhaul, our tree service team can help. From professional tree trimming and pruning to complete tree and stump removal, we have the equipment and expertise to handle it safely and efficiently. Let us transform your entire outdoor space. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    }
   },
-  {
-    slug: "gutter-cleaning",
-    title: "Gutter Cleaning Omaha | A1 Junk Removal and Tree Service",
-    category: "Landscaping",
-    categorySlug: "landscaping",
-    keywords: ["gutter cleaning Omaha", "gutter cleanout", "clogged gutters Omaha"],
-    metaDescription: "Gutter cleaning in Omaha. A1 clears clogged gutters and downspouts. Call (402) 612-2373.",
-    h1: "Gutter Cleaning in Omaha",
-    shortDescription: "Clogged gutters? We clean them out so water flows properly.",
-    description: "Clogged gutters cause water damage, foundation issues, and ice dams. We clean out leaves, debris, and buildup from your gutters and downspouts so water flows where it should. Regular gutter cleaning saves you from expensive repairs down the road.",
-    relatedSlugs: ["leaf-removal", "seasonal-cleanup", "pressure-washing"],
-    photoNeeded: "Cleaning debris from a gutter"
-  },
-  {
+    {slug: "gutter-cleaning",title: "Gutter Cleaning Omaha | A1 Junk Removal and Tree Service",category: "Landscaping",categorySlug: "landscaping",keywords: ["gutter cleaning Omaha", "gutter cleanout Omaha", "clogged gutters Omaha", "gutter cleaning near me"],metaDescription: "Fast and affordable gutter cleaning in the Omaha area. A1 Junk Removal and Tree Service clears clogged gutters and downspouts to protect your home. Call (402) 612-2373.",h1: "Gutter Cleaning Omaha",shortDescription: "Got clogged gutters full of leaves and gunk? Don't risk climbing a ladder yourself. The team at **A1 Junk Removal and Tree Service** provides fast and affordable **gutter cleaning in Omaha** to protect your home from water damage.",description: "Got clogged gutters full of leaves and gunk? Don't risk climbing a ladder yourself. The team at **A1 Junk Removal and Tree Service** provides fast and affordable **gutter cleaning in Omaha** to protect your home from water damage. We're a local Omaha business with **253+ five-star reviews**, and our prices are often **40-60% less than national companies**. Whether you're in **Carter Lake** or **Ralston**, we've got you covered.",richContent: [{heading: "The A1 Gutter Cleaning Process",bullets: ["Roof Debris Removal: We start by clearing any loose leaves and branches from your roof valleys.","Gutter Cleanout: We completely clear all debris from your gutters by hand to ensure they are totally empty.","Downspout Flush: We flush your downspouts to make sure there are no hidden clogs preventing proper drainage.","System Check: Our tech, Winston, will inspect the entire system for any obvious issues or potential problems.","Thorough Cleanup: We bag all the gutter debris and leave your property looking cleaner than when we arrived."]},{heading: "Your Local Yard Experts",body: "A clean yard goes beyond just clear gutters. From seasonal cleanups and leaf removal in the fall to mulching and trimming in the spring, we handle all the tough jobs to keep your property looking its best. Let us do the hard work so you can relax and enjoy your outdoor space. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."}],relatedSlugs: ["leaf-removal", "seasonal-cleanup", "pressure-washing"],photoNeeded: "Cleaning debris from a gutter"},
+    {
     slug: "pressure-washing",
     title: "Pressure Washing Omaha | A1 Junk Removal and Tree Service",
     category: "Landscaping",
     categorySlug: "landscaping",
-    keywords: ["pressure washing Omaha", "power washing service", "driveway pressure washing"],
-    metaDescription: "Pressure washing in Omaha. A1 cleans driveways, sidewalks, decks, and siding. Call (402) 612-2373.",
+    keywords: ["pressure washing Omaha", "pressure washing near me", "power washing Omaha"],
+    metaDescription: "Affordable pressure washing in Omaha. A1 Junk Removal and Tree Service cleans driveways, sidewalks, decks, and siding. Call (402) 612-2373 for a free quote.",
     h1: "Pressure Washing in Omaha",
-    shortDescription: "Driveways, sidewalks, decks, and siding — we blast away the grime.",
-    description: "Over time, dirt, mold, mildew, and algae build up on your driveway, sidewalks, deck, and siding. Pressure washing brings them back to life. We use commercial-grade equipment to clean surfaces without damaging them.",
+    shortDescription: "Is your driveway, sidewalk, or deck looking dull and dirty? **A1 Junk Removal and Tree Service** offers professional **pressure washing Omaha** to blast away the grime and restore your surfaces.",
+    description: "Is your driveway, sidewalk, or deck looking dull and dirty? **A1 Junk Removal and Tree Service** offers professional **pressure washing Omaha** to blast away the grime and restore your surfaces. We're proud to serve customers in **Council Bluffs** and **Elkhorn**. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust us to get the job done right.",
+    richContent: [
+    {
+    heading: "What We Pressure Wash",
+    bullets: [
+    {
+    label: "Driveways",
+    description: "Remove oil stains, tire marks, and dirt buildup."
+    },
+    {
+    label: "Sidewalks",
+    description: "Brighten up your walkways and improve curb appeal."
+    },
+    {
+    label: "Decks & Patios",
+    description: "Safely clean wood and composite decking without causing damage."
+    },
+    {
+    label: "Siding",
+    description: "Wash away mold, mildew, and algae from vinyl, brick, or wood siding."
+    },
+    {
+    label: "Fences",
+    description: "Restore the look of your wood or vinyl fences."
+    }
+    ]
+    },
+    {
+    heading: "Complete Yard Transformation",
+    body: "Once your surfaces are sparkling clean, don't let unruly trees or stumps detract from your beautiful yard. A1 also offers professional tree trimming, tree removal, and stump grinding services to keep your entire property looking its best. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ],
     relatedSlugs: ["gutter-cleaning", "deck-removal", "seasonal-cleanup"],
     photoNeeded: "Pressure washing a driveway"
   },
@@ -2647,55 +3404,121 @@ const treeServices: ServiceItem[] = [
     relatedSlugs: ["tree-removal", "shrub-hedge-trimming", "emergency-tree-service"],
     photoNeeded: "Arborist trimming a large tree"
   },
-  {
+    {
     slug: "stump-grinding",
     title: "Stump Grinding Omaha | A1 Junk Removal and Tree Service",
     category: "Tree Services",
     categorySlug: "tree-service",
-    keywords: ["stump grinding Omaha", "stump removal Omaha", "tree stump grinding"],
+    keywords: ["stump grinding Omaha", "stump removal near me", "tree stump grinding Omaha"],
     metaDescription: "Stump grinding and removal in Omaha. A1 Junk Removal and Tree Service grinds stumps below grade. Call (402) 612-2373.",
     h1: "Stump Grinding in Omaha",
-    shortDescription: "We grind stumps below grade so you can reclaim your yard.",
-    description: "After a tree comes down, the stump is an eyesore and a tripping hazard. We grind it down below grade so you can plant grass, lay sod, or just have a flat yard again. We clean up the chips too.",
+    shortDescription: "Left with an ugly tree stump after a removal? **A1 Junk Removal and Tree Service** can help! Our professional **stump grinding Omaha** service quickly and safely grinds stumps down below the surface, letting you reclaim your yard.",
+    description: "Left with an ugly tree stump after a removal? **A1 Junk Removal and Tree Service** can help! Our professional **stump grinding Omaha** service quickly and safely grinds stumps down below the surface, letting you reclaim your yard. We're proud to serve customers in **Carter Lake**, **Boys Town**, and across the Omaha area, earning **253+ five-star reviews** along the way. Best of all, our pricing is typically **40-60% less than national companies**.",
     relatedSlugs: ["tree-removal", "land-clearing", "yard-waste-removal"],
-    photoNeeded: "Stump grinder in action"
+    photoNeeded: "Stump grinder in action",
+    richContent: {
+    section1: {
+    heading: "Our Stump Grinding Process",
+    bullets: [
+    {
+    label: "Assessment",
+    description: "We evaluate the stump's size, location, and any nearby obstacles."
+    },
+    {
+    label: "Grinding",
+    description: "Using our powerful equipment, we grind the stump down to 6-8 inches below grade."
+    },
+    {
+    label: "Root Grinding",
+    description: "We also chase and grind any large surface roots connected to the stump."
+    },
+    {
+    label: "Cleanup",
+    description: "The resulting wood chips are raked up and can be used as mulch or hauled away."
+    },
+    {
+    label: "Flat Surface",
+    description: "You're left with a level area, ready for topsoil, seed, or sod."
+    }
+    ]
+    },
+    section2: {
+    heading: "More Than Just Stumps",
+    body: "Once the stump is gone, you might notice other areas of your yard that need attention. From trimming overgrown branches to removing entire problem trees, our full tree service can handle it all. Winston and the team are equipped for any job, big or small, to keep your property safe and beautiful. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    }
   },
-  {
+    {
     slug: "emergency-tree-service",
-    title: "Emergency Tree Service Omaha | A1 Tree Service",
+    title: "Emergency Tree Service Omaha | A1 Junk Removal and Tree Service",
     category: "Tree Services",
     categorySlug: "tree-service",
-    keywords: ["emergency tree service Omaha", "storm tree removal", "24/7 tree service"],
-    metaDescription: "Emergency tree service in Omaha. A1 Tree Service responds fast to storm damage and fallen trees. Call (402) 612-2373.",
+    keywords: ["emergency tree service Omaha", "emergency tree service near me", "24/7 tree service Omaha"],
+    metaDescription: "Fast, reliable emergency tree service in Omaha. A1 responds 24/7 to storm damage, fallen trees, and hazardous limbs. Call now for a free quote.",
     h1: "Emergency Tree Service in Omaha",
-    shortDescription: "Fast response for storm damage and fallen trees.",
-    description: "When a tree falls on your house, blocks your driveway, or is leaning dangerously after a storm, you need help fast. We respond quickly to emergency situations to make your property safe. Call us anytime — storms don't wait and neither do we.",
+    shortDescription: "When a storm hits and you have a tree emergency, you need a team you can trust to be there fast. **A1 Junk Removal and Tree Service** offers rapid, reliable **emergency tree service Omaha** to make your property safe again.",
+    description: "When a storm hits and you have a tree emergency, you need a team you can trust to be there fast. **A1 Junk Removal and Tree Service** offers rapid, reliable **emergency tree service Omaha** to make your property safe again. We're proud to serve our neighbors in **Papillion** and **Carter Lake**, and our **253+ five-star reviews** show our commitment to quality work. Plus, our services are often **40-60% less than national companies**, so you get the best value. When disaster strikes, call the local team that's ready to help.",
+    richContent: [
+    {
+    heading: "Our Emergency Process",
+    body: [
+    "Immediate Dispatch: We send a crew as soon as you call, because we know emergencies can't wait.",
+    "Safety First: Our first priority is to assess the situation and eliminate any immediate dangers, like branches on power lines or over your home.",
+    "Efficient Removal: We use specialized equipment to handle fallen or hazardous trees and limbs quickly and safely.",
+    "Damage Mitigation: We work carefully to prevent further damage to your property during the removal process.",
+    "Thorough Cleanup: After the tree is removed, we clear all the related debris, leaving your yard clean and safe."
+    ]
+    },
+    {
+    heading: "Beyond the Emergency",
+    body: "After a storm, you might be left with more than just a tree problem. Piles of branches, leaves, and other debris can clutter your yard. A1 also offers complete storm debris and junk removal services to get your entire property back to normal. We can haul away anything the storm left behind, so you don't have to worry about it. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ],
     relatedSlugs: ["tree-removal", "storm-debris-removal", "tree-branch-removal"],
     photoNeeded: "Emergency tree removal after storm"
   },
-  {
-    slug: "land-clearing",
-    title: "Land Clearing Omaha | A1 Junk Removal and Tree Service",
-    category: "Tree Services",
-    categorySlug: "tree-service",
-    keywords: ["land clearing Omaha", "lot clearing", "brush clearing service"],
-    metaDescription: "Land clearing services in Omaha. A1 Junk Removal and Tree Service clears lots for construction and landscaping. Call (402) 612-2373.",
-    h1: "Land Clearing in Omaha",
-    shortDescription: "Clearing lots for construction, landscaping, or new development.",
-    description: "Need a lot cleared for a new build, a garden, or just to open up your property? We remove trees, brush, stumps, and debris to give you a clean slate. We work on residential lots and larger commercial properties.",
-    relatedSlugs: ["tree-removal", "stump-grinding", "brush-yard-waste"],
-    photoNeeded: "Clearing a wooded lot"
-  },
-  {
+    {slug: "land-clearing",title: "Land Clearing Omaha | A1 Junk Removal and Tree Service",category: "Tree Services",categorySlug: "tree-service",keywords: ["land clearing Omaha", "lot clearing near me", "brush clearing service Omaha"],metaDescription: "Professional land clearing in Omaha. A1 Junk Removal and Tree Service clears trees, brush, and debris for residential and commercial lots. Call (402) 612-2373.",h1: "Land Clearing in Omaha",shortDescription: "Got a piece of land that's more of a jungle than a future home or business? Whether you're a homeowner with big backyard dreams or a developer ready to break ground, **A1 Junk Removal and Tree Service** can help you reclaim your property. We specialize in **land clearing Omaha**, turning overgrown lots into clean, usable spaces.",description: "Got a piece of land that's more of a jungle than a future home or business? Whether you're a homeowner with big backyard dreams or a developer ready to break ground, **A1 Junk Removal and Tree Service** can help you reclaim your property. We specialize in **land clearing Omaha**, turning overgrown lots into clean, usable spaces. We're proud to serve our neighbors in **La Vista** and **Bennington**. With **253+ five-star reviews** and prices **40-60% less than national companies**, you can trust us to get the job done right and affordably.",richContent: {sections: [{heading: "What Our Land Clearing Service Includes",bullets: ["Tree Removal: We safely and efficiently remove trees of all sizes.","Brush & Undergrowth: Thick brush and tangled undergrowth are no match for our equipment.","Stump Grinding: We grind down stumps to below the surface, leaving you with level ground.","Debris Hauling: All cleared material, from logs to rocks, is hauled away, leaving your lot spotless.","Site Preparation: We prepare your land for its next phase, whether it's construction, landscaping, or sale."]},{heading: "Need More Than Just Land Clearing?",body: "Once your land is cleared, you might find yourself with a pile of leftover construction debris, old fencing, or other junk. Our junk removal service can take care of that for you. We handle everything from single-item pickups to full property cleanouts, making sure your new space is truly ready for its fresh start. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."}]},relatedSlugs: ["tree-removal", "stump-grinding", "brush-yard-waste"],photoNeeded: "Clearing a wooded lot"},
+    {
     slug: "shrub-hedge-trimming",
-    title: "Shrub & Hedge Trimming Omaha | A1 Tree Service",
+    title: "Shrub & Hedge Trimming Omaha | A1 Junk Removal and Tree Service",
     category: "Tree Services",
     categorySlug: "tree-service",
-    keywords: ["shrub trimming Omaha", "hedge trimming service", "bush trimming Omaha"],
-    metaDescription: "Shrub and hedge trimming in Omaha. A1 Tree Service keeps your bushes and hedges looking neat. Call (402) 612-2373.",
+    keywords: ["shrub trimming Omaha", "hedge trimming near me", "bush trimming service Omaha"],
+    metaDescription: "Professional shrub and hedge trimming in Omaha, NE. A1 Junk Removal and Tree Service keeps your property looking its best. Call us at (402) 612-2373 for a free quote.",
     h1: "Shrub & Hedge Trimming in Omaha",
-    shortDescription: "Keep your shrubs and hedges looking neat and healthy.",
-    description: "Overgrown shrubs and hedges make your whole property look neglected. We shape them up, trim them back, and keep them looking clean. Regular maintenance keeps them healthy and your curb appeal high.",
+    shortDescription: "Overgrown shrubs and hedges can make your whole property look messy and unkempt. **A1 Junk Removal and Tree Service** is here to help, shaping up your bushes and trimming them back to keep your yard looking sharp.",
+    description: "Overgrown shrubs and hedges can make your whole property look messy and unkempt. **A1 Junk Removal and Tree Service** is here to help, shaping up your bushes and trimming them back to keep your yard looking sharp. We provide professional **shrub and hedge trimming Omaha** and the surrounding areas, including **Gretna** and **Papillion**. With **253+ five-star reviews**, you can trust our team to do the job right. Plus, our services are often **40-60% less than national companies**.",
+    richContent: [
+    {
+    heading: "Our Trimming & Pruning Services",
+    bullets: [
+    {
+    label: "Hedge Shaping:",
+    description: "We create clean lines and a uniform look for your hedges."
+    },
+    {
+    label: "Shrub Pruning:",
+    description: "We selectively remove branches to improve plant health and appearance."
+    },
+    {
+    label: "Overgrowth Removal:",
+    description: "We tame out-of-control shrubs and bushes that are taking over."
+    },
+    {
+    label: "Seasonal Maintenance:",
+    description: "We provide regular trimming to keep your plants healthy year-round."
+    },
+    {
+    label: "Cleanup Included:",
+    description: "We haul away all the clippings, leaving your property spotless."
+    }
+    ]
+    },
+    {
+    heading: "Need More Than a Trim?",
+    body: "After we’ve perfected your hedges, you might notice other parts of your yard that need attention. From old sheds and playsets to piles of branches and leaves, our junk removal services can clear out any unwanted clutter. We handle all the heavy lifting and disposal, so you don't have to. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week."
+    }
+    ],
     relatedSlugs: ["tree-trimming", "backyard-cleanup", "yard-waste-removal"],
     photoNeeded: "Trimming hedges along a property"
   },
@@ -2704,11 +3527,27 @@ const treeServices: ServiceItem[] = [
     title: "Brush Chipping Omaha | A1 Junk Removal and Tree Service",
     category: "Tree Services",
     categorySlug: "tree-service",
-    keywords: ["brush chipping Omaha", "wood chipping service", "branch chipping"],
-    metaDescription: "Brush chipping services in Omaha. A1 converts branches and brush into mulch. Call (402) 612-2373.",
+    keywords: ["brush chipping Omaha", "wood chipping service Omaha", "branch chipping near me"],
+    metaDescription: "Brush chipping services in Omaha. A1 Junk Removal and Tree Service converts branches and brush into mulch on-site. Call (402) 612-2373.",
     h1: "Brush Chipping in Omaha",
-    shortDescription: "We chip branches and brush into mulch on-site.",
-    description: "Instead of hauling away huge piles of branches, we can chip them on-site and leave you with usable mulch for your garden beds. It's efficient, eco-friendly, and saves you money on mulch.",
+    shortDescription: "Instead of paying to haul away huge piles of branches, we can chip them on-site and leave you with usable mulch for your garden beds. If you need **brush chipping Omaha**, **A1 Junk Removal and Tree Service** brings the chipper to your property and turns the mess into something useful.",
+    description: "Instead of paying to haul away huge piles of branches, we can chip them on-site and leave you with usable mulch for your garden beds. If you need **brush chipping Omaha**, **A1 Junk Removal and Tree Service** brings the chipper to your property and turns the mess into something useful. It's efficient, eco-friendly, and saves you money on buying mulch separately. We chip brush for homeowners and contractors across **Carter Lake** and **Council Bluffs** after storm cleanups, tree trimming jobs, and land clearing projects. With **253+ five-star reviews** and rates **40-60% less than national companies**, we're the most affordable chipping crew in the metro.",
+    richContent: [
+      {
+        heading: "What We Chip",
+        bullets: [
+          "Tree Branches: Limbs up to 6 inches in diameter fed right through the chipper.",
+          "Storm Debris: Broken branches and windfall from severe weather.",
+          "Hedge & Shrub Trimmings: Turning bulky green waste into fine mulch.",
+          "Land Clearing Brush: Processing large volumes of brush from lot clearing projects.",
+          "Mulch Placement: We can spread the fresh chips in your beds or pile them where you want.",
+        ],
+      },
+      {
+        heading: "Pair With Tree Trimming",
+        body: "Most brush chipping jobs go hand-in-hand with **tree trimming** or storm cleanup. We can trim your trees and chip the branches in the same visit — no need to schedule two crews. Call or text (402) 612-2373 for a free, no-obligation quote. Available 7 days a week.",
+      },
+    ],
     relatedSlugs: ["brush-yard-waste", "tree-trimming", "yard-waste-removal"],
     photoNeeded: "Wood chipper processing branches"
   },

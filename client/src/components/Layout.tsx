@@ -407,6 +407,7 @@ function Header() {
     { href: "/service-areas", label: "Service Areas" },
     { href: "/reviews", label: "Reviews" },
     { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -444,7 +445,6 @@ function Header() {
 
           {/* Junk Removal Dropdown */}
           <button
-            onMouseEnter={() => setMegaMenuOpen("junk")}
             onClick={() =>
               setMegaMenuOpen(megaMenuOpen === "junk" ? null : "junk")
             }
@@ -464,7 +464,6 @@ function Header() {
 
           {/* Tree Service Dropdown */}
           <button
-            onMouseEnter={() => setMegaMenuOpen("tree")}
             onClick={() =>
               setMegaMenuOpen(megaMenuOpen === "tree" ? null : "tree")
             }
@@ -484,7 +483,6 @@ function Header() {
 
           {/* Landscaping Dropdown */}
           <button
-            onMouseEnter={() => setMegaMenuOpen("landscaping")}
             onClick={() =>
               setMegaMenuOpen(megaMenuOpen === "landscaping" ? null : "landscaping")
             }
@@ -535,13 +533,11 @@ function Header() {
 
       {/* Mega Menu */}
       {megaMenuOpen && (
-        <div onMouseLeave={() => setMegaMenuOpen(null)}>
-          <MegaMenu
-            type={megaMenuOpen}
-            isOpen={true}
-            onClose={() => setMegaMenuOpen(null)}
-          />
-        </div>
+        <MegaMenu
+          type={megaMenuOpen}
+          isOpen={true}
+          onClose={() => setMegaMenuOpen(null)}
+        />
       )}
 
       {/* Mobile Menu */}
