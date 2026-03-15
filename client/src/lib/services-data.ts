@@ -40,6 +40,14 @@ export interface JunkServicePage {
   title: string;
   category: string;
   subcategory: string;
+  // Optional rich content fields (populated as content is added)
+  headline?: string;
+  subheadline?: string;
+  metaDescription?: string;
+  introParagraphs?: string[];
+  bulletListTitle?: string;
+  bulletItems?: { title: string; description: string }[];
+  closingParagraphs?: string[];
 }
 
 export const junkServicePages: JunkServicePage[] = [
@@ -86,7 +94,29 @@ export const junkServicePages: JunkServicePage[] = [
   { slug: "shed-removal", title: "Shed Demolition & Removal", category: "Demolition & Outdoor", subcategory: "demolition" },
   { slug: "deck-removal", title: "Deck Demolition & Removal", category: "Demolition & Outdoor", subcategory: "demolition" },
   { slug: "fence-removal", title: "Fence Removal", category: "Demolition & Outdoor", subcategory: "demolition" },
-  { slug: "pool-removal", title: "Above Ground Pool Removal", category: "Demolition & Outdoor", subcategory: "demolition" },
+  {
+    slug: "pool-removal",
+    title: "Above Ground Pool Removal",
+    category: "Demolition & Outdoor",
+    subcategory: "demolition",
+    headline: "Professional Above Ground Pool Removal in Omaha",
+    subheadline: "We Handle the Demolition and Debris Hauling for You",
+    metaDescription: "Professional above ground pool removal in Omaha. A1 Junk Removal dismantles and hauls away old pools, liners, decks & equipment. 40-60% less than national companies. Call (402) 612-2373.",
+    introParagraphs: [
+      "Getting rid of an old, rusted, or unused pool is a massive project that requires more than just a few extra hands. A1 Junk Removal and Tree Service provides specialized above ground pool removal across the Omaha area. Our crew is busy on the trucks every day helping homeowners in Millard and Elkhorn reclaim their backyards. From tearing down the metal walls to hauling away the heavy, water-logged liners, we do all the dirty work so you can enjoy your outdoor space again.",
+    ],
+    bulletListTitle: "Our pool demolition services include:",
+    bulletItems: [
+      { title: "Metal Frame & Wall Tear Down", description: "Complete dismantling of the steel or aluminum structure." },
+      { title: "Vinyl Liner Disposal", description: "Fast removal and proper disposal of heavy pool liners." },
+      { title: "Deck & Fencing Demolition", description: "We can also haul away the old wooden decks or safety fences surrounding the pool." },
+      { title: "Filter & Pump Removal", description: "Disconnecting and disposing of old pool equipment and plumbing." },
+    ],
+    closingParagraphs: [
+      "We serve the entire Douglas County and Sarpy County area, ensuring your property is left clean and ready for new landscaping. Because we are a local, owner-operated business, we are consistently 40\u201360% cheaper than the national franchises.",
+      "Call A1 Junk Removal and Tree Service today for a free estimate on your Omaha pool removal!",
+    ],
+  },
   { slug: "swing-set-removal", title: "Playground & Swing Set Removal", category: "Demolition & Outdoor", subcategory: "demolition" },
 
   // Yard & Materials
@@ -97,14 +127,20 @@ export const junkServicePages: JunkServicePage[] = [
   { slug: "tire-removal", title: "Tire Removal & Disposal", category: "Yard & Materials", subcategory: "yard" },
 ];
 
-// Helper to get junk service nav categories
+// Helper to get junk service nav categories (sorted alphabetically)
 export function getJunkNavCategories(): { name: string; services: JunkServicePage[] }[] {
   const catMap = new Map<string, JunkServicePage[]>();
   for (const svc of junkServicePages) {
     if (!catMap.has(svc.category)) catMap.set(svc.category, []);
     catMap.get(svc.category)!.push(svc);
   }
-  return Array.from(catMap.entries()).map(([name, services]) => ({ name, services }));
+  // Sort categories alphabetically, then sort services within each category alphabetically by title
+  return Array.from(catMap.entries())
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([name, services]) => ({
+      name,
+      services: services.sort((a, b) => a.title.localeCompare(b.title)),
+    }));
 }
 
 // ─── LANDSCAPING SERVICES ───

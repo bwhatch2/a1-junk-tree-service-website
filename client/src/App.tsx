@@ -25,6 +25,47 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Landscaping from "./pages/Landscaping";
 import LandscapingDetail from "./pages/LandscapingDetail";
+import PoolRemoval from "./pages/junk-services/PoolRemoval";
+import ApartmentCleanouts from "./pages/junk-services/ApartmentCleanouts";
+import ApplianceRemoval from "./pages/junk-services/ApplianceRemoval";
+import ConstructionDebris from "./pages/junk-services/ConstructionDebris";
+import AtticCleanout from "./pages/junk-services/AtticCleanout";
+import BasementCleanout from "./pages/junk-services/BasementCleanout";
+import BulkTrashPickup from "./pages/junk-services/BulkTrashPickup";
+import CommercialJunkRemoval from "./pages/junk-services/CommercialJunkRemoval";
+import ConcreteRemoval from "./pages/junk-services/ConcreteRemoval";
+import CouchSofaRemoval from "./pages/junk-services/CouchSofaRemoval";
+import DeckRemoval from "./pages/junk-services/DeckRemoval";
+import EWasteDisposal from "./pages/junk-services/EWasteDisposal";
+import EstateCleanouts from "./pages/junk-services/EstateCleanouts";
+import EvictionCleanouts from "./pages/junk-services/EvictionCleanouts";
+import ExerciseEquipmentRemoval from "./pages/junk-services/ExerciseEquipmentRemoval";
+import FenceRemoval from "./pages/junk-services/FenceRemoval";
+import ForeclosureCleanouts from "./pages/junk-services/ForeclosureCleanouts";
+import FurnitureRemoval from "./pages/junk-services/FurnitureRemoval";
+import GarageCleanout from "./pages/junk-services/GarageCleanout";
+import TrashHauling from "./pages/junk-services/TrashHauling";
+import HoarderCleanup from "./pages/junk-services/HoarderCleanup";
+import HotTubRemoval from "./pages/junk-services/HotTubRemoval";
+import LightDemolition from "./pages/junk-services/LightDemolition";
+import MattressDisposal from "./pages/junk-services/MattressDisposal";
+import OfficeFurnitureRemoval from "./pages/junk-services/OfficeFurnitureRemoval";
+import PianoRemoval from "./pages/junk-services/PianoRemoval";
+import SwingSetRemoval from "./pages/junk-services/SwingSetRemoval";
+import PropertyCleanouts from "./pages/junk-services/PropertyCleanouts";
+import RefrigeratorRemoval from "./pages/junk-services/RefrigeratorRemoval";
+import ResidentialJunkRemoval from "./pages/junk-services/ResidentialJunkRemoval";
+import SameDayJunkPickup from "./pages/junk-services/SameDayJunkPickup";
+import StorageUnitCleanout from "./pages/junk-services/StorageUnitCleanout";
+import HouseCleanoutServices from "./pages/junk-services/HouseCleanoutServices";
+import WarehouseCleanout from "./pages/junk-services/WarehouseCleanout";
+import RetailCleanout from "./pages/junk-services/RetailCleanout";
+import TVRemoval from "./pages/junk-services/TVRemoval";
+import StormDebrisCleanup from "./pages/junk-services/StormDebrisCleanup";
+import ShedRemoval from "./pages/junk-services/ShedRemoval";
+import YardWasteRemoval from "./pages/junk-services/YardWasteRemoval";
+import ScrapMetalRemoval from "./pages/junk-services/ScrapMetalRemoval";
+import TireRemoval from "./pages/junk-services/TireRemoval";
 
 function Router() {
   return (
@@ -38,47 +79,47 @@ function Router() {
         <Route path="/services" component={Services} />
         
         {/* New root-level junk removal service pages */}
-        <Route path="/residential-junk-removal" component={JunkServicePage} />
-        <Route path="/commercial-junk-removal" component={JunkServicePage} />
-        <Route path="/same-day-junk-pickup" component={JunkServicePage} />
-        <Route path="/bulk-trash-pickup" component={JunkServicePage} />
-        <Route path="/trash-hauling" component={JunkServicePage} />
-        <Route path="/property-cleanouts" component={JunkServicePage} />
-        <Route path="/estate-cleanouts" component={JunkServicePage} />
-        <Route path="/foreclosure-cleanouts" component={JunkServicePage} />
-        <Route path="/hoarder-cleanup" component={JunkServicePage} />
-        <Route path="/garage-cleanout" component={JunkServicePage} />
-        <Route path="/attic-cleanout" component={JunkServicePage} />
-        <Route path="/basement-cleanout" component={JunkServicePage} />
-        <Route path="/storage-unit-cleanout" component={JunkServicePage} />
-        <Route path="/apartment-cleanouts" component={JunkServicePage} />
-        <Route path="/eviction-cleanouts" component={JunkServicePage} />
-        <Route path="/house-cleanout-services" component={JunkServicePage} />
-        <Route path="/office-furniture-removal" component={JunkServicePage} />
-        <Route path="/warehouse-cleanout" component={JunkServicePage} />
-        <Route path="/retail-cleanout" component={JunkServicePage} />
-        <Route path="/appliance-removal" component={JunkServicePage} />
-        <Route path="/refrigerator-removal" component={JunkServicePage} />
-        <Route path="/furniture-removal" component={JunkServicePage} />
-        <Route path="/couch-sofa-removal" component={JunkServicePage} />
-        <Route path="/mattress-disposal" component={JunkServicePage} />
-        <Route path="/tv-removal" component={JunkServicePage} />
-        <Route path="/piano-removal" component={JunkServicePage} />
-        <Route path="/exercise-equipment-removal" component={JunkServicePage} />
-        <Route path="/hot-tub-removal" component={JunkServicePage} />
-        <Route path="/e-waste-disposal" component={JunkServicePage} />
-        <Route path="/storm-debris-cleanup" component={JunkServicePage} />
-        <Route path="/light-demolition" component={JunkServicePage} />
-        <Route path="/shed-removal" component={JunkServicePage} />
-        <Route path="/deck-removal" component={JunkServicePage} />
-        <Route path="/fence-removal" component={JunkServicePage} />
-        <Route path="/pool-removal" component={JunkServicePage} />
-        <Route path="/swing-set-removal" component={JunkServicePage} />
-        <Route path="/yard-waste-removal" component={JunkServicePage} />
-        <Route path="/construction-debris" component={JunkServicePage} />
-        <Route path="/concrete-removal" component={JunkServicePage} />
-        <Route path="/scrap-metal-removal" component={JunkServicePage} />
-        <Route path="/tire-removal" component={JunkServicePage} />
+        <Route path="/residential-junk-removal" component={ResidentialJunkRemoval} />
+        <Route path="/commercial-junk-removal" component={CommercialJunkRemoval} />
+        <Route path="/same-day-junk-pickup" component={SameDayJunkPickup} />
+        <Route path="/bulk-trash-pickup" component={BulkTrashPickup} />
+        <Route path="/trash-hauling" component={TrashHauling} />
+        <Route path="/property-cleanouts" component={PropertyCleanouts} />
+        <Route path="/estate-cleanouts" component={EstateCleanouts} />
+        <Route path="/foreclosure-cleanouts" component={ForeclosureCleanouts} />
+        <Route path="/hoarder-cleanup" component={HoarderCleanup} />
+        <Route path="/garage-cleanout" component={GarageCleanout} />
+        <Route path="/attic-cleanout" component={AtticCleanout} />
+        <Route path="/basement-cleanout" component={BasementCleanout} />
+        <Route path="/storage-unit-cleanout" component={StorageUnitCleanout} />
+        <Route path="/apartment-cleanouts" component={ApartmentCleanouts} />
+        <Route path="/eviction-cleanouts" component={EvictionCleanouts} />
+        <Route path="/house-cleanout-services" component={HouseCleanoutServices} />
+        <Route path="/office-furniture-removal" component={OfficeFurnitureRemoval} />
+        <Route path="/warehouse-cleanout" component={WarehouseCleanout} />
+        <Route path="/retail-cleanout" component={RetailCleanout} />
+        <Route path="/appliance-removal" component={ApplianceRemoval} />
+        <Route path="/refrigerator-removal" component={RefrigeratorRemoval} />
+        <Route path="/furniture-removal" component={FurnitureRemoval} />
+        <Route path="/couch-sofa-removal" component={CouchSofaRemoval} />
+        <Route path="/mattress-disposal" component={MattressDisposal} />
+        <Route path="/tv-removal" component={TVRemoval} />
+        <Route path="/piano-removal" component={PianoRemoval} />
+        <Route path="/exercise-equipment-removal" component={ExerciseEquipmentRemoval} />
+        <Route path="/hot-tub-removal" component={HotTubRemoval} />
+        <Route path="/e-waste-disposal" component={EWasteDisposal} />
+        <Route path="/storm-debris-cleanup" component={StormDebrisCleanup} />
+        <Route path="/light-demolition" component={LightDemolition} />
+        <Route path="/shed-removal" component={ShedRemoval} />
+        <Route path="/deck-removal" component={DeckRemoval} />
+        <Route path="/fence-removal" component={FenceRemoval} />
+        <Route path="/pool-removal" component={PoolRemoval} />
+        <Route path="/swing-set-removal" component={SwingSetRemoval} />
+        <Route path="/yard-waste-removal" component={YardWasteRemoval} />
+        <Route path="/construction-debris" component={ConstructionDebris} />
+        <Route path="/concrete-removal" component={ConcreteRemoval} />
+        <Route path="/scrap-metal-removal" component={ScrapMetalRemoval} />
+        <Route path="/tire-removal" component={TireRemoval} />
         
         {/* Tree Services */}
         <Route path="/tree-service" component={TreeServiceHub} />
