@@ -61,10 +61,20 @@ export default function FreeEstimate() {
               <h1 className="font-display text-4xl lg:text-5xl text-[#0A1628] font-bold mb-4">
                 GET YOUR FREE ESTIMATE
               </h1>
-              <p className="text-gray-600 text-lg mb-8">
+              <p className="text-gray-600 text-lg mb-6">
                 Tell us what you need and we'll give you an honest price. No obligation, no pressure.
                 Most estimates are provided within a few hours.
               </p>
+
+              <div className="bg-amber-50 border-2 border-amber-400 rounded-lg p-5 mb-8 text-center">
+                <p className="text-amber-900 font-bold text-lg mb-1">Our online form is temporarily unavailable.</p>
+                <p className="text-amber-800">
+                  Please give us a call at{" "}
+                  <a href={PHONE_LINK} className="text-[#E8611A] font-bold underline">{PHONE}</a>{" "}
+                  for the fastest service. You can also email us at{" "}
+                  <a href={`mailto:${EMAIL}`} className="text-[#E8611A] font-bold underline">{EMAIL}</a>.
+                </p>
+              </div>
 
               {submitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">

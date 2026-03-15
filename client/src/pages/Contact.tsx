@@ -134,6 +134,15 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="mt-12 bg-white border-2 border-gray-200 rounded-xl p-8">
+            <div className="bg-amber-50 border-2 border-amber-400 rounded-lg p-5 mb-6 text-center">
+              <p className="text-amber-900 font-bold text-lg mb-1">Our online form is temporarily unavailable.</p>
+              <p className="text-amber-800">
+                Please give us a call at{" "}
+                <a href={PHONE_LINK} className="text-[#E8611A] font-bold underline">{PHONE}</a>{" "}
+                for the fastest service. You can also email us at{" "}
+                <a href={`mailto:${EMAIL}`} className="text-[#E8611A] font-bold underline">{EMAIL}</a>.
+              </p>
+            </div>
             <h2 className="font-display text-2xl text-[#0A1628] font-bold mb-2 text-center">
               SEND US A MESSAGE
             </h2>
