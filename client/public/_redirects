@@ -1,105 +1,196 @@
 # Netlify Redirects for A1 Junk Removal and Tree Service
-# 301 redirects from old site URLs (a1junkremovalofomaha.com) to new site structure
+# Updated: March 2026 — restructured junk removal pages to root-level URLs
 
 # Domain-level redirects: old domain → new primary domain (non-www)
-# These use 301! (forced) so they fire even if a matching file/page exists
 https://a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
 http://a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
 https://www.a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
 http://www.a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
 
-# Old site core page redirects
-/services-1    /services    301
+# Old hub page redirect
+/services    /junk-removal    301
+/services-1    /junk-removal    301
+
+# Old core page redirects
 /tree-trimming    /tree-service    301
 /free-estimates    /free-estimate    301
 /contact-us    /contact    301
 
-# Old site service page redirects (moved under /services/)
-/attic-junk-removal    /services/attic-junk-removal    301
-/best-junk-removal-service    /services/full-service-junk-removal    301
-/best-waste-removal    /services/residential-waste-removal    301
-/declutter-service    /services/declutter-service    301
-/full-service-junk-removal    /services/full-service-junk-removal    301
-/residential-junk-removal    /services/residential-junk-removal    301
-/residential-waste-removal    /services/residential-waste-removal    301
-/trash-best-trash-hauling    /services/trash-hauling    301
-/trash-out-service    /services/trash-out-service    301
-/waste-management-services    /services/waste-management-services    301
+# ─── OLD /services/* → NEW ROOT-LEVEL PAGES ───
+# These redirect all the old /services/slug URLs to the new root-level structure.
+# Services that no longer have a dedicated page redirect to the hub.
 
-# Cleanout redirects
-/apartment-and-house-clean-outs    /services/apartment-cleanouts    301
-/basement-cleanout    /services/basement-cleanout    301
-/cleanout-services    /services/cleanout-services    301
-/fall-cleanouts    /services/fall-cleanouts    301
-/hoarder-cleanout-service    /services/hoarder-cleanout    301
-/house-cleanout    /services/house-cleanout    301
-/property-clean-outs    /services/property-cleanouts    301
-/storage-unit-clean-outs    /services/storage-unit-cleanouts    301
+# Residential / General Junk
+/services/residential-junk-removal    /residential-junk-removal    301
+/services/residential-waste-removal    /residential-junk-removal    301
+/services/full-service-junk-removal    /residential-junk-removal    301
+/services/commercial-waste-management    /commercial-junk-removal    301
+/services/junk-removal    /junk-removal    301
+/services/trash-hauling    /trash-hauling    301
+/services/trash-out-service    /trash-hauling    301
+/services/bulk-item-removal    /bulk-trash-pickup    301
+/services/bulky-item-removal    /bulk-trash-pickup    301
+/services/waste-management-services    /trash-hauling    301
+/services/declutter-service    /residential-junk-removal    301
 
-# Construction & Demolition redirects
-/bathroom-demolition    /services/bathroom-demolition    301
-/brick-block-and-concrete-removal    /services/brick-block-concrete-removal    301
-/broken-concrete-haul-away    /services/broken-concrete-haul-away    301
-/building-material-removal    /services/building-material-removal    301
-/concrete-patio-removal    /services/concrete-patio-removal    301
-/construction-debris-haul-away    /services/construction-debris-removal    301
-/construction-debris-removal    /services/construction-debris-removal    301
-/construction-material-haul-away    /services/construction-debris-removal    301
-/construction-material-removal    /services/construction-debris-removal    301
-/construction-waste-removal    /services/construction-waste-removal    301
-/deck-removal    /services/deck-removal    301
-/demolition-barn-demolition    /services/barn-removal    301
-/demolition-concrete-demolition    /services/concrete-removal    301
-/demolition-contractor    /services/demolition-contractor    301
-/drywall-removal    /services/drywall-removal    301
-/remodeling-debris-removal    /services/remodeling-debris-removal    301
+# Cleanouts
+/services/property-cleanouts    /property-cleanouts    301
+/services/estate-cleanout    /estate-cleanouts    301
+/services/estate-cleanouts    /estate-cleanouts    301
+/services/foreclosure-cleanouts    /foreclosure-cleanouts    301
+/services/hoarder-cleanout    /hoarder-cleanup    301
+/services/garage-cleanout    /garage-cleanout    301
+/services/attic-junk-removal    /attic-cleanout    301
+/services/basement-cleanout    /basement-cleanout    301
+/services/storage-unit-cleanouts    /storage-unit-cleanout    301
+/services/apartment-cleanouts    /apartment-cleanouts    301
+/services/eviction-cleanouts    /eviction-cleanouts    301
+/services/house-cleanout    /house-cleanout-services    301
+/services/cleanout-services    /property-cleanouts    301
+/services/fall-cleanouts    /property-cleanouts    301
 
-# Specialized Item redirects
-/air-conditioner-disposal    /services/air-conditioner-disposal    301
-/appliance-removal    /services/appliance-removal    301
-/basketball-goal-removal    /services/basketball-hoop-removal    301
-/basketball-hoop-removal    /services/basketball-hoop-removal    301
-/bathtub-removal    /services/bathtub-removal    301
-/carpet-removal    /services/carpet-removal    301
-/furniture-disposal-service    /services/furniture-removal    301
-/furniture-removal-service    /services/furniture-removal    301
-/gym-equipment-removal    /services/gym-equipment-removal    301
-/hide-a-bed-removal    /services/hide-a-bed-removal    301
-/hot-tub-and-jacuzzi-removal    /services/hot-tub-removal    301
-/hvac-removal    /services/hvac-removal    301
-/jacuzzi-removal    /services/jacuzzi-removal    301
-/organ-removal    /services/organ-removal    301
-/piano-removal    /services/piano-removal    301
-/piano-removal-service    /services/piano-removal    301
-/pool-table-removal    /services/pool-table-removal    301
-/projection-tv-removal    /services/projection-tv-removal    301
-/scrap-metal-haul-away    /services/scrap-metal-removal    301
-/scrap-metal-removal    /services/scrap-metal-removal    301
-/sectional-couch-removal    /services/sectional-couch-removal    301
-/sleeper-sofa-removal    /services/sleeper-sofa-removal    301
-/spa-removal    /services/spa-removal    301
-/swing-set-play-set-removal    /services/swing-set-removal    301
-/trampoline-removal-service    /services/trampoline-removal    301
-/treadmill-removal-service    /services/treadmill-removal    301
+# Appliances & Furniture
+/services/appliance-removal    /appliance-removal    301
+/services/refrigerator-removal    /refrigerator-removal    301
+/services/furniture-removal    /furniture-removal    301
+/services/couch-removal    /couch-sofa-removal    301
+/services/sofa-removal    /couch-sofa-removal    301
+/services/sectional-couch-removal    /couch-sofa-removal    301
+/services/sleeper-sofa-removal    /couch-sofa-removal    301
+/services/hide-a-bed-removal    /couch-sofa-removal    301
+/services/mattress-removal    /mattress-disposal    301
+/services/projection-tv-removal    /tv-removal    301
+/services/piano-removal    /piano-removal    301
+/services/organ-removal    /piano-removal    301
+/services/pool-table-removal    /furniture-removal    301
+/services/gym-equipment-removal    /exercise-equipment-removal    301
+/services/treadmill-removal    /exercise-equipment-removal    301
+/services/hot-tub-removal    /hot-tub-removal    301
+/services/jacuzzi-removal    /hot-tub-removal    301
+/services/spa-removal    /hot-tub-removal    301
+/services/air-conditioner-disposal    /appliance-removal    301
+/services/hvac-removal    /appliance-removal    301
+/services/bathtub-removal    /appliance-removal    301
+/services/carpet-removal    /junk-removal    301
+/services/basketball-hoop-removal    /junk-removal    301
+/services/trampoline-removal    /junk-removal    301
+/services/e-waste-removal    /e-waste-disposal    301
 
-# Yard & Outdoor redirects
-/backyard-cleanup-services    /services/backyard-cleanup    301
-/barn-removal    /services/barn-removal    301
-/brush-and-yard-waste    /services/brush-yard-waste    301
-/gazebo-removal-service    /services/gazebo-removal    301
-/landscape-waste-removal    /services/landscape-waste-removal    301
-/log-removal    /services/log-removal    301
-/old-fencing-removal    /services/old-fencing-removal    301
+# Demolition & Construction
+/services/light-demolition    /light-demolition    301
+/services/shed-removal    /shed-removal    301
+/services/deck-removal    /deck-removal    301
+/services/old-fencing-removal    /fence-removal    301
+/services/fence-removal    /fence-removal    301
+/services/swing-set-removal    /swing-set-removal    301
+/services/concrete-removal    /concrete-removal    301
+/services/brick-block-concrete-removal    /concrete-removal    301
+/services/broken-concrete-haul-away    /concrete-removal    301
+/services/concrete-patio-removal    /concrete-removal    301
+/services/construction-debris-removal    /construction-debris    301
+/services/construction-waste-removal    /construction-debris    301
+/services/building-material-removal    /construction-debris    301
+/services/drywall-removal    /construction-debris    301
+/services/remodeling-debris-removal    /construction-debris    301
+/services/demolition-contractor    /light-demolition    301
+/services/bathroom-demolition    /light-demolition    301
+/services/barn-removal    /shed-removal    301
+/services/gazebo-removal    /shed-removal    301
+/services/above-ground-pool-removal    /pool-removal    301
+
+# Yard & Outdoor
+/services/yard-waste-removal    /yard-waste-removal    301
+/services/brush-yard-waste    /yard-waste-removal    301
+/services/landscape-waste-removal    /yard-waste-removal    301
+/services/backyard-cleanup    /yard-waste-removal    301
+/services/storm-debris-removal    /storm-debris-cleanup    301
+/services/tree-branch-removal    /yard-waste-removal    301
+/services/log-removal    /yard-waste-removal    301
+/services/scrap-metal-removal    /scrap-metal-removal    301
+/services/tire-removal    /tire-removal    301
+
+# ─── OLD SITE (pre-migration) ROOT-LEVEL → NEW ROOT-LEVEL ───
+# These handle visitors/crawlers still hitting the original old-site URLs
+
+/attic-junk-removal    /attic-cleanout    301
+/best-junk-removal-service    /residential-junk-removal    301
+/best-waste-removal    /residential-junk-removal    301
+/declutter-service    /residential-junk-removal    301
+/full-service-junk-removal    /residential-junk-removal    301
+/residential-waste-removal    /residential-junk-removal    301
+/trash-best-trash-hauling    /trash-hauling    301
+/trash-out-service    /trash-hauling    301
+/waste-management-services    /trash-hauling    301
+
+/apartment-and-house-clean-outs    /apartment-cleanouts    301
+/cleanout-services    /property-cleanouts    301
+/fall-cleanouts    /property-cleanouts    301
+/hoarder-cleanout-service    /hoarder-cleanup    301
+/house-cleanout    /house-cleanout-services    301
+/property-clean-outs    /property-cleanouts    301
+/storage-unit-clean-outs    /storage-unit-cleanout    301
+
+/bathroom-demolition    /light-demolition    301
+/brick-block-and-concrete-removal    /concrete-removal    301
+/broken-concrete-haul-away    /concrete-removal    301
+/building-material-removal    /construction-debris    301
+/concrete-patio-removal    /concrete-removal    301
+/construction-debris-haul-away    /construction-debris    301
+/construction-debris-removal    /construction-debris    301
+/construction-material-haul-away    /construction-debris    301
+/construction-material-removal    /construction-debris    301
+/construction-waste-removal    /construction-debris    301
+/demolition-barn-demolition    /shed-removal    301
+/demolition-concrete-demolition    /concrete-removal    301
+/demolition-contractor    /light-demolition    301
+/drywall-removal    /construction-debris    301
+/remodeling-debris-removal    /construction-debris    301
+
+/air-conditioner-disposal    /appliance-removal    301
+/appliance-removal    /appliance-removal    301
+/basketball-goal-removal    /junk-removal    301
+/basketball-hoop-removal    /junk-removal    301
+/bathtub-removal    /appliance-removal    301
+/carpet-removal    /junk-removal    301
+/furniture-disposal-service    /furniture-removal    301
+/furniture-removal-service    /furniture-removal    301
+/gym-equipment-removal    /exercise-equipment-removal    301
+/hide-a-bed-removal    /couch-sofa-removal    301
+/hot-tub-and-jacuzzi-removal    /hot-tub-removal    301
+/hvac-removal    /appliance-removal    301
+/jacuzzi-removal    /hot-tub-removal    301
+/organ-removal    /piano-removal    301
+/piano-removal    /piano-removal    301
+/piano-removal-service    /piano-removal    301
+/pool-table-removal    /furniture-removal    301
+/projection-tv-removal    /tv-removal    301
+/scrap-metal-haul-away    /scrap-metal-removal    301
+/scrap-metal-removal    /scrap-metal-removal    301
+/sectional-couch-removal    /couch-sofa-removal    301
+/sleeper-sofa-removal    /couch-sofa-removal    301
+/spa-removal    /hot-tub-removal    301
+/swing-set-play-set-removal    /swing-set-removal    301
+/trampoline-removal-service    /junk-removal    301
+/treadmill-removal-service    /exercise-equipment-removal    301
+
+/backyard-cleanup-services    /yard-waste-removal    301
+/barn-removal    /shed-removal    301
+/brush-and-yard-waste    /yard-waste-removal    301
+/gazebo-removal-service    /shed-removal    301
+/landscape-waste-removal    /yard-waste-removal    301
+/log-removal    /yard-waste-removal    301
+/old-fencing-removal    /fence-removal    301
+/shed-removal    /shed-removal    301
+/storm-debris-removal    /storm-debris-cleanup    301
+/tree-branch-removal    /yard-waste-removal    301
+/yard-waste-removal    /yard-waste-removal    301
+
+/commercial-waste-management    /commercial-junk-removal    301
+/residential-commercial-waste    /commercial-junk-removal    301
+
+# Tree service redirects (unchanged)
 /professional-tree-removal    /tree-service/tree-removal    301
-/shed-removal    /services/shed-removal    301
-/storm-debris-removal    /services/storm-debris-removal    301
-/tree-branch-removal    /services/tree-branch-removal    301
 /tree-removal    /tree-service/tree-removal    301
-/yard-waste-removal    /services/yard-waste-removal    301
-
-# Commercial redirects
-/commercial-waste-management    /services/commercial-waste-management    301
-/residential-commercial-waste    /services/commercial-waste-management    301
 
 # SPA fallback — serve index.html for all routes (must be last)
 /*    /index.html   200

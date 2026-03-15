@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import {
   serviceCategories,
+  junkServicePages,
   serviceAreas,
   PHONE,
   PHONE_LINK,
@@ -41,10 +42,9 @@ export default function Home() {
     if (meta) meta.setAttribute("content", "Omaha's trusted junk removal and tree service. 40-60% less than national companies. 253+ five-star reviews. Same-day service. Call (402) 612-2373 for a free estimate.");
   }, []);
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service" && c.slug !== "landscaping");
   const treeCategory = serviceCategories.find(c => c.slug === "tree-service");
   const landscapingCategory = serviceCategories.find(c => c.slug === "landscaping");
-  const topJunkServices = junkCategories.flatMap(c => c.services).slice(0, 6);
+  const topJunkServices = junkServicePages.slice(0, 6);
 
   return (
     <div>
@@ -145,15 +145,15 @@ export default function Home() {
                   {topJunkServices.slice(0, 4).map((svc) => (
                     <li key={svc.slug} className="flex items-center gap-2 text-sm text-gray-700">
                       <CheckCircle className="w-4 h-4 text-[#E8611A]" />
-                      {svc.h1.replace(" in Omaha", "")}
+                      {svc.title}
                     </li>
                   ))}
                 </ul>
                 <Link
-                  href="/services"
+                  href="/junk-removal"
                   className="inline-flex items-center gap-2 text-[#E8611A] font-bold hover:underline"
                 >
-                  View All 75+ Services <ArrowRight className="w-4 h-4" />
+                  View All 40 Services <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

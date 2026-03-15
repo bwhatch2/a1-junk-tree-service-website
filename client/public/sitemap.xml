@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/junk-removal</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/tree-service</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/landscaping</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/service-areas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -16,86 +16,56 @@
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/terms-of-service</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/sitemap</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 
-  <!-- Junk Removal & Hauling Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/residential-junk-removal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/full-service-junk-removal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/attic-junk-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/declutter-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/trash-hauling</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/waste-management-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/residential-waste-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/trash-out-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Junk Removal Services (root-level) -->
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/residential-junk-removal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/commercial-junk-removal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/same-day-junk-pickup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/bulk-trash-pickup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/trash-hauling</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- Cleanout Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/apartment-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/basement-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/garage-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/house-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/cleanout-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/fall-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/hoarder-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/property-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/storage-unit-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Cleanout Services (root-level) -->
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/property-cleanouts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/estate-cleanouts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/foreclosure-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/hoarder-cleanup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/garage-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/attic-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/basement-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/storage-unit-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/apartment-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/eviction-cleanouts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/house-cleanout-services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Construction & Demolition Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/construction-debris-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/construction-waste-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/concrete-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/concrete-patio-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/broken-concrete-haul-away</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/brick-block-concrete-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/building-material-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/deck-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/demolition-contractor</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/bathroom-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/drywall-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/remodeling-debris-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/barn-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/kitchen-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/garage-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/pool-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/driveway-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/interior-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/small-structure-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Commercial Services (root-level) -->
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/office-furniture-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/warehouse-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/retail-cleanout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Specialized Item Removal Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/appliance-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/furniture-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/hot-tub-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/piano-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/carpet-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/bathtub-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/basketball-hoop-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/gym-equipment-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/treadmill-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/pool-table-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/swing-set-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/trampoline-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/hvac-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/air-conditioner-disposal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/scrap-metal-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/sectional-couch-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/sleeper-sofa-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/hide-a-bed-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/spa-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/jacuzzi-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/organ-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/projection-tv-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/gazebo-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Item Removal Services (root-level) -->
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/appliance-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/refrigerator-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/furniture-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/couch-sofa-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/mattress-disposal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/tv-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/piano-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/exercise-equipment-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/hot-tub-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/e-waste-disposal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Yard & Outdoor Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/yard-waste-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/backyard-cleanup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/brush-yard-waste</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/landscape-waste-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/log-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/old-fencing-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/shed-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/storm-debris-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/tree-branch-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-  <!-- Commercial Services -->
-  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/services/commercial-waste-management</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Demolition & Outdoor (root-level) -->
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/storm-debris-cleanup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/light-demolition</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/shed-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/deck-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/fence-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/pool-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/swing-set-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/yard-waste-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/construction-debris</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/concrete-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/scrap-metal-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a1junkremovalandtreeserviceofomaha.com/tire-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Landscaping Services -->
   <url><loc>https://a1junkremovalandtreeserviceofomaha.com/landscaping/lawn-care-mowing</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

@@ -1,32 +1,37 @@
 /*
-  SERVICES HUB PAGE
-  Lists all junk removal services organized by category.
-  Acts as the main "Junk Removal" landing page.
+  JUNK REMOVAL HUB PAGE
+  Lists all 40 junk removal services organized by category.
+  Acts as the main "Junk Removal" landing page at /junk-removal.
 */
 
 import { useEffect } from "react";
 import { Link } from "wouter";
 import {
-  serviceCategories,
+  getJunkNavCategories,
   PHONE,
   PHONE_LINK,
   HERO_JUNK_IMG,
   CTA_BG_IMG,
 } from "@/lib/services-data";
-import { ArrowRight, Phone, Truck, Home, HardHat, Package, Trees, Building } from "lucide-react";
+import { ArrowRight, Phone, Truck, Home, HardHat, Package, TreePine, Building } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
-  Truck, Home, HardHat, Package, Trees, Building,
+  "General Junk Removal": Truck,
+  "Cleanouts": Home,
+  "Commercial": Building,
+  "Item Removal": Package,
+  "Demolition & Outdoor": HardHat,
+  "Yard & Materials": TreePine,
 };
 
 export default function Services() {
   useEffect(() => {
     document.title = "Junk Removal Services Omaha | A1 Junk Removal and Tree Service";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "A1 Junk Removal offers 75+ specialized junk removal services in Omaha. From residential cleanouts to construction debris, we handle it all. Call (402) 612-2373.");
+    if (meta) meta.setAttribute("content", "A1 Junk Removal offers 40 specialized junk removal services in Omaha. From residential cleanouts to construction debris, we handle it all. Call (402) 612-2373.");
   }, []);
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service");
+  const junkCategories = getJunkNavCategories();
 
   return (
     <div>
@@ -53,7 +58,7 @@ export default function Services() {
               JUNK REMOVAL SERVICES IN OMAHA
             </h1>
             <p className="text-white/80 text-lg lg:text-xl leading-relaxed mb-8">
-              Over 75 specialized junk removal services. From a single appliance to a full estate
+              40 specialized junk removal services. From a single appliance to a full estate
               cleanout, we handle it all. Locally owned, 40-60% less than the national companies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -80,9 +85,9 @@ export default function Services() {
       <section className="py-16 lg:py-20">
         <div className="container">
           {junkCategories.map((cat, idx) => {
-            const Icon = iconMap[cat.icon] || Truck;
+            const Icon = iconMap[cat.name] || Truck;
             return (
-              <div key={cat.slug} className={`${idx > 0 ? "mt-16" : ""}`}>
+              <div key={cat.name} className={`${idx > 0 ? "mt-16" : ""}`}>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 bg-[#E8611A]/10 rounded-lg flex items-center justify-center">
                     <Icon className="w-5 h-5 text-[#E8611A]" />
@@ -95,15 +100,14 @@ export default function Services() {
                   {cat.services.map((svc) => (
                     <Link
                       key={svc.slug}
-                      href={`/services/${svc.slug}`}
+                      href={`/${svc.slug}`}
                       className="group flex items-start gap-3 p-4 bg-white border border-gray-200 rounded-lg hover:border-[#E8611A] hover:shadow-md transition-all"
                     >
                       <ArrowRight className="w-4 h-4 mt-1 text-gray-400 group-hover:text-[#E8611A] transition-colors flex-shrink-0" />
                       <div>
                         <h3 className="font-semibold text-[#0A1628] group-hover:text-[#E8611A] transition-colors">
-                          {svc.h1.replace(" in Omaha", "")}
+                          {svc.title}
                         </h3>
-                        <p className="text-gray-500 text-sm mt-1">{svc.shortDescription}</p>
                       </div>
                     </Link>
                   ))}

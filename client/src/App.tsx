@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import TreeServiceHub from "./pages/TreeService";
 import ServiceDetail from "./pages/ServiceDetail";
+import JunkServicePage from "./pages/JunkServicePage";
 import About from "./pages/About";
 import Reviews from "./pages/Reviews";
 import FAQ from "./pages/FAQ";
@@ -31,9 +32,53 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         
-        {/* Junk Removal Services */}
+        {/* Junk Removal Hub (preserved) */}
+        <Route path="/junk-removal" component={Services} />
+        {/* Legacy /services path redirects handled by Netlify _redirects */}
         <Route path="/services" component={Services} />
-        <Route path="/services/:slug" component={ServiceDetail} />
+        
+        {/* New root-level junk removal service pages */}
+        <Route path="/residential-junk-removal" component={JunkServicePage} />
+        <Route path="/commercial-junk-removal" component={JunkServicePage} />
+        <Route path="/same-day-junk-pickup" component={JunkServicePage} />
+        <Route path="/bulk-trash-pickup" component={JunkServicePage} />
+        <Route path="/trash-hauling" component={JunkServicePage} />
+        <Route path="/property-cleanouts" component={JunkServicePage} />
+        <Route path="/estate-cleanouts" component={JunkServicePage} />
+        <Route path="/foreclosure-cleanouts" component={JunkServicePage} />
+        <Route path="/hoarder-cleanup" component={JunkServicePage} />
+        <Route path="/garage-cleanout" component={JunkServicePage} />
+        <Route path="/attic-cleanout" component={JunkServicePage} />
+        <Route path="/basement-cleanout" component={JunkServicePage} />
+        <Route path="/storage-unit-cleanout" component={JunkServicePage} />
+        <Route path="/apartment-cleanouts" component={JunkServicePage} />
+        <Route path="/eviction-cleanouts" component={JunkServicePage} />
+        <Route path="/house-cleanout-services" component={JunkServicePage} />
+        <Route path="/office-furniture-removal" component={JunkServicePage} />
+        <Route path="/warehouse-cleanout" component={JunkServicePage} />
+        <Route path="/retail-cleanout" component={JunkServicePage} />
+        <Route path="/appliance-removal" component={JunkServicePage} />
+        <Route path="/refrigerator-removal" component={JunkServicePage} />
+        <Route path="/furniture-removal" component={JunkServicePage} />
+        <Route path="/couch-sofa-removal" component={JunkServicePage} />
+        <Route path="/mattress-disposal" component={JunkServicePage} />
+        <Route path="/tv-removal" component={JunkServicePage} />
+        <Route path="/piano-removal" component={JunkServicePage} />
+        <Route path="/exercise-equipment-removal" component={JunkServicePage} />
+        <Route path="/hot-tub-removal" component={JunkServicePage} />
+        <Route path="/e-waste-disposal" component={JunkServicePage} />
+        <Route path="/storm-debris-cleanup" component={JunkServicePage} />
+        <Route path="/light-demolition" component={JunkServicePage} />
+        <Route path="/shed-removal" component={JunkServicePage} />
+        <Route path="/deck-removal" component={JunkServicePage} />
+        <Route path="/fence-removal" component={JunkServicePage} />
+        <Route path="/pool-removal" component={JunkServicePage} />
+        <Route path="/swing-set-removal" component={JunkServicePage} />
+        <Route path="/yard-waste-removal" component={JunkServicePage} />
+        <Route path="/construction-debris" component={JunkServicePage} />
+        <Route path="/concrete-removal" component={JunkServicePage} />
+        <Route path="/scrap-metal-removal" component={JunkServicePage} />
+        <Route path="/tire-removal" component={JunkServicePage} />
         
         {/* Tree Services */}
         <Route path="/tree-service" component={TreeServiceHub} />

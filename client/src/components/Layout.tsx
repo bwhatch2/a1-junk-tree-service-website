@@ -14,6 +14,8 @@ import { Link, useLocation } from "wouter";
 import { LocalBusinessSchema } from "@/components/StructuredData";
 import {
   serviceCategories,
+  junkServicePages,
+  getJunkNavCategories,
   PHONE,
   PHONE_LINK,
   BUSINESS_NAME,
@@ -69,16 +71,9 @@ function MegaMenu({
   onClose: () => void;
 }) {
   const menuRef = useRef<HTMLDivElement>(null);
-  const junkCategories = serviceCategories.filter(
-    (c) => c.slug !== "tree-service" && c.slug !== "landscaping"
-  );
   const treeCategory = serviceCategories.find((c) => c.slug === "tree-service");
   const landscapingCategory = serviceCategories.find((c) => c.slug === "landscaping");
-  const categories = type === "junk" 
-    ? junkCategories 
-    : type === "tree" 
-      ? (treeCategory ? [treeCategory] : []) 
-      : (landscapingCategory ? [landscapingCategory] : []);
+  const junkNavCategories = getJunkNavCategories();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -94,6 +89,62 @@ function MegaMenu({
 
   if (!isOpen) return null;
 
+  // For tree and landscaping, use the old category-based approach
+  if (type === "tree" || type === "landscaping") {
+    const categories = type === "tree"
+      ? (treeCategory ? [treeCategory] : [])
+      : (landscapingCategory ? [landscapingCategory] : []);
+    return (
+      <div
+        ref={menuRef}
+        className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t-4 border-[#E8611A] z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+      >
+        <div className="container py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {categories.map((cat) => (
+              <div key={cat.slug}>
+                <Link
+                  href={type === "tree" ? "/tree-service" : "/landscaping"}
+                  onClick={onClose}
+                  className="text-[#0A1628] font-bold text-sm uppercase tracking-wider mb-3 block hover:text-[#7A9E7E] transition-colors"
+                >
+                  {cat.name}
+                </Link>
+                <ul className="space-y-1.5">
+                  {cat.services.map((svc) => (
+                    <li key={svc.slug}>
+                      <Link
+                        href={type === "tree" ? `/tree-service/${svc.slug}` : `/landscaping/${svc.slug}`}
+                        onClick={onClose}
+                        className="text-gray-600 hover:text-[#7A9E7E] text-sm transition-colors flex items-center gap-1 group"
+                      >
+                        <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-[#7A9E7E]" />
+                        <span>{svc.h1.replace(" in Omaha", "")}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 pt-6 border-t border-gray-200 flex items-center justify-between">
+            <p className="text-gray-500 text-sm">
+              {type === "tree" ? "Complete tree care for your property" : "Full landscaping and lawn care services"}
+            </p>
+            <Link
+              href={type === "tree" ? "/tree-service" : "/landscaping"}
+              onClick={onClose}
+              className="text-[#7A9E7E] font-semibold text-sm hover:underline"
+            >
+              View All {type === "tree" ? "Tree" : "Landscaping"} Services →
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Junk Removal mega menu — uses new root-level junkServicePages
   return (
     <div
       ref={menuRef}
@@ -101,31 +152,21 @@ function MegaMenu({
     >
       <div className="container py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {categories.map((cat) => (
-            <div key={cat.slug}>
-              <Link
-                href={type === "tree" ? "/tree-service" : type === "landscaping" ? "/landscaping" : `/services/${cat.slug}`}
-                onClick={onClose}
-                className="text-[#0A1628] font-bold text-sm uppercase tracking-wider mb-3 block hover:text-[#E8611A] transition-colors"
-              >
+          {junkNavCategories.map((cat) => (
+            <div key={cat.name}>
+              <p className="text-[#0A1628] font-bold text-sm uppercase tracking-wider mb-3">
                 {cat.name}
-              </Link>
+              </p>
               <ul className="space-y-1.5">
                 {cat.services.map((svc) => (
                   <li key={svc.slug}>
                     <Link
-                      href={
-                        type === "tree"
-                          ? `/tree-service/${svc.slug}`
-                          : type === "landscaping"
-                            ? `/landscaping/${svc.slug}`
-                            : `/services/${svc.slug}`
-                      }
+                      href={`/${svc.slug}`}
                       onClick={onClose}
                       className="text-gray-600 hover:text-[#E8611A] text-sm transition-colors flex items-center gap-1 group"
                     >
                       <ChevronRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity text-[#E8611A]" />
-                      <span>{svc.h1.replace(" in Omaha", "")}</span>
+                      <span>{svc.title}</span>
                     </Link>
                   </li>
                 ))}
@@ -135,18 +176,14 @@ function MegaMenu({
         </div>
         <div className="mt-6 pt-6 border-t border-gray-200 flex items-center justify-between">
           <p className="text-gray-500 text-sm">
-            {type === "junk"
-              ? "Over 75 specialized junk removal services"
-              : type === "tree"
-                ? "Complete tree care for your property"
-                : "Full landscaping and lawn care services"}
+            40 specialized junk removal services
           </p>
           <Link
-            href={type === "junk" ? "/services" : type === "tree" ? "/tree-service" : "/landscaping"}
+            href="/junk-removal"
             onClick={onClose}
             className="text-[#E8611A] font-semibold text-sm hover:underline"
           >
-            View All {type === "junk" ? "Junk Removal" : type === "tree" ? "Tree" : "Landscaping"} Services →
+            View All Junk Removal Services →
           </Link>
         </div>
       </div>
@@ -163,11 +200,9 @@ function MobileMenu({
   onClose: () => void;
 }) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
-  const junkCategories = serviceCategories.filter(
-    (c) => c.slug !== "tree-service" && c.slug !== "landscaping"
-  );
   const treeCategory = serviceCategories.find((c) => c.slug === "tree-service");
   const landscapingCategory = serviceCategories.find((c) => c.slug === "landscaping");
+  const junkNavCategories = getJunkNavCategories();
 
   if (!isOpen) return null;
 
@@ -210,36 +245,27 @@ function MobileMenu({
           {expandedCategory === "junk" && (
             <div className="ml-4 space-y-1 mt-1">
               <Link
-                href="/services"
+                href="/junk-removal"
                 onClick={onClose}
                 className="block py-2 px-4 text-[#E8611A] font-semibold text-sm"
               >
                 View All Junk Services
               </Link>
-              {junkCategories.map((cat) => (
-                <div key={cat.slug} className="mb-2">
+              {junkNavCategories.map((cat) => (
+                <div key={cat.name} className="mb-2">
                   <p className="py-1 px-4 text-white/50 text-xs uppercase tracking-wider font-bold">
                     {cat.name}
                   </p>
-                  {cat.services.slice(0, 5).map((svc) => (
+                  {cat.services.map((svc) => (
                     <Link
                       key={svc.slug}
-                      href={`/services/${svc.slug}`}
+                      href={`/${svc.slug}`}
                       onClick={onClose}
                       className="block py-1.5 px-4 text-white/80 text-sm hover:text-[#E8611A]"
                     >
-                      {svc.h1.replace(" in Omaha", "")}
+                      {svc.title}
                     </Link>
                   ))}
-                  {cat.services.length > 5 && (
-                    <Link
-                      href="/services"
-                      onClick={onClose}
-                      className="block py-1.5 px-4 text-[#E8611A] text-xs"
-                    >
-                      + {cat.services.length - 5} more
-                    </Link>
-                  )}
                 </div>
               ))}
             </div>
@@ -449,7 +475,7 @@ function Header() {
               setMegaMenuOpen(megaMenuOpen === "junk" ? null : "junk")
             }
             className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${
-              megaMenuOpen === "junk" || location.startsWith("/services")
+              megaMenuOpen === "junk" || location === "/junk-removal" || junkServicePages.some(s => location === `/${s.slug}`)
                 ? "text-[#E8611A]"
                 : "text-white/80 hover:text-white"
             }`}
@@ -548,12 +574,9 @@ function Header() {
 
 // ─── FOOTER ───
 function Footer() {
-  const junkCategories = serviceCategories.filter(
-    (c) => c.slug !== "tree-service" && c.slug !== "landscaping"
-  );
   const treeCategory = serviceCategories.find((c) => c.slug === "tree-service");
   const landscapingCategory = serviceCategories.find((c) => c.slug === "landscaping");
-  const topJunkServices = junkCategories.flatMap((c) => c.services).slice(0, 8);
+  const topJunkServices = junkServicePages.slice(0, 8);
 
   return (
     <footer className="bg-[#0A1628] text-white">
@@ -608,16 +631,16 @@ function Footer() {
               {topJunkServices.map((svc) => (
                 <li key={svc.slug}>
                   <Link
-                    href={`/services/${svc.slug}`}
+                    href={`/${svc.slug}`}
                     className="text-white/70 hover:text-white text-sm transition-colors"
                   >
-                    {svc.h1.replace(" in Omaha", "")}
+                    {svc.title}
                   </Link>
                 </li>
               ))}
               <li>
                 <Link
-                  href="/services"
+                  href="/junk-removal"
                   className="text-[#E8611A] text-sm font-semibold hover:underline"
                 >
                   View All Services →

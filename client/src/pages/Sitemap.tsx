@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { serviceCategories, serviceAreas } from "@/lib/services-data";
+import { serviceCategories, serviceAreas, getJunkNavCategories } from "@/lib/services-data";
 
 export default function SitemapPage() {
   useEffect(() => {
     document.title = "Sitemap | A1 Junk Removal and Tree Service";
   }, []);
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service" && c.slug !== "landscaping");
   const treeCategory = serviceCategories.find(c => c.slug === "tree-service");
   const landscapingCategory = serviceCategories.find(c => c.slug === "landscaping");
+  const junkNavCategories = getJunkNavCategories();
 
   return (
     <div>
@@ -34,7 +34,7 @@ export default function SitemapPage() {
               <ul className="space-y-2">
                 {[
                   { href: "/", label: "Home" },
-                  { href: "/services", label: "Junk Removal Services" },
+                  { href: "/junk-removal", label: "Junk Removal Services" },
                   { href: "/tree-service", label: "Tree Service" },
                   { href: "/landscaping", label: "Landscaping" },
                   { href: "/service-areas", label: "Service Areas" },
@@ -97,14 +97,14 @@ export default function SitemapPage() {
             </div>
 
             {/* Junk Removal by Category */}
-            {junkCategories.map((cat) => (
-              <div key={cat.slug}>
+            {junkNavCategories.map((cat) => (
+              <div key={cat.name}>
                 <h2 className="font-display text-xl text-[#E8611A] font-bold mb-4">{cat.name}</h2>
                 <ul className="space-y-2">
                   {cat.services.map((svc) => (
                     <li key={svc.slug}>
-                      <Link href={`/services/${svc.slug}`} className="text-gray-700 hover:text-[#E8611A] text-sm transition-colors">
-                        {svc.h1}
+                      <Link href={`/${svc.slug}`} className="text-gray-700 hover:text-[#E8611A] text-sm transition-colors">
+                        {svc.title}
                       </Link>
                     </li>
                   ))}

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { serviceAreas, serviceCategories, PHONE, PHONE_LINK, CTA_BG_IMG, PLACEHOLDER_IMG, BUSINESS_NAME } from "@/lib/services-data";
+import { serviceAreas, serviceCategories, junkServicePages, PHONE, PHONE_LINK, CTA_BG_IMG, PLACEHOLDER_IMG, BUSINESS_NAME } from "@/lib/services-data";
 import { Phone, ArrowRight, MapPin, Star, CheckCircle } from "lucide-react";
 
 export default function ServiceAreaDetail() {
@@ -24,9 +24,8 @@ export default function ServiceAreaDetail() {
     );
   }
 
-  const junkCategories = serviceCategories.filter(c => c.slug !== "tree-service");
   const treeCategory = serviceCategories.find(c => c.slug === "tree-service");
-  const topServices = junkCategories.flatMap(c => c.services).slice(0, 6);
+  const topServices = junkServicePages.slice(0, 6);
 
   return (
     <div>
@@ -95,15 +94,15 @@ export default function ServiceAreaDetail() {
                 {topServices.map((svc) => (
                   <Link
                     key={svc.slug}
-                    href={`/services/${svc.slug}`}
+                    href={`/${svc.slug}`}
                     className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
                   >
                     <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#E8611A]" />
-                    <span className="text-gray-700 group-hover:text-[#0A1628]">{svc.h1.replace(" in Omaha", ` in ${area.name}`)}</span>
+                    <span className="text-gray-700 group-hover:text-[#0A1628]">{svc.title} in {area.name}</span>
                   </Link>
                 ))}
-                <Link href="/services" className="block text-[#E8611A] font-semibold text-sm mt-4 hover:underline">
-                  View All 75+ Junk Removal Services →
+                <Link href="/junk-removal" className="block text-[#E8611A] font-semibold text-sm mt-4 hover:underline">
+                  View All 40 Junk Removal Services →
                 </Link>
               </div>
             </div>
