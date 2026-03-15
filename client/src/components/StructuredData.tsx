@@ -166,12 +166,6 @@ export function ServiceSchema({ service }: { service: ServiceItem }) {
         priceCurrency: "USD",
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "253",
-      bestRating: "5",
-    },
   };
 
   return (
