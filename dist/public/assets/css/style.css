@@ -333,11 +333,11 @@ strong { font-weight: 700; }
 /* ─── HERO SECTION ─── */
 .hero-section {
   position: relative;
-  padding: 1.25rem 0;
+  padding: 2rem 0;
   background: #0A1628;
   overflow: hidden;
 }
-@media (min-width: 1024px) { .hero-section { padding: 1.75rem 0; } }
+@media (min-width: 1024px) { .hero-section { padding: 2.5rem 0; } }
 .hero-bg {
   position: absolute;
   inset: 0;
