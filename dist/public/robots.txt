@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://a1junkremovalandtreeserviceofomaha.com/sitemap.xml
