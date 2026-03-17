@@ -1,24 +1,37 @@
-# Update TODO — Landscaping/Demo Services + JSON-LD
+# A1 Website Audit Fix Tracker
 
-## Phase 1: Pull landscaping and demolition services from GBP
-- [ ] Navigate to GBP and extract all landscaping services
-- [ ] Navigate to GBP and extract all demolition services
-- [ ] Document the full list of new services to add
+## Batch 1: Quick Wins (Low effort, all 88 pages)
+- [ ] Add `defer` to main.js script tag
+- [ ] Add skip-navigation link for accessibility
+- [ ] Fix empty alt text on 25 content images (tree service + landscaping pages)
 
-## Phase 2: Integrate new services into site
-- [ ] Add new landscaping services to services-data.ts
-- [ ] Add new demolition services to services-data.ts
-- [ ] Update navigation mega-menu categories if needed
-- [ ] Verify all new pages render correctly
+## Batch 2: Broken Links
+- [ ] Fix 25 broken internal links on apartment-cleanouts page
+- [ ] Fix 25 broken internal links on house-cleanout-services page
+- [ ] Fix 1 broken link (/backyard-cleanup) on 3 landscaping pages
 
-## Phase 3: Add JSON-LD structured data
-- [ ] Add LocalBusiness schema to homepage
-- [ ] Add Service schema to service pages
-- [ ] Add FAQ schema to FAQ page
-- [ ] Add BreadcrumbList schema to all pages
+## Batch 3: Tailwind CDN Replacement
+- [ ] Scan all HTML for Tailwind utility classes used
+- [ ] Generate pre-built CSS with only used classes
+- [ ] Replace CDN script tag with local CSS file on all 88 pages
+- [ ] Verify styling is preserved
 
-## Phase 4: Test and deliver
-- [ ] Test new service pages
-- [ ] Test structured data
-- [ ] Save checkpoint
-- [ ] Deliver to user
+## Batch 4: Meta & Headers
+- [ ] Create/add favicon
+- [ ] Add og:image meta tag to all 88 pages
+- [ ] Create Netlify _headers file with security headers
+- [ ] Add caching headers for static assets
+
+## Batch 5: Title/Description Length
+- [ ] Trim ~40 titles to under 60 characters
+- [ ] Trim ~24 meta descriptions to under 160 characters
+
+## Batch 6: Minification
+- [ ] Minify style.css
+- [ ] Minify main.js
+
+## Not fixing now (future/requires user action):
+- Analytics tracking (requires Google account setup)
+- manuscdn.com images (only 2 pages, needs re-upload)
+- Responsive images (future, when real photos replace placeholders)
+- Flower bed text references (natural text, not broken links)
