@@ -603,33 +603,6 @@
 </div>
 </div>
 </footer>
-<script>
-    document.getElementById('mobile-toggle').addEventListener('click', function() {
-      const nav = document.getElementById('desktop-nav');
-      nav.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-dropdown-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const menuId = 'mega-' + this.getAttribute('data-menu');
-        const menu = document.getElementById(menuId);
-        
-        document.querySelectorAll('.mega-menu').forEach(m => {
-          if (m.id !== menuId) m.classList.remove('active');
-        });
-        
-        menu.classList.toggle('active');
-      });
-    });
-
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('site-header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  </script>
+<script defer src="/assets/js/main.min.js"></script>
 </body>
 </html>
