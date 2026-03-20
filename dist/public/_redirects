@@ -1,11 +1,15 @@
 # Netlify Redirects for A1 Junk Removal and Tree Service
 # Updated: March 2026 — restructured junk removal pages to root-level URLs
 
-# Domain-level redirects: old domain → new primary domain (non-www)
-https://a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
-http://a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
-https://www.a1junkremovalofomaha.com/*  https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
-http://www.a1junkremovalofomaha.com/*   https://a1junkremovalandtreeserviceofomaha.com/:splat  301!
+# Domain-level redirects: all old domains → new primary domain (www.a1junkandtree.com)
+https://a1junkremovalandtreeserviceofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+http://a1junkremovalandtreeserviceofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+https://www.a1junkremovalandtreeserviceofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+http://www.a1junkremovalandtreeserviceofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+https://a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+http://a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+https://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
+http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 
 # Old hub page redirect
 /services    /junk-removal    301
