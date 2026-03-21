@@ -739,23 +739,6 @@
     </a>
 <a class="btn btn-outline-white" href="/free-estimate">FREE ESTIMATE</a>
 </div>
-<!-- FAQ Accordion JS -->
-<script>
-(function(){
-  var btns = document.querySelectorAll('.faq-accordion-btn');
-  btns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var content = this.nextElementSibling;
-      var wasOpen = content.classList.contains('open');
-      document.querySelectorAll('.faq-accordion-content.open').forEach(function(c){ c.classList.remove('open'); });
-      document.querySelectorAll('.faq-accordion-btn.open').forEach(function(b){ b.classList.remove('open'); });
-      if(!wasOpen){
-        content.classList.add('open');
-        this.classList.add('open');
-      }
-    });
-  });
-})();
-</script>
+
 </main></body></html>
 
