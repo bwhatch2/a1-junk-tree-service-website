@@ -253,6 +253,58 @@
   ]
 }
   </script>
+<style>
+/* Before & After Image Layout */
+.before-after-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+@media (max-width: 640px) {
+  .before-after-pair { gap: 0.75rem; }
+}
+.ba-image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.ba-image-container img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+.ba-label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  z-index: 2;
+}
+.ba-before {
+  background: #dc2626;
+  color: #fff;
+}
+.ba-after {
+  background: #16a34a;
+  color: #fff;
+}
+.ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  font-style: italic;
+  background: #f9fafb;
+}
+</style>
 </head>
 <body><a class_="skip-to-main" href="#main-content">Skip to main content</a>
 <div class="top-bar">
@@ -458,12 +510,34 @@
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Stoves, Ovens, and Ranges</h3><p class="text-gray-600 mt-1">Electric and gas ranges, wall ovens, and cooktops. For gas appliances, we ask that the gas line be shut off before we arrive.</p></div></div>
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Water Heaters, Dishwashers, and More</h3><p class="text-gray-600 mt-1">Water heaters (tank and tankless), dishwashers, garbage disposals, window AC units, dehumidifiers, and any other household appliance taking up space.</p></div></div>
 </div>
-<div class="my-8 rounded-lg overflow-hidden border border-gray-200"><img alt="Old washer and dryer being hauled away from an Omaha home by A1 Junk Removal" class="w-full h-64 object-cover" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">Photo coming soon</p></div>
+<div class="before-after-pair">
+<div class="ba-image-container">
+<div class="ba-label ba-before">BEFORE</div>
+<img alt="Before appliance removal - old washer and dryer in Omaha home" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+<div class="ba-image-container">
+<div class="ba-label ba-after">AFTER</div>
+<img alt="After appliance removal - clean space in Omaha home" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Getting Appliances Out of Tight Spots</h2>
 <p>Appliances end up in the worst possible places. The chest freezer that went into the basement 20 years ago when the stairs were wider. The washer wedged into a closet-sized laundry room. The water heater in a crawl space that barely fits a person, let alone a 150-pound tank. We deal with all of it. Our crew knows how to navigate tight doorways, steep stairs, and awkward angles without damaging your home. We use appliance dollies, furniture straps, and good old-fashioned muscle to get heavy units out safely. If we need to remove a door from its hinges to fit something through, we do that and put it back when we're done.</p>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Where Your Old Appliances Go</h2>
 <p>Household appliances are made primarily of steel, with copper wiring, aluminum components, and sometimes cast iron. All of that is recyclable. When we pick up your old appliance, it goes to a metal recycling facility where the materials are recovered and reprocessed. Refrigerators and freezers go through an additional step where the refrigerant is captured and disposed of according to EPA regulations — you can't just dump Freon into the atmosphere. The recycling value of appliances actually helps keep removal costs down, since the scrap metal offsets disposal fees. If you've got other metal items to go along with the appliances, check out our <a class="text-[#E8611A] font-semibold hover:underline" href="/scrap-metal-removal">scrap metal removal service</a>.</p>
-<div class="my-8 rounded-lg overflow-hidden border border-gray-200"><img alt="A1 crew loading a refrigerator onto the truck for appliance removal in Omaha NE" class="w-full h-64 object-cover" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">Photo coming soon</p></div>
+<div class="before-after-pair">
+<div class="ba-image-container">
+<div class="ba-label ba-before">BEFORE</div>
+<img alt="Before refrigerator removal in Omaha NE" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+<div class="ba-image-container">
+<div class="ba-label ba-after">AFTER</div>
+<img alt="After refrigerator removal - clean area in Omaha NE" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Frequently Asked Questions</h2>
 <div class="space-y-6 not-prose">
 <div class="border-b border-gray-200 pb-6"><h3 class="font-bold text-[#0A1628] text-lg mb-2">Do you disconnect appliances before removing them?</h3><p class="text-gray-600">We disconnect standard appliances like washers, dryers, and refrigerators. For gas appliances, we recommend having the gas line capped by a licensed plumber before we arrive, though we can disconnect the appliance from the line if it's already been shut off.</p></div>
