@@ -253,6 +253,99 @@
   ]
 }
   </script>
+<style>
+/* Simplified Nav Dropdowns */
+.nav-dropdown-simple { position: relative; }
+.nav-dropdown-simple-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  transition: color 0.2s;
+  white-space: nowrap;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+}
+.nav-dropdown-simple-btn:hover { color: #fff; }
+.nav-dropdown-simple-btn svg { transition: transform 0.2s; }
+.nav-dropdown-simple-btn.open svg { transform: rotate(180deg); }
+.nav-simple-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15);
+  border-top: 3px solid #E8611A;
+  border-radius: 0 0 6px 6px;
+  z-index: 50;
+  padding: 0.5rem 0;
+}
+.nav-simple-menu.open { display: block; }
+.nav-simple-menu a {
+  display: block;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  color: #374151;
+  transition: all 0.15s;
+}
+.nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+
+/* Before & After Image Layout */
+.before-after-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+@media (max-width: 640px) {
+  .before-after-pair { gap: 0.75rem; }
+}
+.ba-image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.ba-image-container img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+.ba-label {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  z-index: 2;
+}
+.ba-before {
+  background: #dc2626;
+  color: #fff;
+}
+.ba-after {
+  background: #16a34a;
+  color: #fff;
+}
+.ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  font-style: italic;
+  background: #f9fafb;
+}
+</style>
 </head>
 <body><a class_="skip-to-main" href="#main-content">Skip to main content</a>
 <div class="top-bar">
@@ -282,147 +375,24 @@
 </a>
 <nav class="desktop-nav" id="desktop-nav">
 <a href="/">Home</a>
-<div class="nav-dropdown">
-<button class="nav-dropdown-btn" data-menu="junk">Junk Removal <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
-<div class="mega-menu" id="mega-junk">
-<div class="container">
-<div class="mega-grid">
-<div class="mega-col">
-<p class="mega-col-title">Cleanout Services</p>
-<ul>
-<li><a href="/apartment-cleanouts">Apartment Complex Junk Removal</a></li>
-<li><a href="/attic-cleanout">Attic Cleanout</a></li>
-<li><a href="/basement-cleanout">Basement Cleanout</a></li>
-<li><a href="/estate-cleanouts">Estate Cleanout Services</a></li>
-<li><a href="/eviction-cleanouts">Eviction Cleanouts</a></li>
-<li><a href="/foreclosure-cleanouts">Foreclosure Cleanouts</a></li>
-<li><a href="/garage-cleanout">Garage Cleanout</a></li>
-<li><a href="/hoarder-cleanup">Hoarder House Cleanup</a></li>
-<li><a href="/house-cleanout-services">House Cleanout Services</a></li>
-<li><a href="/property-cleanouts">Property Cleanout Services</a></li>
-<li><a href="/storage-unit-cleanout">Storage Unit Cleanout</a></li>
-</ul>
-</div>
-<div class="mega-col">
-<p class="mega-col-title">Commercial Services</p>
-<ul>
-<li><a href="/office-furniture-removal">Office Furniture Removal</a></li>
-<li><a href="/retail-cleanout">Retail Space Cleanout</a></li>
-<li><a href="/warehouse-cleanout">Warehouse Cleanout</a></li>
-</ul>
-</div>
-<div class="mega-col">
-<p class="mega-col-title">Demolition &amp; Outdoor</p>
-<ul>
-<li><a href="/pool-removal">Above Ground Pool Removal</a></li>
-<li><a href="/deck-removal">Deck Demolition &amp; Removal</a></li>
-<li><a href="/fence-removal">Fence Removal</a></li>
-<li><a href="/light-demolition">Light Demolition Services</a></li>
-<li><a href="/swing-set-removal">Playground &amp; Swing Set Removal</a></li>
-<li><a href="/shed-removal">Shed Demolition &amp; Removal</a></li>
-<li><a href="/storm-debris-cleanup">Storm Debris &amp; Emergency Cleanup</a></li>
-</ul>
-</div>
-<div class="mega-col">
-<p class="mega-col-title">General Junk Removal</p>
-<ul>
-<li><a href="/bulk-trash-pickup">Bulk Trash Pickup</a></li>
-<li><a href="/commercial-junk-removal">Commercial Junk Removal</a></li>
-<li><a href="/trash-hauling">Garbage &amp; Trash Hauling</a></li>
-<li><a href="/residential-junk-removal">Residential Junk Removal</a></li>
-<li><a href="/same-day-junk-pickup">Same-Day Junk Pickup</a></li>
-</ul>
-</div>
-<div class="mega-col">
-<p class="mega-col-title">Item Removal</p>
-<ul>
-<li><a href="/appliance-removal">Appliance Removal</a></li>
-<li><a href="/couch-sofa-removal">Couch &amp; Sofa Removal</a></li>
-<li><a href="/e-waste-disposal">E-Waste Disposal &amp; Recycling</a></li>
-<li><a href="/exercise-equipment-removal">Exercise Equipment Removal</a></li>
-<li><a href="/furniture-removal">Furniture Removal</a></li>
-<li><a href="/hot-tub-removal">Hot Tub Removal</a></li>
-<li><a href="/mattress-disposal">Mattress Disposal &amp; Recycling</a></li>
-<li><a href="/piano-removal">Piano Removal</a></li>
-<li><a href="/refrigerator-removal">Refrigerator Removal</a></li>
-<li><a href="/tv-removal">Television Removal</a></li>
-</ul>
-</div>
-<div class="mega-col">
-<p class="mega-col-title">Yard &amp; Materials</p>
-<ul>
-<li><a href="/concrete-removal">Concrete &amp; Brick Removal</a></li>
-<li><a href="/construction-debris">Construction Debris Removal</a></li>
-<li><a href="/scrap-metal-removal">Scrap Metal Removal</a></li>
-<li><a href="/tire-removal">Tire Removal &amp; Disposal</a></li>
-<li><a href="/yard-waste-removal">Yard Waste Removal</a></li>
-</ul>
+<div class="nav-dropdown-simple">
+<button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
+<div class="nav-simple-menu" id="simple-services">
+<a href="/junk-removal">Junk Removal</a>
+<a href="/tree-service">Tree Services</a>
+<a href="/landscaping">Landscaping</a>
+<a href="/junk-removal" style="border-top:1px solid #e5e7eb; color:#9ca3af; font-size:0.8125rem;">All Services</a>
 </div>
 </div>
-<div class="mega-footer">
-<p>40 specialized junk removal services</p>
-<a href="/junk-removal">View All Junk Removal Services →</a>
-</div>
-</div>
-</div>
-</div>
-<div class="nav-dropdown">
-<button class="nav-dropdown-btn" data-menu="tree">Tree Service <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
-<div class="mega-menu" id="mega-tree">
-<div class="container">
-<div class="mega-grid">
-<div class="mega-col">
-<p class="mega-col-title">Tree Services</p>
-<ul>
-<li><a href="/tree-service/tree-removal">Professional Tree Removal</a></li>
-<li><a href="/tree-service/tree-trimming">Expert Tree Trimming</a></li>
-<li><a href="/tree-service/stump-grinding">Stump Grinding</a></li>
-<li><a href="/tree-service/emergency-tree-service">Emergency Tree Service</a></li>
-<li><a href="/tree-service/land-clearing">Land Clearing</a></li>
-<li><a href="/tree-service/shrub-hedge-trimming">Shrub &amp; Hedge Trimming</a></li>
-<li><a href="/tree-service/brush-chipping">Brush Chipping</a></li>
-</ul>
-</div>
-</div>
-<div class="mega-footer">
-<p>Complete tree care for your property</p>
-<a href="/tree-service">View All Tree Services →</a>
-</div>
-</div>
-</div>
-</div>
-<div class="nav-dropdown">
-<button class="nav-dropdown-btn" data-menu="landscaping">Landscaping <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
-<div class="mega-menu" id="mega-landscaping">
-<div class="container">
-<div class="mega-grid">
-<div class="mega-col">
-<p class="mega-col-title">Landscaping</p>
-<ul>
-<li><a href="/landscaping/lawn-care-mowing">Lawn Care &amp; Mowing</a></li>
-<li><a href="/landscaping/lawn-maintenance">Lawn Maintenance</a></li>
-<li><a href="/landscaping/mulching">Mulching</a></li>
-<li><a href="/landscaping/sod-installation">Sod Installation</a></li>
-<li><a href="/landscaping/leaf-removal">Leaf Removal</a></li>
-<li><a href="/landscaping/seasonal-cleanup">Seasonal Cleanup</a></li>
-<li><a href="/landscaping/weed-control">Weed Control</a></li>
-<li><a href="/landscaping/grading-leveling">Grading &amp; Leveling</a></li>
-<li><a href="/landscaping/yard-cleanup-landscaping">Yard Cleanup &amp; Landscaping</a></li>
-<li><a href="/landscaping/gutter-cleaning">Gutter Cleaning</a></li>
-<li><a href="/landscaping/pressure-washing">Pressure Washing</a></li>
-</ul>
-</div>
-</div>
-<div class="mega-footer">
-<p>Full landscaping and lawn care services</p>
-<a href="/landscaping">View All Landscaping Services →</a>
-</div>
-</div>
-</div>
-</div>
+<div class="nav-dropdown-simple">
+<button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
+<div class="nav-simple-menu" id="simple-about">
+<a href="/about">About Us</a>
 <a href="/service-areas">Service Areas</a>
+<a href="/faq">FAQ</a>
+</div>
+</div>
 <a href="/reviews">Reviews</a>
-<a href="/about">About</a>
 <a href="/contact">Contact</a>
 <a class="btn btn-orange" href="/free-estimate">FREE ESTIMATE</a>
 </nav>
@@ -451,7 +421,18 @@
 <div class="trust-item"><svg fill="none" height="32" stroke="#E8611A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg><div><p class="trust-label">Locally Owned</p><p class="trust-sub">Serving Omaha Metro</p></div></div>
 </div></section>
 <section class="content-section"><div class="container"><div class="content-narrow">
-<p class="text-lg text-gray-600 mb-8">Let's be honest, sometimes a yard gets away from you. One minute it's manageable, and the next—after a wild Nebraska storm, a busy season at work, or just life happening—you're looking at a space that feels more like a jungle than a backyard. It’s not just about aesthetics; an overgrown, messy yard can be a headache and even a hazard. That's where we come in.</p><p class="text-lg text-gray-600 mb-8">My name is Bryan, and at A1, we do more than just basic lawn care. Our yard cleanup service is the total reset button for your property. We’ve seen it all in neighborhoods from Dundee to Elkhorn, and we know how to bring a yard back from the brink. Whether you've got fallen limbs from a thunderstorm, years of accumulated leaves, or just a tangled mess of weeds and overgrowth, we have the crew and the equipment to tackle it efficiently.</p><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">From Overwhelmed to Outstanding: Your Yard Reset</h2><p class="text-lg text-gray-600 mb-8">A major yard cleanup is about more than just making things look tidy. It’s about reclaiming your outdoor space so you can actually enjoy it. It’s about getting rid of the clutter that can attract pests and making sure your property is safe for kids and pets to run around in. We take a comprehensive approach, looking at the entire yard to see what needs to go and what can be saved.</p><div class="my-8 rounded-lg overflow-hidden border border-gray-200"><img alt="Before-and-after of a messy overgrown Omaha backyard transformed into a clean space" class="w-full h-64 object-cover" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">Photo coming soon</p></div><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What a Full Yard Cleanup Includes</h2><p class="text-lg text-gray-600 mb-8">When we say full cleanup, we mean it. We’re not just doing a quick pass with a rake. We’re equipped to handle the tough stuff and get your yard back into a manageable state. If you have specific shrubs or hedges that need detailed work, our <a class="text-[#7A9E7E] font-semibold hover:underline" href="/tree-service/shrub-hedge-trimming">shrub &amp; hedge trimming</a> service can be a great next step.</p><div class="space-y-4 not-prose"><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Debris &amp; Leaf Removal</h4><p class="text-gray-600">We'll clear out all the accumulated leaves, branches, twigs, and other organic debris cluttering your lawn and flower beds.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Clearing Overgrowth &amp; Weeds</h4><p class="text-gray-600">Tackling overgrown vegetation and thick patches of weeds that have taken over parts of your yard.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Hauling Away All Waste</h4><p class="text-gray-600">It’s not clean until the mess is gone. Our complete <a class="text-[#7A9E7E] font-semibold hover:underline" href="/yard-waste-removal">yard waste removal</a> service means we load it all up and haul it away for you.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">General Tidying</h4><p class="text-gray-600">This includes getting into corners, along fence lines, and around structures to make the entire property look sharp.</p></div></div></div><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Why Bother With a Professional Cleanup?</h2><p class="text-lg text-gray-600 mb-8">You could spend multiple weekends trying to get your yard under control, making trip after trip to dispose of the waste. Or, you could make one call and let us knock it out in a fraction of the time. We have the right equipment, the right size crew, and the experience to work quickly and thoroughly. For us, it’s a standard process. For you, it’s getting your free time back and a yard you can be proud of without all the back-breaking work.</p><div class="my-8 rounded-lg overflow-hidden border border-gray-200"><img alt="A1 crew loading branches, leaves, and debris into a trailer during yard cleanup in Omaha NE" class="w-full h-64 object-cover" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">Photo coming soon</p></div>
+<p class="text-lg text-gray-600 mb-8">Let's be honest, sometimes a yard gets away from you. One minute it's manageable, and the next—after a wild Nebraska storm, a busy season at work, or just life happening—you're looking at a space that feels more like a jungle than a backyard. It’s not just about aesthetics; an overgrown, messy yard can be a headache and even a hazard. That's where we come in.</p><p class="text-lg text-gray-600 mb-8">My name is Bryan, and at A1, we do more than just basic lawn care. Our yard cleanup service is the total reset button for your property. We’ve seen it all in neighborhoods from Dundee to Elkhorn, and we know how to bring a yard back from the brink. Whether you've got fallen limbs from a thunderstorm, years of accumulated leaves, or just a tangled mess of weeds and overgrowth, we have the crew and the equipment to tackle it efficiently.</p><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">From Overwhelmed to Outstanding: Your Yard Reset</h2><p class="text-lg text-gray-600 mb-8">A major yard cleanup is about more than just making things look tidy. It’s about reclaiming your outdoor space so you can actually enjoy it. It’s about getting rid of the clutter that can attract pests and making sure your property is safe for kids and pets to run around in. We take a comprehensive approach, looking at the entire yard to see what needs to go and what can be saved.</p><div class="before-after-pair">
+<div class="ba-image-container">
+<div class="ba-label ba-before">BEFORE</div>
+<img alt="Before - Before-and-after of a messy overgrown Omaha backyard transformed into a clean space" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+<div class="ba-image-container">
+<div class="ba-label ba-after">AFTER</div>
+<img alt="After - Before-and-after of a messy overgrown Omaha backyard transformed into a clean space" loading="lazy" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/>
+<p class="ba-caption">Your photo here</p>
+</div>
+</div><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What a Full Yard Cleanup Includes</h2><p class="text-lg text-gray-600 mb-8">When we say full cleanup, we mean it. We’re not just doing a quick pass with a rake. We’re equipped to handle the tough stuff and get your yard back into a manageable state. If you have specific shrubs or hedges that need detailed work, our <a class="text-[#7A9E7E] font-semibold hover:underline" href="/tree-service/shrub-hedge-trimming">shrub &amp; hedge trimming</a> service can be a great next step.</p><div class="space-y-4 not-prose"><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Debris &amp; Leaf Removal</h4><p class="text-gray-600">We'll clear out all the accumulated leaves, branches, twigs, and other organic debris cluttering your lawn and flower beds.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Clearing Overgrowth &amp; Weeds</h4><p class="text-gray-600">Tackling overgrown vegetation and thick patches of weeds that have taken over parts of your yard.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">Hauling Away All Waste</h4><p class="text-gray-600">It’s not clean until the mess is gone. Our complete <a class="text-[#7A9E7E] font-semibold hover:underline" href="/yard-waste-removal">yard waste removal</a> service means we load it all up and haul it away for you.</p></div></div><div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#7A9E7E] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h4 class="font-bold text-lg text-[#0A1628]">General Tidying</h4><p class="text-gray-600">This includes getting into corners, along fence lines, and around structures to make the entire property look sharp.</p></div></div></div><h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Why Bother With a Professional Cleanup?</h2><p class="text-lg text-gray-600 mb-8">You could spend multiple weekends trying to get your yard under control, making trip after trip to dispose of the waste. Or, you could make one call and let us knock it out in a fraction of the time. We have the right equipment, the right size crew, and the experience to work quickly and thoroughly. For us, it’s a standard process. For you, it’s getting your free time back and a yard you can be proud of without all the back-breaking work.</p>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Frequently Asked Questions</h2><div class="space-y-4"><div class="p-6 bg-gray-50 rounded-lg border border-gray-200"><h3 class="font-bold text-[#0A1628] text-lg mb-2">Is this different from your seasonal cleanup service?</h3><p class="text-gray-600">Yes, it can be. While our seasonal cleanups are typically for spring and fall prep, a general yard cleanup can happen anytime. It's for when things have just gotten out of hand due to a storm, neglect, or a property you've recently taken over.</p></div><div class="p-6 bg-gray-50 rounded-lg border border-gray-200"><h3 class="font-bold text-[#0A1628] text-lg mb-2">Do you haul away the debris and junk?</h3><p class="text-gray-600">Absolutely. We're A1 Junk Removal and Tree Service, so hauling is in our DNA. We won't leave a pile on your curb; all cleared debris and waste is loaded up and properly disposed of as part of the job.</p></div><div class="p-6 bg-gray-50 rounded-lg border border-gray-200"><h3 class="font-bold text-[#0A1628] text-lg mb-2">What if I have old furniture or a hot tub that needs to go, too?</h3><p class="text-gray-600">We can take care of that at the same time. Just let us know when you call for an estimate. We can bundle our <a class="text-[#7A9E7E] font-semibold hover:underline" href="/junk-removal">junk removal</a> services with the yard cleanup to save you a headache.</p></div><div class="p-6 bg-gray-50 rounded-lg border border-gray-200"><h3 class="font-bold text-[#0A1628] text-lg mb-2">How much does a full yard cleanup in Omaha cost?</h3><p class="text-gray-600">The cost really depends on the size of your yard and the amount of work needed. A small yard with just leaves and a few branches will be much different than an acre that's completely overgrown. The best way to know for sure is to have us out for a free, no-obligation estimate.</p></div></div>
 </div></div></section>
 <section class="cta-section">
@@ -484,89 +465,26 @@
   </div>
   <nav class="mobile-menu-nav">
     <a href="/">Home</a>
-    
+
     <div class="mobile-dropdown">
-      <button>Junk Removal <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+      <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
-        <a href="/junk-removal" style="color: #E8611A; font-weight: 600;">View All Junk Services</a>
-        <p style="padding: 0.5rem 1rem; color: rgba(255,255,255,0.5); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Cleanout Services</p>
-        <a href="/apartment-cleanouts" class="mobile-svc-link">Apartment Complex Junk Removal</a>
-        <a href="/attic-cleanout" class="mobile-svc-link">Attic Cleanout</a>
-        <a href="/basement-cleanout" class="mobile-svc-link">Basement Cleanout</a>
-        <a href="/estate-cleanouts" class="mobile-svc-link">Estate Cleanout Services</a>
-        <a href="/eviction-cleanouts" class="mobile-svc-link">Eviction Cleanouts</a>
-        <a href="/foreclosure-cleanouts" class="mobile-svc-link">Foreclosure Cleanouts</a>
-        <a href="/garage-cleanout" class="mobile-svc-link">Garage Cleanout</a>
-        <a href="/hoarder-cleanup" class="mobile-svc-link">Hoarding Cleanup</a>
-        <a href="/property-cleanouts" class="mobile-svc-link">Property Cleanout Services</a>
-        <a href="/retail-cleanout" class="mobile-svc-link">Retail Cleanout</a>
-        <a href="/storage-unit-cleanout" class="mobile-svc-link">Storage Unit Cleanout</a>
-        <a href="/warehouse-cleanout" class="mobile-svc-link">Warehouse Cleanout</a>
-        
-        <p style="padding: 0.5rem 1rem; color: rgba(255,255,255,0.5); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Items & Debris</p>
-        <a href="/appliance-removal" class="mobile-svc-link">Appliance Removal</a>
-        <a href="/bulk-trash-pickup" class="mobile-svc-link">Bulk Trash Pickup</a>
-        <a href="/concrete-removal" class="mobile-svc-link">Concrete & Brick Removal</a>
-        <a href="/construction-debris" class="mobile-svc-link">Construction Debris Removal</a>
-        <a href="/couch-sofa-removal" class="mobile-svc-link">Couch & Sofa Removal</a>
-        <a href="/deck-removal" class="mobile-svc-link">Deck Removal</a>
-        <a href="/e-waste-disposal" class="mobile-svc-link">E-Waste Disposal</a>
-        <a href="/exercise-equipment-removal" class="mobile-svc-link">Exercise Equipment Removal</a>
-        <a href="/fence-removal" class="mobile-svc-link">Fence Removal</a>
-        <a href="/furniture-removal" class="mobile-svc-link">Furniture Removal</a>
-        <a href="/hot-tub-removal" class="mobile-svc-link">Hot Tub Removal</a>
-        <a href="/mattress-disposal" class="mobile-svc-link">Mattress Disposal</a>
-        <a href="/office-furniture-removal" class="mobile-svc-link">Office Furniture Removal</a>
-        <a href="/piano-removal" class="mobile-svc-link">Piano Removal</a>
-        <a href="/pool-removal" class="mobile-svc-link">Pool Removal</a>
-        <a href="/refrigerator-removal" class="mobile-svc-link">Refrigerator Removal</a>
-        <a href="/scrap-metal-removal" class="mobile-svc-link">Scrap Metal Removal</a>
-        <a href="/shed-removal" class="mobile-svc-link">Shed Removal</a>
-        <a href="/storm-debris-cleanup" class="mobile-svc-link">Storm Debris Cleanup</a>
-        <a href="/swing-set-removal" class="mobile-svc-link">Swing Set Removal</a>
-        <a href="/tire-removal" class="mobile-svc-link">Tire Removal & Disposal</a>
-        <a href="/trash-hauling" class="mobile-svc-link">Garbage & Trash Hauling</a>
-        <a href="/tv-removal" class="mobile-svc-link">Television Removal</a>
-        <a href="/yard-waste-removal" class="mobile-svc-link">Yard Waste Removal</a>
+        <a href="/junk-removal" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
+        <a href="/tree-service" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
+        <a href="/landscaping" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
       </div>
     </div>
 
     <div class="mobile-dropdown">
-      <button>Tree Service <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
+      <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
-        <a href="/tree-service" style="color: #7A9E7E; font-weight: 600;">View All Tree Services</a>
-        <a href="/tree-service/tree-removal" class="mobile-svc-link">Professional Tree Removal</a>
-        <a href="/tree-service/tree-trimming" class="mobile-svc-link">Expert Tree Trimming</a>
-        <a href="/tree-service/stump-grinding" class="mobile-svc-link">Stump Grinding</a>
-        <a href="/tree-service/emergency-tree-service" class="mobile-svc-link">Emergency Tree Service</a>
-        <a href="/tree-service/land-clearing" class="mobile-svc-link">Land Clearing</a>
-        <a href="/tree-service/shrub-hedge-trimming" class="mobile-svc-link">Shrub & Hedge Trimming</a>
-        <a href="/tree-service/brush-chipping" class="mobile-svc-link">Brush Chipping</a>
+        <a href="/about" class="mobile-svc-link">About Us</a>
+        <a href="/service-areas" class="mobile-svc-link">Service Areas</a>
+        <a href="/faq" class="mobile-svc-link">FAQ</a>
       </div>
     </div>
 
-    <div class="mobile-dropdown">
-      <button>Landscaping <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
-      <div class="mobile-dropdown-content">
-        <a href="/landscaping" style="color: #7A9E7E; font-weight: 600;">View All Landscaping</a>
-        <a href="/landscaping/lawn-care-mowing" class="mobile-svc-link">Lawn Care & Mowing</a>
-        <a href="/landscaping/lawn-maintenance" class="mobile-svc-link">Lawn Maintenance</a>
-        <a href="/landscaping/mulching" class="mobile-svc-link">Mulching</a>
-        <a href="/landscaping/sod-installation" class="mobile-svc-link">Sod Installation</a>
-        <a href="/landscaping/leaf-removal" class="mobile-svc-link">Leaf Removal</a>
-        <a href="/landscaping/seasonal-cleanup" class="mobile-svc-link">Seasonal Cleanup</a>
-        <a href="/landscaping/weed-control" class="mobile-svc-link">Weed Control</a>
-        <a href="/landscaping/grading-leveling" class="mobile-svc-link">Grading & Leveling</a>
-        <a href="/landscaping/yard-cleanup-landscaping" class="mobile-svc-link">Yard Cleanup & Landscaping</a>
-        <a href="/landscaping/gutter-cleaning" class="mobile-svc-link">Gutter Cleaning</a>
-        <a href="/landscaping/pressure-washing" class="mobile-svc-link">Pressure Washing</a>
-      </div>
-    </div>
-
-    <a href="/service-areas">Service Areas</a>
     <a href="/reviews">Reviews</a>
-    <a href="/about">About</a>
-    <a href="/faq">FAQ</a>
     <a href="/contact">Contact</a>
   </nav>
   <div class="mobile-menu-ctas">
@@ -670,5 +588,39 @@
 <a class="btn btn-outline-white" href="/free-estimate">FREE ESTIMATE</a>
 </div>
 <script defer="" src="/assets/js/main.min.js"></script>
+
+<!-- New nav dropdown JS for simplified Services/About Us menus -->
+<script>
+(function(){
+  // Simple dropdown click handlers
+  var simpleBtns = document.querySelectorAll('.nav-dropdown-simple-btn');
+  var simpleMenus = document.querySelectorAll('.nav-simple-menu');
+
+  function closeAllSimple(){
+    simpleMenus.forEach(function(m){ m.classList.remove('open'); });
+    simpleBtns.forEach(function(b){ b.classList.remove('open'); });
+  }
+
+  simpleBtns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var menuId = 'simple-' + btn.getAttribute('data-simplemenu');
+      var menu = document.getElementById(menuId);
+      var wasOpen = menu && menu.classList.contains('open');
+      closeAllSimple();
+      if(!wasOpen && menu){
+        menu.classList.add('open');
+        btn.classList.add('open');
+      }
+    });
+  });
+
+  document.addEventListener('click', function(e){
+    var inside = false;
+    simpleMenus.forEach(function(m){ if(m.contains(e.target)) inside = true; });
+    if(!inside) closeAllSimple();
+  });
+})();
+</script>
 </body>
 </html>
