@@ -67,6 +67,17 @@
   <url><loc>https://www.a1junkandtree.com/scrap-metal-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/tire-removal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Demolition Services -->
+  <url><loc>https://www.a1junkandtree.com/demolition/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/kitchen-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/bathroom-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/interior-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/shed-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/garage-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/deck-patio-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/basement-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.a1junkandtree.com/demolition/concrete-removal/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Landscaping Services -->
   <url><loc>https://www.a1junkandtree.com/landscaping/lawn-care-mowing</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/landscaping/lawn-maintenance</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
