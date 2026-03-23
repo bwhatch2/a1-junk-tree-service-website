@@ -1,0 +1,1 @@
+Image dimensions need to be checked. The phone number "402-555-0123" is on the truck door on the right side of the image, below "OMAHA JUNK &amp; TREE SERVICE" text. The text and number are in white/light color on the dark green truck door. Need to blur just the phone number line, keeping the company name visible if possible, or blur the entire text area on the truck door.

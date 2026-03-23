@@ -1,0 +1,7 @@
+Hero image findings:
+- The homepage hero currently shows a "no picture" placeholder icon (camera with X through it)
+- The image URL is: https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg
+- This is NOT a truck image - it's a placeholder
+- The user mentioned a truck with a wrong phone number in the hero
+- The logo (gold/charcoal seal) IS showing in the header - looks good
+- Need to ask user which image has the truck with the wrong phone number
