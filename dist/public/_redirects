@@ -1,3 +1,11 @@
+# ─── FORCE HTTPS ───
+# All HTTP traffic → HTTPS (must be first rule)
+http://* https://:splat 301!
+
+# ─── FORCE WWW ───
+# Non-www HTTPS → www HTTPS
+https://a1junkandtree.com/* https://www.a1junkandtree.com/:splat 301!
+
 # Netlify Redirects for A1 Junk Removal and Tree Service
 # Updated: March 2026 — restructured junk removal pages to root-level URLs
 
