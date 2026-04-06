@@ -294,6 +294,43 @@
   transition: all 0.15s;
 }
 .nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+
+/* Before & After Image Layout */
+.before-after-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+@media (max-width: 640px) {
+  .before-after-pair { gap: 0.75rem; }
+}
+.ba-image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.ba-image-container img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+.ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+}
+.before-after-pair.ba-single {
+  grid-template-columns: 1fr;
+}
+.ba-single .ba-image-container img {
+  aspect-ratio: 3/2;
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -362,7 +399,7 @@
 <main>
 <div class="bg-gray-50 border-b border-gray-200"><div class="container py-3"><nav class="flex items-center gap-2 text-sm text-gray-500"><a class="hover:text-[#0A1628]" href="/">Home</a><span>/</span><a class="hover:text-[#0A1628]" href="/junk-removal">Junk Removal</a><span>/</span><span class="text-[#0A1628] font-medium">Apartment Cleanouts</span></nav></div></div>
 <section class="relative py-16 lg:py-24 bg-[#0A1628]" style="padding-bottom:8rem; overflow:visible">
-<div class="absolute inset-0 opacity-20"><img alt="Apartment cleanout service in Omaha NE" class="w-full h-full object-cover" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/nrULRhtVaiGZzoZae5kn9U/nopicture_ddd96ce4.jpg"/></div>
+<div class="absolute inset-0 opacity-20"><img alt="Before and after room cleanout by A1 Junk Removal and Tree Service showing furniture and debris cleared in Omaha, NE" class="w-full h-full object-cover" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1775493427/basement-cleanout-house-cleanout-omaha-a1-junk-removal_uo7yt3.jpg"/></div>
 <div class="absolute inset-0 bg-gradient-to-r from-[#0A1628] via-[#0A1628]/80 to-transparent"></div>
 <div class="container relative z-10"><div class="max-w-3xl">
 <div class="inline-block bg-[#E8611A]/20 text-[#E8611A] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">Commercial Services</div>
@@ -385,10 +422,15 @@
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Full-Service Removal</h3><p class="text-gray-600 mt-1">We handle all the heavy lifting, sorting, and hauling. You don't need to lift a finger—just tell us which unit needs clearing.</p></div></div>
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Professional Crew</h3><p class="text-gray-600 mt-1">Our team is uniformed, respectful, and fully insured. We work discreetly and efficiently to minimize disruption to your other tenants.</p></div></div>
 </div>
-<div class="my-8 rounded-lg border border-gray-200"><img alt="Before: A1 Junk Removal crew working on a bedroom cleanout in Omaha" class="rounded-lg" height="525" loading="lazy" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663388590750/qqgsEXKhMcjwZXyN.jpg" style="max-width:100%;height:auto;" width="700"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">Before: Our A1 Junk Removal crew hard at work clearing out a cluttered bedroom during an apartment cleanout.</p></div>
+<div class="before-after-pair ba-single">
+<div class="ba-image-container">
+<img alt="Before and after room cleanout by A1 Junk Removal and Tree Service showing furniture and debris cleared in Omaha, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1775493427/basement-cleanout-house-cleanout-omaha-a1-junk-removal_uo7yt3.jpg"/>
+<p class="ba-caption">Room cleanout before and after — Omaha, NE</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Built for Property Managers</h2>
 <p>We understand that apartment turnovers run on a tight schedule. Every day a unit sits full of the previous tenant's junk is a day it's not generating revenue. That's why we've built our service to be the most reliable partner for property managers in Omaha. We can handle everything from a single unit to an entire building cleanout. We also specialize in clearing out common areas, storage rooms, and parking garages. If it's junk and it's on your property, we can make it disappear.</p>
-<div class="my-8 rounded-lg border border-gray-200"><img alt="After: The same bedroom completely cleared and ready for turnover." class="rounded-lg" height="525" loading="lazy" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663388590750/BFUaEmWaGzoYLujx.jpg" style="max-width:100%;height:auto;" width="700"/><p class="text-sm text-gray-500 p-3 bg-gray-50 italic">After: The same bedroom completely cleared and ready for turnover.</p></div>
+
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Frequently Asked Questions</h2>
 <div class="space-y-6 not-prose">
 <div class="border-b border-gray-200 pb-6"><h3 class="font-bold text-[#0A1628] text-lg mb-2">How quickly can you clear an apartment?</h3><p class="text-gray-600">We often provide same-day or next-day service. Most standard apartment cleanouts are completed in just a few hours, allowing your cleaning and maintenance crews to get to work immediately.</p></div>
