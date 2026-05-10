@@ -150,6 +150,30 @@
   transition: all 0.15s;
 }
 .nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #E8611A;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+}
+.skip-to-main:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -210,12 +234,12 @@
 </header>
 <main>
 <!-- HERO -->
-<section class="relative min-h-[85vh] flex items-center bg-[#0A1628] overflow-visible">
+<section class="relative min-h-[50vh] flex items-center bg-[#0A1628] overflow-visible">
 <div class="absolute inset-0">
 <img alt="A1 Junk Removal crew" class="w-full h-full object-cover opacity-40" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663388590750/n8Ee8kowJWDuihyGZ2Ah73/hero-homepage-v2-9ZXLAvxiMKsneqDpitMfUG.webp"/>
 <div class="absolute inset-0 bg-gradient-to-r from-[#0A1628] via-[#0A1628]/70 to-transparent"></div>
 </div>
-<div class="container relative z-10 py-20">
+<div class="container relative z-10 py-8">
 <div class="max-w-3xl">
 <div class="inline-flex items-center gap-2 bg-yellow-400/20 text-yellow-400 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
 <svg fill="#FBBF24" height="16" stroke="#FBBF24" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 253+ Five-Star Google Reviews
