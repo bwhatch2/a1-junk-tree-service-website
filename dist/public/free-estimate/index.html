@@ -58,7 +58,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "253",
+    "reviewCount": "274",
     "bestRating": "5"
   },
   "openingHoursSpecification": [
@@ -140,6 +140,30 @@
   transition: all 0.15s;
 }
 .nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #E8611A;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+}
+.skip-to-main:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -209,26 +233,28 @@
 <section class="py-16"><div class="container"><div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div>
 <h2 class="font-display text-2xl text-[#0A1628] font-bold mb-6">REQUEST YOUR ESTIMATE</h2>
-<form data-netlify="true" method="POST" name="free-estimate" netlify-honeypot="bot-field">
+<form action="/free-estimate/thank-you/" data-netlify="true" method="POST" name="free-estimate" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="free-estimate"/>
 <input name="_replyto" type="hidden" value="email"/>
 <p class="hidden"><label>Don't fill this out: <input name="bot-field"/></label></p>
 <div class="form-group"><label class="form-label" for="est-name">Name *</label><input class="form-input" id="est-name" name="name" required="" type="text"/></div>
 <div class="form-group"><label class="form-label" for="est-phone">Phone *</label><input class="form-input" id="est-phone" name="phone" required="" type="tel"/></div>
 <div class="form-group"><label class="form-label" for="est-email">Email *</label><input class="form-input" id="est-email" name="email" required="" type="email"/></div>
-<div class="form-group"><label class="form-label" for="est-service">Service Needed</label>
-<select class="form-select" id="est-service" name="service">
-<option value="">Select a service...</option>
-<option value="junk-removal">Junk Removal</option>
-<option value="tree-service">Tree Service</option>
-<option value="landscaping">Landscaping</option>
-<option value="cleanout">Cleanout Service</option>
-<option value="demolition">Light Demolition</option>
+<div class="form-group"><label class="form-label" for="est-address">Address, Location, or Area of Town</label><input class="form-input" id="est-address" name="address" type="text"/></div>
+<div class="form-group"><label class="form-label" for="est-details">Tell us about the job *</label><textarea class="form-textarea" id="est-details" name="details" placeholder="What do you need removed? How much stuff? Any access issues?" required=""></textarea></div>
+<div class="form-group"><label class="form-label" for="est-referral">How did you find us?</label>
+<select class="form-select" id="est-referral" name="referral">
+<option value="">Select one...</option>
+<option value="google">Google Search</option>
+<option value="facebook">Facebook</option>
+<option value="yelp">Yelp</option>
+<option value="nextdoor">Nextdoor</option>
+<option value="referral">Friend / Family Referral</option>
+<option value="repeat">Repeat Customer</option>
+<option value="drove-by">Drove By / Saw Our Truck</option>
 <option value="other">Other</option>
 </select>
 </div>
-<div class="form-group"><label class="form-label" for="est-address">Address / Location</label><input class="form-input" id="est-address" name="address" type="text"/></div>
-<div class="form-group"><label class="form-label" for="est-details">Tell us about the job *</label><textarea class="form-textarea" id="est-details" name="details" placeholder="What do you need removed? How much stuff? Any access issues?" required=""></textarea></div>
 <button class="btn btn-orange btn-lg w-full" type="submit">SUBMIT ESTIMATE REQUEST</button>
 </form>
 </div>

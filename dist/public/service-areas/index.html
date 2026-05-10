@@ -58,7 +58,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "253",
+    "reviewCount": "274",
     "bestRating": "5"
   },
   "openingHoursSpecification": [
@@ -140,6 +140,30 @@
   transition: all 0.15s;
 }
 .nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #E8611A;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+}
+.skip-to-main:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -200,7 +224,7 @@
 </header>
 <main>
 <div class="bg-gray-50 border-b border-gray-200"><div class="container py-3"><nav class="flex items-center gap-2 text-sm text-gray-500"><a class="hover:text-[#0A1628]" href="/">Home</a><span>/</span><span class="text-[#0A1628] font-medium">Service Areas</span></nav></div></div>
-<section class="relative py-8 lg:py-12 bg-[#0A1628]" style="padding-bottom:2rem; overflow:visible">
+<section class="relative py-4 lg:py-6 bg-[#0A1628]" style="overflow:visible">
 <div class="container relative z-10"><div class="max-w-3xl">
 <h1 class="font-display text-4xl lg:text-6xl text-white font-bold mb-6">SERVICE AREAS</h1>
 <p class="text-white/80 text-lg lg:text-xl">We serve the entire Omaha metro area and surrounding communities. Click on your city to learn more.</p>
