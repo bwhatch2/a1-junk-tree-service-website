@@ -178,6 +178,61 @@
   transition: all 0.15s;
 }
 .nav-simple-menu a:hover { background: #f9fafb; color: #E8611A; }
+
+.social-link-header {
+  display: flex;
+  align-items: center;
+  margin-left: 0.75rem;
+}
+.social-link-header a {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.social-link-header a:hover {
+  opacity: 0.8;
+}
+.top-bar-email {
+  display: none;
+  align-items: center;
+  gap: 0.35rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-left: 0.75rem;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+.top-bar-email:hover {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .top-bar-email {
+    display: flex;
+  }
+}
+.social-links-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.social-links-footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  transition: background 0.2s;
+}
+.social-links-footer a:hover {
+  background: #E8611A;
+}
+.social-links-footer .social-fb { color: #1877F2; }
+.social-links-footer .social-google { color: #4285F4; }
+.social-links-footer .social-yelp { color: #D32323; }
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -197,6 +252,8 @@
 <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           (402) 612-2373
         </a>
+<a class="top-bar-email" href="mailto:bryan@a1junkandtree.com"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> bryan@a1junkandtree.com</a>
+<span class="social-link-header"><a href="https://www.facebook.com/a1junkandtree/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path d="M16.67 15.13l.55-3.58h-3.44v-2.32c0-.98.48-1.94 2.02-1.94h1.57V4.17s-1.42-.24-2.78-.24c-2.84 0-4.69 1.72-4.69 4.83v2.73H7.08v3.58h2.82v8.64c.56.09 1.14.14 1.73.14s1.17-.05 1.73-.14v-8.64h2.89z" fill="#fff"/></svg></a></span>
 </div>
 </div>
 </div>
@@ -285,6 +342,11 @@
 <a href="tel:4026122373"><svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> (402) 612-2373</a>
 <a href="mailto:bryan@a1junkandtree.com"><svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> bryan@a1junkandtree.com</a>
 <span><svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Open 7 Days a Week</span>
+</div>
+<div class="social-links-footer">
+<a class="social-fb" href="https://www.facebook.com/a1junkandtree/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+<a class="social-google" href="https://share.google/Kot55lE4g1VE2dxmq" target="_blank" rel="noopener noreferrer" aria-label="Google"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></a>
+<a class="social-yelp" href="https://www.yelp.com/biz/a1-junk-removal-and-tree-service-omaha" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308c.564-.83 1.956-.54 2.1.44l.6 4.073c.072.49-.18.912-.434.992zm-3.75 5.676l-4.15-2.633c-.84-.534-.612-1.87.344-2.02l4.946-.78c.956-.15 1.596 1.09.964 1.87l-1.79 2.77c-.316.49-.84.63-1.314.793zm-8.166-2.078l1.58-4.883c.318-.984 1.698-.9 2.084.127l1.992 5.296c.386 1.027-.74 1.92-1.698 1.346l-3.572-2.14c-.48-.288-.578-.77-.386-.746zm-1.2-7.394l3.96 3.403c.72.62.24 1.83-.726 1.83H5.31c-.966 0-1.398-1.29-.65-1.95l2.384-3.283c.374-.33.748-.33 1 0zm5.49-6.472l.6 5.28c.108.96-.984 1.53-1.65.864L7.6 4.668c-.666-.666-.12-1.848.822-1.848h3.312c.51 0 .87.306.8.506z"/></svg></a>
 </div>
 </div>
 <div class="footer-col">
