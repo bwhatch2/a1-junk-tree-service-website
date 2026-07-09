@@ -347,9 +347,17 @@
 }
 .before-after-pair.ba-single {
   grid-template-columns: 1fr;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ba-single .ba-image-container img {
   aspect-ratio: 3/4;
+}
+@media (max-width: 768px) {
+  .before-after-pair.ba-single {
+    max-width: 100%;
+  }
 }
 .skip-to-main {
   position: absolute;
