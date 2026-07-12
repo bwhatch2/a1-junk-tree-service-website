@@ -215,6 +215,34 @@
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How fast can you respond to an emergency?","acceptedAnswer":{"@type":"Answer","text":"It depends on the situation and how many calls we're handling. For immediate hazards — trees on structures or blocking access — we prioritize same-day response. After major storms, we triage calls and get to the most dangerous situations first."}},{"@type":"Question","name":"Do you charge more for emergency service?","acceptedAnswer":{"@type":"Answer","text":"Emergency calls may cost more than scheduled work due to the urgency and complexity involved. But we don't gouge people after storms. We give you an honest price based on the work required, and we always provide an estimate before we start."}},{"@type":"Question","name":"Should I call my insurance company first?","acceptedAnswer":{"@type":"Answer","text":"If a tree has damaged your property, yes — contact your insurance company to start a claim. Then call us. We can work with your adjuster and provide the documentation they need. Don't wait for insurance approval to address an immediate safety hazard, though."}},{"@type":"Question","name":"Can you remove a tree that fell on my neighbor's property?","acceptedAnswer":{"@type":"Answer","text":"Yes. If your tree fell on a neighbor's fence, yard, or structure, we can remove it. Liability and insurance responsibility depends on the situation, but we handle the physical removal regardless."}}]}</script>
 <style>
+/* Mobile Dropdown Fix - each item on its own line */
+.mobile-dropdown-content a {
+  display: block;
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+/* Mobile Header Estimate Button */
+.mobile-estimate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: #E8611A;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  white-space: nowrap;
+}
+.mobile-estimate-btn:hover {
+  background: #d4570f;
+}
+@media (min-width: 1024px) {
+  .mobile-estimate-btn {
+    display: none;
+  }
+}
 /* Simplified Nav Dropdowns */
 .nav-dropdown-simple { position: relative; }
 .nav-dropdown-simple-btn {
@@ -468,6 +496,7 @@
 <a href="/contact/">Contact</a>
 <a class="btn btn-orange" href="/free-estimate/">FREE ESTIMATE</a>
 </nav>
+<a class="mobile-estimate-btn" href="/free-estimate/">FREE ESTIMATE</a>
 <button aria-label="Open menu" class="mobile-menu-btn" id="mobile-menu-btn">
 <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
 </button>

@@ -215,6 +215,34 @@
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When is the best time to trim trees in Omaha?","acceptedAnswer":{"@type":"Answer","text":"Late winter to early spring — while the tree is still dormant — is ideal for most species. But dead and hazardous branches can and should be removed any time of year. We trim year-round."}},{"@type":"Question","name":"How much does tree trimming cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the size of the tree, how much work it needs, and access. A single ornamental tree is going to cost less than a 60-foot oak hanging over the house. We give free estimates on every job."}},{"@type":"Question","name":"Will trimming hurt my tree?","acceptedAnswer":{"@type":"Answer","text":"Not when it's done right. Proper pruning cuts at the branch collar allow the tree to seal the wound and continue growing healthy. Bad cuts — like topping or flush cuts — are what damage trees."}},{"@type":"Question","name":"Do you clean up all the branches?","acceptedAnswer":{"@type":"Answer","text":"Yes. We chip all the brush on-site and either haul it away or leave the chips for your garden beds. We rake and blow the area clean before we leave."}}]}</script>
 <style>
+/* Mobile Dropdown Fix - each item on its own line */
+.mobile-dropdown-content a {
+  display: block;
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+/* Mobile Header Estimate Button */
+.mobile-estimate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: #E8611A;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  white-space: nowrap;
+}
+.mobile-estimate-btn:hover {
+  background: #d4570f;
+}
+@media (min-width: 1024px) {
+  .mobile-estimate-btn {
+    display: none;
+  }
+}
 /* Simplified Nav Dropdowns */
 .nav-dropdown-simple { position: relative; }
 .nav-dropdown-simple-btn {
@@ -440,6 +468,7 @@
 <a href="/contact/">Contact</a>
 <a class="btn btn-orange" href="/free-estimate/">FREE ESTIMATE</a>
 </nav>
+<a class="mobile-estimate-btn" href="/free-estimate/">FREE ESTIMATE</a>
 <button aria-label="Open menu" class="mobile-menu-btn" id="mobile-menu-btn">
 <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
 </button>
