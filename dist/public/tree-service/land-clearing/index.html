@@ -215,6 +215,34 @@
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does land clearing cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the size of the area, the number and size of trees, and how dense the brush is. Small residential lots are less than larger wooded properties. We give free on-site estimates so you know exactly what to expect."}},{"@type":"Question","name":"Do you handle permits for land clearing?","acceptedAnswer":{"@type":"Answer","text":"In most cases, residential land clearing on private property doesn't require a permit in the Omaha area. If your project does require one, we can help you figure out the process. We always recommend checking with the city before major clearing work."}},{"@type":"Question","name":"Can you save certain trees and remove others?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We work with you to identify which trees to keep and which to remove. We'll flag the keepers and work around them carefully."}},{"@type":"Question","name":"What do you do with all the debris?","acceptedAnswer":{"@type":"Answer","text":"Everything gets processed on-site. Trees are cut and hauled. Brush goes through the chipper. Stumps get ground. We leave the property clean and ready for whatever comes next."}}]}</script>
 <style>
+/* Mobile Dropdown Fix - each item on its own line */
+.mobile-dropdown-content a {
+  display: block;
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+/* Mobile Header Estimate Button */
+.mobile-estimate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: #E8611A;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  white-space: nowrap;
+}
+.mobile-estimate-btn:hover {
+  background: #d4570f;
+}
+@media (min-width: 1024px) {
+  .mobile-estimate-btn {
+    display: none;
+  }
+}
 /* Simplified Nav Dropdowns */
 .nav-dropdown-simple { position: relative; }
 .nav-dropdown-simple-btn {
@@ -440,6 +468,7 @@
 <a href="/contact/">Contact</a>
 <a class="btn btn-orange" href="/free-estimate/">FREE ESTIMATE</a>
 </nav>
+<a class="mobile-estimate-btn" href="/free-estimate/">FREE ESTIMATE</a>
 <button aria-label="Open menu" class="mobile-menu-btn" id="mobile-menu-btn">
 <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
 </button>

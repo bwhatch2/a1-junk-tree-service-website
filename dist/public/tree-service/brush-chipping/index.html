@@ -215,6 +215,34 @@
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does brush chipping cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the volume of brush and how accessible it is. Small piles are quick and affordable. Larger jobs take more time. We give free estimates so you know the price before we start."}},{"@type":"Question","name":"Can you chip branches of any size?","acceptedAnswer":{"@type":"Answer","text":"Our commercial chipper handles branches up to about 12 inches in diameter. Anything larger gets cut into sections and hauled away. Trunk wood that's too big for the chipper can be bucked into firewood rounds if you want to keep it."}},{"@type":"Question","name":"Do I need to pile the brush up before you come?","acceptedAnswer":{"@type":"Answer","text":"It helps, but it's not required. If the brush is scattered across the yard, we'll gather it as part of the job. Having it in a pile just speeds things up."}},{"@type":"Question","name":"Can I keep the wood chips?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We can spread them in your garden beds, blow them around trees, or leave them in a pile for you to use. If you don't want them, we haul them away at no extra charge."}}]}</script>
 <style>
+/* Mobile Dropdown Fix - each item on its own line */
+.mobile-dropdown-content a {
+  display: block;
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+/* Mobile Header Estimate Button */
+.mobile-estimate-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: #E8611A;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  white-space: nowrap;
+}
+.mobile-estimate-btn:hover {
+  background: #d4570f;
+}
+@media (min-width: 1024px) {
+  .mobile-estimate-btn {
+    display: none;
+  }
+}
 /* Simplified Nav Dropdowns */
 .nav-dropdown-simple { position: relative; }
 .nav-dropdown-simple-btn {
@@ -446,6 +474,7 @@
 <a href="/contact/">Contact</a>
 <a class="btn btn-orange" href="/free-estimate/">FREE ESTIMATE</a>
 </nav>
+<a class="mobile-estimate-btn" href="/free-estimate/">FREE ESTIMATE</a>
 <button aria-label="Open menu" class="mobile-menu-btn" id="mobile-menu-btn">
 <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
 </button>
