@@ -204,3 +204,6 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /professional-tree-removal    /tree-service/tree-removal/    301
 /tree-removal    /tree-service/tree-removal/    301
 
+/demolition/concrete-removal/    /concrete-removal/    301!
+/demolition/shed-demolition/    /shed-removal/    301!
+/demolition/deck-patio-demolition/    /deck-removal/    301!
