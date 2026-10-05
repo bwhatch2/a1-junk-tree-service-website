@@ -207,3 +207,10 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /demolition/concrete-removal/    /concrete-removal/    301!
 /demolition/shed-demolition/    /shed-removal/    301!
 /demolition/deck-patio-demolition/    /deck-removal/    301!
+
+# Retired tree and landscaping service pages
+/tree-service/stump-grinding/    /tree-service/    301!
+/landscaping/grading-leveling/    /landscaping/    301!
+/landscaping/gutter-cleaning/    /landscaping/    301!
+/landscaping/pressure-washing/    /landscaping/    301!
+/landscaping/weed-control/    /landscaping/    301!
