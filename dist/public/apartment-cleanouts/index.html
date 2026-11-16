@@ -373,6 +373,43 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.job-photo-pair .ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -462,18 +499,23 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>When a tenant moves out and leaves a unit full of junk, every day that apartment sits empty is money lost. <strong>A1 Junk Removal and Tree Service</strong> specializes in rapid-response apartment cleanout services for property managers, landlords, and real estate agents in Omaha. We understand the pressure of tight turnover schedules and provide the reliable, thorough service you need to get your units back on the market fast.</p>
 <p>Our crew handles everything from single-unit clearouts to entire building projects. We don't just take the big furniture; we clear out the closets, the cabinets, and the balconies. Whether it's a standard move-out mess or a more challenging eviction situation, we have the experience and the equipment to handle it efficiently and professionally.</p>
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img alt="Apartment cleanouts in Omaha, NE: wood-floor room shown before and after removal of a sofa, cabinets and shelving." width="800" height="1000" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857805/apartment-furniture-cleanout-junk-removal-omaha-ne_empehd.jpg"/>
+<p class="ba-caption">Wood-floor apartment room before and after furniture removal — Omaha, NE</p>
+</div>
+<div class="ba-image-container">
+<img alt="Apartment cleanouts in Omaha, NE: carpeted room shown before and after removal of a sofa, armchair and large furniture." width="800" height="1000" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857805/apartment-furniture-cleanout-junk-removal-omaha-ne-02_bpucj2.jpg"/>
+<p class="ba-caption">Carpeted apartment room before and after large furniture removal — Omaha, NE</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Why Property Managers Choose Us</h2>
 <div class="space-y-4 not-prose">
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Fast Turnaround Times</h3><p class="text-gray-600 mt-1">We offer same-day and next-day service to ensure your units are cleared and ready for cleaning and repairs as quickly as possible.</p></div></div>
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Full-Service Removal</h3><p class="text-gray-600 mt-1">We handle all the heavy lifting, sorting, and hauling. You don't need to lift a finger—just tell us which unit needs clearing.</p></div></div>
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Professional Crew</h3><p class="text-gray-600 mt-1">Our team is uniformed, respectful, and fully insured. We work discreetly and efficiently to minimize disruption to your other tenants.</p></div></div>
 </div>
-<div class="before-after-pair ba-single">
-<div class="ba-image-container">
-<img alt="Before and after room cleanout by A1 Junk Removal and Tree Service showing furniture and debris cleared in Omaha, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1775493427/basement-cleanout-house-cleanout-omaha-a1-junk-removal_uo7yt3.jpg"/>
 <p class="ba-caption">Room cleanout before and after — Omaha, NE</p>
-</div>
-</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Built for Property Managers</h2>
 <p>We understand that apartment turnovers run on a tight schedule. Every day a unit sits full of the previous tenant's junk is a day it's not generating revenue. That's why we've built our service to be the most reliable partner for property managers in Omaha. We can handle everything from a single unit to an entire building cleanout. We also specialize in clearing out common areas, storage rooms, and parking garages. If it's junk and it's on your property, we can make it disappear.</p>
 

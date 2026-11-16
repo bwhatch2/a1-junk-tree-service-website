@@ -387,6 +387,43 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.job-photo-pair .ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -469,6 +506,16 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>Old tires are one of the most annoying things to get rid of. You can't put them in the trash. The city won't take them at the curb. Most donation centers don't want them. And they've been stacking up in your garage or along the side of your house for months — maybe years. <strong>A1 Junk Removal and Tree Service</strong> handles tire removal across the Omaha metro. We pick up old tires from homes, garages, farms, and commercial properties, and we take them to a licensed tire recycling facility where they're processed properly.</p>
 <p>We've hauled tires from garages in Gretna where a homeowner had a dozen old sets stacked against the wall, cleared tire piles from rural properties outside Bennington, and picked up commercial quantities from auto shops and fleet operations across Douglas County. Whether it's four tires or four hundred, we have the capacity to handle it.</p>
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img alt="Old tires scattered across a gravel path beside a corrugated metal building for tire removal in Omaha, NE" width="800" height="600" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857813/old-tire-removal-disposal-service-omaha-ne-01_wbjh0v.jpg"/>
+<p class="ba-caption">Old tires piled on gravel beside a metal building — Omaha, NE.</p>
+</div>
+<div class="ba-image-container">
+<img alt="Old tires with and without metal rims stacked against weathered building siding for tire removal in Omaha, NE" width="800" height="600" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857813/old-tire-removal-disposal-service-omaha-ne-02_t68uw6.jpg"/>
+<p class="ba-caption">Old tires with and without rims stacked against weathered siding — Omaha, NE.</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Types of Tires We Remove</h2>
 <div class="space-y-4 not-prose">
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Passenger Car and Light Truck Tires</h3><p class="text-gray-600 mt-1">The most common type we pick up. Old sets from tire changes, worn-out all-seasons, winter tires you'll never use again. With or without rims.</p></div></div>
