@@ -50,7 +50,6 @@
 
   <!-- Demolition & Outdoor (root-level) -->
   <url><loc>https://www.a1junkandtree.com/storm-debris-cleanup/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.a1junkandtree.com/light-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/shed-removal/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/deck-removal/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/fence-removal/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -64,11 +63,6 @@
 
   <!-- Demolition Services -->
   <url><loc>https://www.a1junkandtree.com/demolition/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.a1junkandtree.com/demolition/kitchen-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.a1junkandtree.com/demolition/bathroom-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.a1junkandtree.com/demolition/interior-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.a1junkandtree.com/demolition/garage-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.a1junkandtree.com/demolition/basement-demolition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Landscaping Services -->
   <url><loc>https://www.a1junkandtree.com/landscaping/lawn-care-mowing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/landscaping/lawn-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -86,5 +80,4 @@
   <url><loc>https://www.a1junkandtree.com/tree-service/shrub-hedge-trimming/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.a1junkandtree.com/tree-service/brush-chipping/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Service Areas -->
   </urlset>

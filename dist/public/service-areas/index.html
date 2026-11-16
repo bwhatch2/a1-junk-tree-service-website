@@ -252,6 +252,29 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Plain city list: no buttons, links, or hover treatment. */
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 0 0 1.25rem;
+  list-style: disc;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.city-list li::marker {
+  color: #E8611A;
+}
+@media (max-width: 768px) {
+  .city-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -290,7 +313,7 @@
 <a href="/junk-removal/">Junk Removal</a>
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
-<a href="/demolition/">Demolition Services</a>
+<a href="/demolition/">Demolition</a>
 <a class="nav-all-services" href="/sitemap/">All Services</a>
 </div>
 </div>
@@ -319,26 +342,28 @@
 <section class="relative py-4 lg:py-6 bg-[#0A1628]" style="overflow:visible">
 <div class="container relative z-10"><div class="max-w-3xl">
 <h1 class="font-display text-4xl lg:text-6xl text-white font-bold mb-6">SERVICE AREAS</h1>
-<p class="text-white/80 text-lg lg:text-xl">We serve the entire Omaha metro area and surrounding communities. Click on your city to learn more.</p>
+<p class="text-white/80 text-lg lg:text-xl">We serve the entire Omaha metro area and surrounding communities.</p>
 </div></div>
 </section>
 <section class="py-16"><div class="container">
-<div class="area-grid"><a class="area-card" href="/service-areas/"><h3>Omaha</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Bellevue</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Papillion</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>La Vista</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Ralston</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Elkhorn</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Gretna</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Bennington</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Boys Town</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Council Bluffs</h3><p>IA</p></a>
-<a class="area-card" href="/service-areas/"><h3>Carter Lake</h3><p>IA</p></a>
-<a class="area-card" href="/service-areas/"><h3>Waterloo</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Valley</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Springfield</h3><p>NE</p></a>
-<a class="area-card" href="/service-areas/"><h3>Plattsmouth</h3><p>NE</p></a>
-</div>
+<p class="text-gray-600 text-lg mb-8"><strong>Don’t see your city or neighborhood listed?</strong> We probably serve your area, too. Give Bryan a call at <a class="text-[#E8611A] font-semibold hover:underline" href="tel:4026122373">(402) 612-2373</a> to check.</p>
+<ul class="city-list">
+<li>Omaha, NE</li>
+<li>Bellevue, NE</li>
+<li>Papillion, NE</li>
+<li>La Vista, NE</li>
+<li>Ralston, NE</li>
+<li>Elkhorn, NE</li>
+<li>Gretna, NE</li>
+<li>Bennington, NE</li>
+<li>Boys Town, NE</li>
+<li>Council Bluffs, IA</li>
+<li>Carter Lake, IA</li>
+<li>Waterloo, NE</li>
+<li>Valley, NE</li>
+<li>Springfield, NE</li>
+<li>Plattsmouth, NE</li>
+</ul>
 </div></section>
 <section class="py-16 bg-white"><div class="container">
 <div class="max-w-4xl mx-auto">
@@ -449,7 +474,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
-<li><a class="footer-view-all" href="/junk-removal/">View All Services →</a></li>
+<li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
 <div class="footer-col">
@@ -563,7 +588,7 @@
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
-        <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition Services</a>
+        <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
       </div>
     </div>
 

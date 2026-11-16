@@ -89,7 +89,7 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /services/e-waste-removal    /e-waste-disposal/    301
 
 # Demolition & Construction
-/services/light-demolition    /light-demolition/    301
+/services/light-demolition    /demolition/    301
 /services/shed-removal    /shed-removal/    301
 /services/deck-removal    /deck-removal/    301
 /services/old-fencing-removal    /fence-removal/    301
@@ -104,8 +104,8 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /services/building-material-removal    /construction-debris/    301
 /services/drywall-removal    /construction-debris/    301
 /services/remodeling-debris-removal    /construction-debris/    301
-/services/demolition-contractor    /light-demolition/    301
-/services/bathroom-demolition    /light-demolition/    301
+/services/demolition-contractor    /demolition/    301
+/services/bathroom-demolition    /demolition/    301
 /services/barn-removal    /shed-removal/    301
 /services/gazebo-removal    /shed-removal/    301
 /services/above-ground-pool-removal    /pool-removal/    301
@@ -142,7 +142,7 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /property-clean-outs    /property-cleanouts/    301
 /storage-unit-clean-outs    /storage-unit-cleanout/    301
 
-/bathroom-demolition    /light-demolition/    301
+/bathroom-demolition    /demolition/    301
 /brick-block-and-concrete-removal    /concrete-removal/    301
 /broken-concrete-haul-away    /concrete-removal/    301
 /building-material-removal    /construction-debris/    301
@@ -154,7 +154,7 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /construction-waste-removal    /construction-debris/    301
 /demolition-barn-demolition    /shed-removal/    301
 /demolition-concrete-demolition    /concrete-removal/    301
-/demolition-contractor    /light-demolition/    301
+/demolition-contractor    /demolition/    301
 /drywall-removal    /construction-debris/    301
 /remodeling-debris-removal    /construction-debris/    301
 
@@ -231,3 +231,11 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /service-areas/springfield/    /service-areas/    301
 /service-areas/valley/    /service-areas/    301
 /service-areas/waterloo/    /service-areas/    301
+
+# Consolidated demolition pages; originals preserved outside the publish directory.
+/light-demolition/    /demolition/    301
+/demolition/kitchen-demolition/    /demolition/    301
+/demolition/bathroom-demolition/    /demolition/    301
+/demolition/interior-demolition/    /demolition/    301
+/demolition/basement-demolition/    /demolition/    301
+/demolition/garage-demolition/    /demolition/    301
