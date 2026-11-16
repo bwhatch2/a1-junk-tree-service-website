@@ -214,3 +214,20 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /landscaping/gutter-cleaning/    /landscaping/    301!
 /landscaping/pressure-washing/    /landscaping/    301!
 /landscaping/weed-control/    /landscaping/    301!
+
+# Town pages preserved in archive; use the single Service Areas page.
+/service-areas/bellevue/    /service-areas/    301
+/service-areas/bennington/    /service-areas/    301
+/service-areas/boys-town/    /service-areas/    301
+/service-areas/carter-lake/    /service-areas/    301
+/service-areas/council-bluffs/    /service-areas/    301
+/service-areas/elkhorn/    /service-areas/    301
+/service-areas/gretna/    /service-areas/    301
+/service-areas/la-vista/    /service-areas/    301
+/service-areas/omaha/    /service-areas/    301
+/service-areas/papillion/    /service-areas/    301
+/service-areas/plattsmouth/    /service-areas/    301
+/service-areas/ralston/    /service-areas/    301
+/service-areas/springfield/    /service-areas/    301
+/service-areas/valley/    /service-areas/    301
+/service-areas/waterloo/    /service-areas/    301
