@@ -387,6 +387,43 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.job-photo-pair .ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -470,6 +507,16 @@
 </div></section>
 <section class="content-section"><div class="container"><div class="content-narrow">
 <p>Fresh mulch is one of the fastest ways to make your entire property look sharper and more put-together. It’s like a fresh haircut for your landscape beds. But beyond just looking good, a proper layer of mulch is one of the best things you can do for your plants, your soil, and even your water bill. Here in Omaha, where our weather can swing from one extreme to another, mulch provides a much-needed buffer, protecting your plants from the scorching Nebraska sun and helping the soil hold onto moisture during those dry spells. My name is Bryan, and at A1 Junk Removal and Tree Service, we’ve been helping homeowners all over the Omaha area—from Benson to Bellevue—keep their properties looking great with our straightforward, no-nonsense mulching services.</p>
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img alt="Mulching in Omaha, NE: photo comparison of dense backyard brush and a cleared bed with dark mulch beside a gray shed." width="800" height="1000" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783538552/overgrown-brush-removal-mulching-gretna-01_qz9vho.jpg"/>
+<p class="ba-caption">Dark mulch in a cleared backyard bed beside a shed — Omaha, NE</p>
+</div>
+<div class="ba-image-container">
+<img alt="Mulching in Omaha, NE: photo comparison of an overgrown stone-walled tree bed and the same terraced bed covered with mulch." width="800" height="533" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857815/omaha-mulch-delivery-yard-spreading-03_fsotvy.jpg"/>
+<p class="ba-caption">Mulching around a mature tree in terraced stone beds — Omaha, NE</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">More Than Just a Pretty Face: What Mulch Really Does for Your Yard</h2>
 <p>It’s easy to think of mulch as just decorative ground cover, but it’s a real workhorse for your garden beds. A good 2-3 inch layer of quality mulch does a whole lot more than just look nice. It’s a critical part of maintaining healthy soil and happy plants, especially with our unpredictable Nebraska weather patterns. It acts like a shield, keeping the soil cooler in the summer and warmer in the winter, which means less stress on your plant roots. Plus, it’s one of the best ways to keep weeds from taking over your beautiful flower beds. If you're tired of constantly pulling weeds, our <a class="text-[#7A9E7E] font-semibold hover:underline" href="/landscaping/">weed control</a> services combined with fresh mulch can make a world of difference.</p>
 
@@ -499,16 +546,8 @@
 <p><strong>Thorough Cleanup:</strong> Once the mulch is down, we blow off all patios, walkways, and driveways to leave your property looking immaculate.</p>
 </div>
 </div>
-<div class="before-after-pair">
-<div class="ba-image-container">
-<img alt="A1 Junk Removal and Tree Service overgrown brush removal and mulching before and after in Gretna, Nebraska" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783538552/overgrown-brush-removal-mulching-gretna-01_qz9vho.jpg"/>
 <p class="ba-caption">Overgrown brush removal and mulching — Gretna, NE</p>
-</div>
-<div class="ba-image-container">
-<img alt="A1 Junk Removal and Tree Service land clearing and mulching service before and after in Gretna, Nebraska" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783538553/overgrown-brush-removal-mulching-gretna-02_e12fhi.jpg"/>
 <p class="ba-caption">Land clearing and mulching service — Gretna, NE</p>
-</div>
-</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Frequently Asked Questions</h2>
 <div class="space-y-4">
 <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
