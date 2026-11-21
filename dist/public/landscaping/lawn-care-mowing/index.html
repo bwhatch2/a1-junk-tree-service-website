@@ -387,6 +387,33 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+}
+.job-photo-pair .ba-image-container img,
+.service-image-section img.job-photo-image,
+.ba-image-container img.job-photo-image,
+.gallery-item-image img.job-photo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -470,6 +497,16 @@
 </div></section>
 <section class="content-section"><div class="container"><div class="content-narrow">
 <p class="text-lg text-gray-600 mb-8">Keeping your lawn looking its best in Omaha can feel like a constant battle. Between the unpredictable Nebraska weather, the surprisingly fast growth in the spring, and just the general busyness of life, finding time to mow is tough. My name is Bryan, and at A1 Junk Removal and Tree Service, we offer a straightforward, reliable lawn mowing service to take that chore off your hands.</p>
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Lawn care crew, mower and equipment beside a front yard and work vehicles in Omaha, NE, with A1 Junk Removal and Tree Service." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg" width="800" height="1067"/>
+<p class="ba-caption">Lawn care crew and mowing equipment — Omaha, NE</p>
+</div>
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Green lawn with mowing stripes beside a house and patio in Omaha, NE, from A1 Junk Removal and Tree Service's lawn care work." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg" width="800" height="1067"/>
+<p class="ba-caption">Lawn with mowing stripes — Omaha, NE</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">More Than Just a Quick Mow – We Handle the Details</h2>
 <p class="text-gray-600 mb-6">For us, mowing the lawn isn't just about cutting the grass short. It’s about making your yard look genuinely neat and cared for. A lot of companies rush through, leaving clumps of grass behind or missing spots along the fence. We take the time to do it right, ensuring an even cut across your entire property, whether you're in a newer development out in Elkhorn or have an established yard in an older neighborhood like Dundee.</p>
 

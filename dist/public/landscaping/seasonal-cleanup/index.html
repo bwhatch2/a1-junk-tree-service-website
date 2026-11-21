@@ -387,6 +387,27 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+.job-photo-pair .ba-image-container img,
+.service-image-section img.job-photo-image,
+.ba-image-container img.job-photo-image,
+.gallery-item-image img.job-photo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -470,6 +491,16 @@
 </div></section>
 <section class="content-section"><div class="container"><div class="content-narrow">
 <p class="text-lg text-gray-600 mb-8">Here in Omaha, the changing seasons are no joke. One minute you’re enjoying a perfect spring day, and the next, your yard is covered in a blanket of helicopter seeds and fallen branches from a classic Nebraska thunderstorm. Then comes fall, and with it, an endless sea of leaves. It’s a constant battle to keep your property looking sharp. That’s where we come in. At A1 Junk Removal and Tree Service, we handle the heavy lifting of seasonal cleanups so you don’t have to. We’re not just a junk hauling company; we’re your neighbors, and we know exactly what your yard needs to look its best, no matter what the Nebraska weather throws at it.</p>
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Overgrown shrubs beside a fenced side yard and house steps before seasonal cleanup by A1 Junk Removal and Tree Service in Omaha, NE." loading="lazy" width="800" height="1067" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217637/seasonal-yard-cleanup-overgrown-before-omaha-ne_iyne3i.jpg"/>
+<p class="ba-caption">Before seasonal yard cleanup — Omaha, NE</p>
+</div>
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Cleared fenced side yard with house steps and walkway after seasonal cleanup by A1 Junk Removal and Tree Service in Omaha, NE." loading="lazy" width="800" height="1067" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217637/seasonal-yard-cleanup-cleared-after-omaha-ne_bsc1ds.jpg"/>
+<p class="ba-caption">After seasonal yard cleanup — Omaha, NE</p>
+</div>
+</div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Taming Your Yard After a Wild Nebraska Season</h2>
 <p class="text-gray-600 mb-6">Whether it’s the aftermath of a harsh winter or the leafy explosion of fall, every season leaves its mark on your yard. Spring in the Omaha area means clearing away the last of the winter debris—fallen branches, dead leaves, and whatever else the snow was hiding. It’s the perfect time to get your lawn and garden beds ready for the growing season. A thorough spring cleanup gives your grass and plants the breathing room they need to thrive. We can even help with <a class="text-[#7A9E7E] font-semibold hover:underline" href="/landscaping/mulching/">mulching</a> to give your flower beds a fresh start.</p>
 <p class="text-gray-600 mb-8">Then there’s fall. The beautiful colors are great, but the cleanup can be a real chore, especially if you have a lot of mature trees in your neighborhood like those in Dundee or Benson. It’s not just about raking; it’s about getting all those leaves and twigs bagged up and hauled away. A good fall cleanup is also crucial for your lawn's health, preventing mold and fungus from growing under a thick layer of wet leaves. Let us handle the <a class="text-[#7A9E7E] font-semibold hover:underline" href="/landscaping/leaf-removal/">leaf removal</a> and you can just enjoy the crisp autumn air.</p>
