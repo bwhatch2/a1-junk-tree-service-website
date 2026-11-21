@@ -108,6 +108,46 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.service-image-section img.job-photo-image,
+.ba-image-container img.job-photo-image,
+.gallery-item-image img.job-photo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.job-photo-pair .ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -338,6 +378,16 @@
 </div></div>
 </section>
 <section class="py-16"><div class="container">
+<div class="before-after-pair job-photo-pair">
+<div class="ba-image-container">
+<img class="job-photo-image" alt="A1 Junk Removal and Tree Service landscaping crew among lawn and flower beds with rakes and a leaf blower in Papillion, NE" loading="lazy" width="800" height="1067" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/landscaping-crew-flower-beds-papillion-ne_hsle01.jpg"/>
+<p class="ba-caption">Landscaping crew beside lawn and flower beds — Papillion, NE</p>
+</div>
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Overgrown shrubs and cleared driveway edges before and after landscaping by A1 Junk Removal and Tree Service in Papillion, NE" loading="lazy" width="800" height="1000" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/landscaping-shrub-trimming-before-after-papillion-ne_zco6yk.jpg"/>
+<p class="ba-caption">Shrub trimming and landscaping before and after — Papillion, NE</p>
+</div>
+</div>
 <div class="service-list">
 <ul style="list-style-type: disc; margin-left: 2rem; line-height: 1.8;">
 <li><a href="/landscaping/lawn-care-mowing/">Lawn Care &amp; Mowing</a></li>

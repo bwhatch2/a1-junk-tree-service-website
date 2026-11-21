@@ -395,6 +395,45 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+/* Job photo pairs: preserve complete photos, side by side on desktop. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .ba-image-container {
+  min-width: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.service-image-section img.job-photo-image,
+.ba-image-container img.job-photo-image,
+.gallery-item-image img.job-photo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.job-photo-pair .ba-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -483,10 +522,14 @@
 <p class="ba-caption">Couch removal before and after — Omaha, NE</p>
 </div>
 </div>
-<div class="before-after-pair ba-single">
+<div class="before-after-pair job-photo-pair">
 <div class="ba-image-container">
-<img alt="Before and after couch and sofa removal in Omaha showing a sectional couch hauled away from a room by A1 Junk Removal and Tree Service" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1780320506/furniture-removal-omaha-couch-hauling_boukdd.jpg"/>
-<p class="ba-caption">Couch and sofa removal before and after — Omaha</p>
+<img class="job-photo-image" alt="Before and after curbside couch removal with a sofa beside a trailer and the cleared driveway by A1 Junk Removal and Tree Service in Ralston, NE" loading="lazy" width="800" height="1000" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217639/couch-sofa-removal-curbside-before-after-ralston-ne_qobjwb.jpg"/>
+<p class="ba-caption">Couch and sofa removal before and after — Ralston, NE</p>
+</div>
+<div class="ba-image-container">
+<img class="job-photo-image" alt="Two A1 Junk Removal and Tree Service crew members carrying a recliner inside a room during recliner removal in Omaha, NE" loading="lazy" width="800" height="1067" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217636/recliner-couch-removal-crew-omaha-ne_myrusy.jpg"/>
+<p class="ba-caption">Crew carrying a recliner for removal — Omaha, NE</p>
 </div>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Types of Couches and Sofas We Remove</h2>
