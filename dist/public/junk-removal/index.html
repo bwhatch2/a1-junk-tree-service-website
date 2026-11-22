@@ -148,6 +148,44 @@
     grid-template-columns: 1fr;
   }
 }
+/* Readable heading and introduction panel. */
+.hero-intro-panel {
+  background: #fff;
+  color: #111827;
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.12);
+}
+.hero-intro-panel h1,
+.hero-intro-panel .hero-intro-text {
+  color: #111827;
+}
+.hero-intro-panel .hero-intro-text {
+  margin: 0;
+  line-height: 1.7;
+}
+.hero-intro-phone {
+  color: #0A1628;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+}
+.hero-intro-phone:hover {
+  color: #111827;
+  text-decoration-thickness: 2px;
+}
+.hero-intro-phone:focus-visible {
+  outline: 2px solid #0A1628;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .hero-intro-panel {
+    padding: 1.25rem;
+  }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -374,8 +412,10 @@
 <div class="absolute inset-0 opacity-45"><img alt="Before and after side yard junk removal by A1 Junk Removal in Bennington" class="w-full h-full object-cover" loading="eager" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1778424302/01_collage_Yard_Cleanup_and_Debris_Hauling_Bennington_p5p6u5.jpg"/></div>
 <div class="container relative z-10"><div class="max-w-3xl">
 <span class="inline-block bg-[#E8611A]/20 text-[#E8611A] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">40+ Services</span>
-<h1 class="font-display text-4xl lg:text-6xl text-white font-bold mb-6">JUNK REMOVAL SERVICES IN OMAHA</h1>
-<p class="text-white/80 text-lg lg:text-xl">From a single item to a full property cleanout, we handle it all. Click any service below to learn more.</p>
+<div class="hero-intro-panel">
+<h1 class="font-display text-4xl lg:text-6xl font-bold mb-6">JUNK REMOVAL SERVICES IN OMAHA</h1>
+<p class="hero-intro-text text-lg lg:text-xl">A1 handles junk removal across the Omaha metro—from a single appliance or piece of furniture to full estate and property cleanouts. Same-day service is available most days. Browse the services below or call Bryan at <a class="hero-intro-phone" href="tel:4026122373">(402) 612-2373</a> for a free estimate.</p>
+</div>
 </div></div>
 </section>
 <section class="py-16"><div class="container">
