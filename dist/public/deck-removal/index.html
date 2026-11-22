@@ -424,6 +424,51 @@
     grid-template-columns: 1fr;
   }
 }
+/* Content photos: smaller desktop groups, stacked on mobile. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, calc((100% - 2rem) / 3)));
+  justify-content: center;
+}
+.job-photo-pair .service-image-section {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.job-photo-pair .service-image-section img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+.job-photo-pair .service-image-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    justify-content: normal;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -507,9 +552,9 @@
 <p>The deck boards are soft, the railing wobbles when you lean on it, and you haven't actually used the deck in two years because you're not sure it's safe to stand on. Nebraska weather is brutal on outdoor wood — the freeze-thaw cycles crack boards, moisture rots the joists, and sun bleaches everything gray. <strong>A1 Junk Removal and Tree Service</strong> handles deck demolition and removal across the Omaha metro. We tear the whole thing down — boards, railings, framing, posts, and footings — and haul every piece away.</p>
 <p>We've demolished rotting pressure-treated decks in Millard, torn down multi-level composite decks in Papillion, and removed old ground-level platforms across West Omaha. Every deck is different — different size, different height, different condition — but the process is the same: controlled demolition, careful sorting, and a clean yard when we leave.</p>
 <div class="before-after-pair job-photo-pair">
-<div class="ba-image-container">
-<img src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857806/deck-pergola-removal-omaha-ne-deck-teardown-01_zkvkz5.jpg" alt="Deck removal in Omaha, NE, showing workers dismantling a wooden backyard deck and the exposed soil beside a gray house" width="800" height="1067" loading="lazy"/>
-<p class="ba-caption">Wooden deck dismantling and the exposed soil beside the house — Omaha, NE.</p>
+<div class="service-image-section">
+<img src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362772/deck-demolition-haul-away-omaha_icgshl.webp" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_244,f_auto,q_auto/v1795362772/deck-demolition-haul-away-omaha_icgshl.webp 244w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362772/deck-demolition-haul-away-omaha_icgshl.webp 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_600,f_auto,q_auto/v1795362772/deck-demolition-haul-away-omaha_icgshl.webp 600w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_767,f_auto,q_auto/v1795362772/deck-demolition-haul-away-omaha_icgshl.webp 767w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 815px) calc((100vw - 86px) / 3), 243.34px" alt="Deck demolition and haul away by A1 Junk Removal and Tree Service in Omaha, NE" width="488" height="652" loading="lazy"/>
+<p class="service-image-caption">Wooden backyard deck before demolition and cleared ground after removal — Omaha, NE.</p>
 </div>
 <div class="ba-image-container">
 <img src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857806/deck-pergola-removal-omaha-ne-deck-teardown-02_udqnxs.jpg" alt="Deck removal service in Omaha, NE, showing a red wooden deck with a pergola above it and the deck remaining without the pergola" width="800" height="1000" loading="lazy"/>

@@ -434,6 +434,51 @@
     grid-template-columns: 1fr;
   }
 }
+/* Content photos: smaller desktop groups, stacked on mobile. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, calc((100% - 2rem) / 3)));
+  justify-content: center;
+}
+.job-photo-pair .service-image-section {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.job-photo-pair .service-image-section img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+.job-photo-pair .service-image-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    justify-content: normal;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -516,20 +561,18 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>The new couch is on the way and the old one needs to go — but it weighs 200 pounds, it barely fit through the door when you bought it, and the city trash service won't touch it. <strong>A1 Junk Removal and Tree Service</strong> handles couch and sofa removal across the Omaha metro. We come inside, pick it up from whatever room it's in, navigate it through your hallways and doorways, and load it on the truck. Done.</p>
 <p>We've carried sectionals out of finished basements in Ralston, hauled sleeper sofas down three flights of apartment stairs in La Vista, and picked up couches from front porches across Omaha where they'd been sitting since the last failed attempt to get rid of them. If it's a couch and you want it gone, we'll get it out.</p>
-<div class="before-after-pair ba-single">
-<div class="ba-image-container">
-<img alt="Before and after sectional couch removal showing living room cleared by A1 Junk Removal and Tree Service in Omaha, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1776120183/Old-Couch-Removal-and-Furniture-Hauling-in-Omaha-01_tgtxmu.jpg"/>
-<p class="ba-caption">Couch removal before and after — Omaha, NE</p>
-</div>
-</div>
 <div class="before-after-pair job-photo-pair">
-<div class="ba-image-container">
-<img class="job-photo-image" alt="Before and after curbside couch removal with a sofa beside a trailer and the cleared driveway by A1 Junk Removal and Tree Service in Ralston, NE" loading="lazy" width="800" height="1000" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217639/couch-sofa-removal-curbside-before-after-ralston-ne_qobjwb.jpg"/>
-<p class="ba-caption">Couch and sofa removal before and after — Ralston, NE</p>
+<div class="service-image-section">
+<img class="job-photo-image" alt="Furniture junk removal and couch pickup by A1 Junk Removal and Tree Service in Papillion, NE" loading="lazy" width="488" height="610" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362455/furniture-junk-removal-couch-pickup-papillion_dmfwjt.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_244,f_auto,q_auto/v1795362455/furniture-junk-removal-couch-pickup-papillion_dmfwjt.jpg 244w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362455/furniture-junk-removal-couch-pickup-papillion_dmfwjt.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795362455/furniture-junk-removal-couch-pickup-papillion_dmfwjt.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1080,f_auto,q_auto/v1795362455/furniture-junk-removal-couch-pickup-papillion_dmfwjt.jpg 1080w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 816px) calc((100vw - 80px) / 3 - 2px), 243.333333px"/>
+<p class="service-image-caption">Couch and furniture pickup before and after — Papillion, NE</p>
 </div>
-<div class="ba-image-container">
-<img class="job-photo-image" alt="Two A1 Junk Removal and Tree Service crew members carrying a recliner inside a room during recliner removal in Omaha, NE" loading="lazy" width="800" height="1067" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217636/recliner-couch-removal-crew-omaha-ne_myrusy.jpg"/>
-<p class="ba-caption">Crew carrying a recliner for removal — Omaha, NE</p>
+<div class="service-image-section">
+<img class="job-photo-image" alt="Old sofa disposal and haul away by A1 Junk Removal and Tree Service in La Vista, NE" loading="lazy" width="488" height="610" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_244,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg 244w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1080,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg 1080w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1440,f_auto,q_auto/v1795362456/old-sofa-disposal-haul-away-la-vista_cvrxtl.jpg 1440w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 816px) calc((100vw - 80px) / 3 - 2px), 243.333333px"/>
+<p class="service-image-caption">Crew loading an old sofa into the trailer — La Vista, NE</p>
+</div>
+<div class="service-image-section">
+<img class="job-photo-image" alt="A1 Junk Removal and Tree Service junk hauling and couch removal in Omaha, NE" loading="lazy" width="488" height="651" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_244,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg 244w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1080,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg 1080w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1440,f_auto,q_auto/v1795362457/omaha-junk-hauling-couch-removal_dazdf8.jpg 1440w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 816px) calc((100vw - 80px) / 3 - 2px), 243.333333px"/>
+<p class="service-image-caption">Crew carrying a couch to the hauling trailer — Omaha, NE</p>
 </div>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Types of Couches and Sofas We Remove</h2>
