@@ -239,3 +239,7 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 /demolition/interior-demolition/    /demolition/    301
 /demolition/basement-demolition/    /demolition/    301
 /demolition/garage-demolition/    /demolition/    301
+
+# Sod service retired; original retained outside the publish directory.
+/landscaping/sod-installation/    /landscaping/    301
+/landscaping/sod-installation    /landscaping/    301

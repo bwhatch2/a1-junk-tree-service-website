@@ -252,6 +252,22 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+/* Compact quotes reused verbatim from the Reviews page. */
+.customer-reviews-snippet { padding: 2rem 0; }
+.customer-reviews-title { margin: 0 0 1rem; text-align: center; color: #0A1628; font-family: 'Bebas Neue', sans-serif; font-size: 2rem; line-height: 1.1; }
+.customer-review-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; max-width: 48rem; margin: 0 auto 1rem; }
+.customer-review-card { min-width: 0; padding: 1.1rem; background: #0A1628; color: #f8fafc; border-top: 3px solid #E8611A; border-radius: 0.5rem; box-shadow: 0 10px 24px rgba(10, 22, 40, 0.12); }
+.customer-review-stars { color: #E8611A; letter-spacing: 0.1em; font-size: 1rem; line-height: 1; }
+.customer-review-card-meta { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem 0.75rem; margin: 0.55rem 0 0.65rem; }
+.customer-review-name { font-family: 'Work Sans', sans-serif; color: #fff; font-size: 1rem; font-weight: 700; }
+.customer-review-quote { margin: 0; color: #e2e8f0; font-family: 'Work Sans', sans-serif; font-size: 0.92rem; line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden; }
+.customer-reviews-link { display: block; width: fit-content; margin: 0 auto; color: #b94710; font-weight: 600; text-decoration: underline; text-underline-offset: 0.15em; }
+.customer-reviews-link:hover { color: #0A1628; }
+.customer-reviews-link:focus-visible { outline: 2px solid #0A1628; outline-offset: 3px; }
+@media (min-width: 768px) {
+  .customer-review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .customer-review-card { padding: 1.35rem; }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -322,6 +338,22 @@
 <p class="text-white/80 text-lg lg:text-xl">Tell us what you need hauled and we'll give you an honest price. No obligation, no pressure.</p>
 </div></div>
 </section>
+<section class="customer-reviews-snippet" aria-label="Customer reviews"><div class="container">
+<h2 class="customer-reviews-title">WHAT CUSTOMERS SAY</h2>
+<div class="customer-review-grid">
+<article class="customer-review-card">
+<div class="customer-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+<div class="customer-review-card-meta"><h3 class="customer-review-name">Diana M.</h3></div>
+<blockquote class="customer-review-quote">Fantastic experience with A1 Junk Removal and Tree Service. They handled a big yard cleanup for me—including an old large 6 foot wood fence, large branches, and a refrigerator—with ease...</blockquote>
+</article>
+<article class="customer-review-card">
+<div class="customer-review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+<div class="customer-review-card-meta"><h3 class="customer-review-name">Gabriel L.</h3></div>
+<blockquote class="customer-review-quote">I called them, they gave a quick estimate and removed the junk swiftly. Best junk removal company in Omaha!!!</blockquote>
+</article>
+</div>
+<a class="customer-reviews-link" href="/reviews/">Read more customer reviews</a>
+</div></section>
 <section class="py-16"><div class="container"><div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div>
 <h2 class="font-display text-2xl text-[#0A1628] font-bold mb-6">REQUEST YOUR ESTIMATE</h2>
@@ -418,7 +450,6 @@
 <li><a href="/landscaping/lawn-care-mowing/">Lawn Care &amp; Mowing</a></li>
 <li><a href="/landscaping/lawn-maintenance/">Lawn Maintenance</a></li>
 <li><a href="/landscaping/mulching/">Mulching</a></li>
-<li><a href="/landscaping/sod-installation/">Sod Installation</a></li>
 <li><a href="/landscaping/leaf-removal/">Leaf Removal</a></li>
 <li><a href="/landscaping/seasonal-cleanup/">Seasonal Cleanup</a></li>
 <li><a class="footer-view-all-green" href="/landscaping/">View All Landscaping →</a></li>
