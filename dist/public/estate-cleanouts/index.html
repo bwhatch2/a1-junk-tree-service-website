@@ -301,6 +301,51 @@
   font-style: italic;
   background: #f9fafb;
 }
+/* Content photos: smaller desktop groups, stacked on mobile. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, calc((100% - 2rem) / 3)));
+  justify-content: center;
+}
+.job-photo-pair .service-image-section {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.job-photo-pair .service-image-section img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+.job-photo-pair .service-image-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair:has(> :nth-child(2):last-child) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    justify-content: normal;
+  }
+}
 .skip-to-main {
   position: absolute;
   left: -9999px;
@@ -469,12 +514,18 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>Losing a family member is hard enough without having to figure out what to do with an entire house full of their belongings. The furniture, the clothes, the kitchen full of dishes, the garage packed with tools, the closets and drawers and cabinets — it all needs to be sorted, removed, and dealt with, usually on a timeline because the house needs to be sold or the lease is ending. <strong>A1 Junk Removal and Tree Service</strong> handles estate cleanouts across the Omaha metro. We work with families to clear the home respectfully and efficiently, so you can focus on what matters instead of logistics.</p>
 <p>We've helped families clear homes in Gretna where a parent lived for 40 years, emptied houses in Ralston for out-of-state families who couldn't be there to do it themselves, and handled estate cleanouts across Omaha for attorneys and estate executors managing the process. Every situation is different, and we treat each one with the care it deserves.</p>
-<div class="before-after-pair">
-<div class="ba-image-container">
-<img alt="Before an estate cleanout by A1 Junk Removal and Tree Service in Omaha, NE: closet crowded with boxes, baskets, and household belongings." loading="lazy" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663388590750/YoDGyFxdzITUPXjJ.jpg"/>
+<div class="before-after-pair job-photo-pair not-prose">
+<div class="service-image-section">
+<img alt="Full estate cleanout and junk removal by A1 Junk Removal and Tree Service in Valley, NE" loading="lazy" width="488" height="651" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364644/full-estate-cleanout-junk-removal-valley_f77nci.webp" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_320/v1795364644/full-estate-cleanout-junk-removal-valley_f77nci.webp 320w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364644/full-estate-cleanout-junk-removal-valley_f77nci.webp 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_768/v1795364644/full-estate-cleanout-junk-removal-valley_f77nci.webp 768w" sizes="(min-width: 816px) calc((48rem - 2rem) / 3 - 2px), (min-width: 769px) calc((100vw - 5rem) / 3 - 2px), (min-width: 640px) calc(100vw - 3rem - 2px), calc(100vw - 2rem - 2px)"/>
+<div class="service-image-caption">Estate cleanout crew handling a glass display cabinet in Valley, NE.</div>
 </div>
-<div class="ba-image-container">
-<img alt="After an estate cleanout by A1 Junk Removal and Tree Service in Omaha, NE: same closet emptied, with clear floor and shelves." loading="lazy" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663388590750/YtuhNgUZXehtGgIB.jpg"/>
+<div class="service-image-section">
+<img alt="A1 Junk Removal and Tree Service junk hauling during estate cleanout in Omaha, NE" loading="lazy" width="488" height="651" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_320/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg 320w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_736/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg 736w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_1024/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg 1024w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_1440/v1795364645/omaha-junk-hauling-estate-cleanout_yzr754.jpg 1440w" sizes="(min-width: 816px) calc((48rem - 2rem) / 3 - 2px), (min-width: 769px) calc((100vw - 5rem) / 3 - 2px), (min-width: 640px) calc(100vw - 3rem - 2px), calc(100vw - 2rem - 2px)"/>
+<div class="service-image-caption">Estate cleanout crew working beside a sofa in Omaha, NE.</div>
+</div>
+<div class="service-image-section">
+<img alt="Estate cleanout and property cleanup by A1 Junk Removal and Tree Service in Gretna, NE" loading="lazy" width="488" height="651" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_320/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg 320w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_488/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_736/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg 736w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_1024/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg 1024w, https://res.cloudinary.com/dwq8sdbr7/image/upload/f_auto,q_auto,w_1440/v1795364646/estate-cleanout-property-cleanup-gretna_qjht0r.jpg 1440w" sizes="(min-width: 816px) calc((48rem - 2rem) / 3 - 2px), (min-width: 769px) calc((100vw - 5rem) / 3 - 2px), (min-width: 640px) calc(100vw - 3rem - 2px), calc(100vw - 2rem - 2px)"/>
+<div class="service-image-caption">Furniture and boxed household items during an estate cleanout in Gretna, NE.</div>
 </div>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What an Estate Cleanout Involves</h2>
