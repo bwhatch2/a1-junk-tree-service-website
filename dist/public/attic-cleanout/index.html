@@ -387,6 +387,45 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+/* Content photos: three across on desktop, stacked on mobile. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .service-image-section {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.job-photo-pair .service-image-section img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+.job-photo-pair .service-image-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -469,14 +508,18 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>Nobody wants to go up in the attic. It's hot in the summer, freezing in the winter, and whatever's up there has been sitting untouched since the Clinton administration. Christmas decorations you stopped using ten years ago, boxes from your last move that never got unpacked, old luggage, baby clothes your kids outgrew two decades ago — it all piles up. <strong>A1 Junk Removal and Tree Service</strong> handles attic cleanouts across the Omaha metro. We go up there, bring everything down, and haul it away so you can actually use the space again.</p>
 <p>We've cleared out attics in older homes in Millard where the previous owner left 30 years of accumulation behind, and we've cleaned out attics in Ralston for families getting ready to sell. Some attics have a few boxes. Others have so much stuff crammed in that you can't see the floor. We handle both.</p>
-<div class="before-after-pair">
+<div class="before-after-pair job-photo-pair">
 <div class="ba-image-container">
 <img alt="A1 Junk Removal and Tree Service attic cleanout before and after showing cluttered attic cleared in Council Bluffs, Iowa" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783537667/attic-cleanout-junk-removal-council-bluffs-01_osptbc.jpg"/>
 <p class="ba-caption">Attic cleanout junk removal — Council Bluffs, IA</p>
 </div>
-<div class="ba-image-container">
-<img alt="A1 Junk Removal and Tree Service attic junk hauling before and after with all debris removed in Council Bluffs, Iowa" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783537667/attic-cleanout-junk-removal-council-bluffs-02_gkpmml.jpg"/>
-<p class="ba-caption">Attic junk hauling service — Council Bluffs, IA</p>
+<div class="service-image-section">
+<img alt="Attic cleanout junk removal with stored items and clutter being cleared by A1 Junk Removal and Tree Service in Omaha, NE" loading="lazy" width="512" height="288" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_512,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_256,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 256w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_384,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 384w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_512,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 512w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1024,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 1024w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1280,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-01_ctmwod.jpg 1280w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 815px) calc((100vw - 80px) / 3 - 2px), 243.33px"/>
+<p class="service-image-caption">Attic cleanout for boxes and stored items — Omaha, NE</p>
+</div>
+<div class="service-image-section">
+<img alt="A1 Junk Removal and Tree Service crew clearing boxes and stored items during attic cleanout in Omaha, NE" loading="lazy" width="512" height="288" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_512,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_256,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 256w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_384,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 384w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_512,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 512w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1024,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 1024w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1280,f_auto,q_auto/v1795304248/attic-cleanout-junk-removal-omaha-ne-02_w4joo5.jpg 1280w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 815px) calc((100vw - 80px) / 3 - 2px), 243.33px"/>
+<p class="service-image-caption">Attic junk removal for furniture and holiday decorations — Omaha, NE</p>
 </div>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What Accumulates in Attics</h2>

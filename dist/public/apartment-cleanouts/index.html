@@ -410,6 +410,45 @@
     grid-template-columns: 1fr;
   }
 }
+/* Content photos: three across on desktop, stacked on mobile. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: start;
+}
+.job-photo-pair .service-image-section {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.job-photo-pair .ba-image-container img,
+.job-photo-pair .service-image-section img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+.job-photo-pair .service-image-caption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8125rem;
+  color: #6b7280;
+  font-style: italic;
+  background: #f9fafb;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -507,6 +546,10 @@
 <div class="ba-image-container">
 <img alt="Apartment cleanouts in Omaha, NE: carpeted room shown before and after removal of a sofa, armchair and large furniture." width="800" height="1000" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857805/apartment-furniture-cleanout-junk-removal-omaha-ne-02_bpucj2.jpg"/>
 <p class="ba-caption">Carpeted apartment room before and after large furniture removal — Omaha, NE</p>
+</div>
+<div class="service-image-section">
+<img alt="Apartment cleanout and trash-out showing junk and debris cleared by A1 Junk Removal and Tree Service in Omaha, NE" width="488" height="488" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_244,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg 244w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_360,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg 360w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_488,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg 488w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg 720w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_1024,f_auto,q_auto/v1795304132/apt-clean-out-trash-out-omaha-ne_mme9mh.jpg 1024w" sizes="(max-width: 639px) calc(100vw - 34px), (max-width: 768px) calc(100vw - 50px), (max-width: 815px) calc(33.333333vw - 28.666667px), 243.33px"/>
+<p class="service-image-caption">Apartment cleanout and trash-out — Omaha, NE</p>
 </div>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Why Property Managers Choose Us</h2>
