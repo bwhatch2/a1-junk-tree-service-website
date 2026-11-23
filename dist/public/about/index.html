@@ -275,14 +275,18 @@
   font-size: 0.8125rem;
 }
 
-/* Compact standalone About photos; retain each image's natural proportions. */
+/* Compact About photos in the existing story section's right-hand column. */
+.about-story {
+  grid-template-columns: minmax(0, 1fr) 240px;
+  align-items: start;
+}
 .about-job-photos {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   width: 100%;
-  max-width: 672px;
-  margin: 2rem auto 0;
+  max-width: 240px;
+  margin: 0 auto;
 }
 .about-job-photo {
   min-width: 0;
@@ -304,9 +308,11 @@
   text-align: center;
 }
 @media (max-width: 768px) {
-  .about-job-photos {
+  .about-story {
     grid-template-columns: 1fr;
-    max-width: 320px;
+  }
+  .about-job-photos {
+    max-width: 240px;
   }
 }
 </style>
@@ -345,7 +351,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
-<a href="/flood-damage-cleanup/">Flood Damage Cleanup</a>
+
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -382,7 +388,7 @@
 <p class="text-white/80 text-lg lg:text-xl leading-relaxed">We're not a franchise. We're not a call center. We're a local Omaha business built on showing up, working hard, and charging a fair price.</p>
 </div></div>
 </section>
-<section class="py-16 lg:py-20"><div class="container"><div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section class="py-16 lg:py-20"><div class="container"><div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center about-story">
 <div>
 <p class="text-[#E8611A] font-bold text-sm uppercase tracking-wider mb-2">Our Story</p>
 <h2 class="font-display text-3xl lg:text-4xl text-[#0A1628] font-bold mb-6">LOCALLY OWNED. HARD WORKING. HONEST.</h2>
@@ -394,18 +400,18 @@
 <p>My mission is simple: show up on time, do the job right, and treat every customer the way I'd want to be treated.</p>
 </div>
 </div>
-<div class="rounded-xl overflow-visible shadow-2xl"><img alt="A1 Junk Removal team" class="w-full h-full object-cover" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663388590750/qMgaTvjyoYafpjqi.webp"/></div>
-</div>
 <div class="about-job-photos">
 <figure class="about-job-photo">
-<img alt="A1 Junk Removal owner Bryan in a bright yellow shirt beside a mattress, boxes, and a trash bin in Omaha, NE" decoding="async" height="492" loading="lazy" sizes="(max-width: 351px) calc(100vw - 2rem), (max-width: 768px) 320px, 328px" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_656,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_328,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 328w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_656,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 656w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_984,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 984w" width="656"/>
+<img alt="A1 Junk Removal owner Bryan in a bright yellow shirt beside a mattress, boxes, and a trash bin in Omaha, NE" decoding="async" height="360" loading="lazy" sizes="(max-width: 271px) calc(100vw - 2rem), 240px" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_480,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_240,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 240w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_480,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 480w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795457771/omaha-junk-removal-owner-about-us_e8wjeb.png 720w" width="480"/>
 <figcaption class="service-image-caption">Owner Bryan beside a mattress and boxes in Omaha, NE.</figcaption>
 </figure>
 <figure class="about-job-photo">
-<img alt="A1 Junk Removal crew member standing beside a branded black dump trailer outside a home in Gretna, NE" decoding="async" height="492" loading="lazy" sizes="(max-width: 351px) calc(100vw - 2rem), (max-width: 768px) 320px, 328px" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_656,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_328,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 328w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_656,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 656w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_984,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 984w" width="656"/>
+<img alt="A1 Junk Removal crew member standing beside a branded black dump trailer outside a home in Gretna, NE" decoding="async" height="360" loading="lazy" sizes="(max-width: 271px) calc(100vw - 2rem), 240px" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_480,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_240,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 240w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_480,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 480w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_720,f_auto,q_auto/v1795457773/a1-junk-removal-team-gretna_puowxv.jpg 720w" width="480"/>
 <figcaption class="service-image-caption">An A1 crew member beside the branded dump trailer in Gretna, NE.</figcaption>
 </figure>
 </div>
+</div>
+
 </div></section>
 <section class="py-16 bg-gray-50"><div class="container">
 <div class="text-center mb-12"><h2 class="font-display text-3xl lg:text-4xl text-[#0A1628] font-bold">WHAT WE STAND FOR</h2></div>
@@ -590,7 +596,6 @@
       <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
-        <a href="/flood-damage-cleanup/" class="mobile-svc-link">Flood Damage Cleanup</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
         <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
