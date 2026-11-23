@@ -393,6 +393,48 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  max-width: 224px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair.ba-single {
+  grid-template-columns: 1fr;
+  max-width: 14rem;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair.ba-single {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -429,6 +471,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+<a href="/flood-damage-cleanup/">Flood Damage Cleanup</a>
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -439,6 +482,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -475,9 +519,9 @@
 <div class="trust-item"><svg fill="none" height="32" stroke="#E8611A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg><div><p class="trust-label">Locally Owned</p><p class="trust-sub">Serving Omaha Metro</p></div></div>
 </div></section>
 <section class="content-section"><div class="container"><div class="content-narrow">
-<p class="text-lg text-gray-600 mb-8">Let's be honest, sometimes a yard gets away from you. One minute it's manageable, and the next—after a wild Nebraska storm, a busy season at work, or just life happening—you're looking at a space that feels more like a jungle than a backyard. It’s not just about aesthetics; an overgrown, messy yard can be a headache and even a hazard. That's where we come in.</p><p class="text-lg text-gray-600 mb-8">My name is Bryan, and at A1, we do more than just basic lawn care. Our yard cleanup service is the total reset button for your property. We’ve seen it all in neighborhoods from Dundee to Elkhorn, and we know how to bring a yard back from the brink. Whether you've got fallen limbs from a thunderstorm, years of accumulated leaves, or just a tangled mess of weeds and overgrowth, we have the crew and the equipment to tackle it efficiently.</p><div class="before-after-pair ba-single">
+<p class="text-lg text-gray-600 mb-8">Let's be honest, sometimes a yard gets away from you. One minute it's manageable, and the next—after a wild Nebraska storm, a busy season at work, or just life happening—you're looking at a space that feels more like a jungle than a backyard. It’s not just about aesthetics; an overgrown, messy yard can be a headache and even a hazard. That's where we come in.</p><p class="text-lg text-gray-600 mb-8">My name is Bryan, and at A1, we do more than just basic lawn care. Our yard cleanup service is the total reset button for your property. We’ve seen it all in neighborhoods from Dundee to Elkhorn, and we know how to bring a yard back from the brink. Whether you've got fallen limbs from a thunderstorm, years of accumulated leaves, or just a tangled mess of weeds and overgrowth, we have the crew and the equipment to tackle it efficiently.</p><div class="before-after-pair ba-single job-photo-pair">
 <div class="ba-image-container">
-<img alt="Before and after yard cleanup landscaping in Waterloo, NE showing weeds, outdoor junk, and debris cleared by A1 Junk Removal and Tree Service" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg"/>
+<img alt="Before and after yard cleanup landscaping in Waterloo, NE showing weeds, outdoor junk, and debris cleared by A1 Junk Removal and Tree Service" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg" width="432" height="288" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1780320507/yard-waste-removal-omaha-weeds-junk-cleanup_quvkqz.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
 <p class="ba-caption">Yard cleanup and outdoor junk removal — Waterloo</p>
 </div>
 </div>
@@ -519,6 +563,7 @@
       <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
+        <a href="/flood-damage-cleanup/" class="mobile-svc-link">Flood Damage Cleanup</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
         <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
@@ -529,6 +574,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -577,6 +623,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -609,6 +656,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>

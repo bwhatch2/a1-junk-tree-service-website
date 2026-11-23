@@ -410,6 +410,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 448px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -446,6 +483,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+<a href="/flood-damage-cleanup/">Flood Damage Cleanup</a>
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -456,6 +494,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -494,11 +533,11 @@
 <p>Most homeowners quickly realize that you can't just "drag" a hot tub to the curb. They weigh between 500 and 1,000 pounds and are often wired into your home's electrical system. Because we are a local, hard-working outfit, we handle the entire teardown. We don't leave a mess behind, and we ensure your <a class="text-[#E8611A] font-semibold hover:underline" href="/deck-removal/">deck or patio</a> is ready for its next use.</p>
 <div class="before-after-pair job-photo-pair">
 <div class="ba-image-container">
-<img alt="A1 Junk Removal and Tree Service truck and loaded hauling trailer for hot tub removal in La Vista, NE." width="800" height="600" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg"/>
+<img alt="A1 Junk Removal and Tree Service truck and loaded hauling trailer for hot tub removal in La Vista, NE." width="432" height="324" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-01_ygnlzv.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Hot tub removal and trailer hauling — La Vista</p>
 </div>
 <div class="ba-image-container">
-<img alt="Weathered backyard spa with a torn cover on a concrete patio awaiting hot tub removal and disposal in Omaha, NE." width="800" height="600" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg"/>
+<img alt="Weathered backyard spa with a torn cover on a concrete patio awaiting hot tub removal and disposal in Omaha, NE." width="432" height="324" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1794857809/hot-tub-removal-omaha-ne-old-hot-tub-disposal-02_wwbdkr.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Hot tub disposal and spa removal — Omaha</p>
 </div>
 </div>
@@ -570,6 +609,7 @@
       <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
+        <a href="/flood-damage-cleanup/" class="mobile-svc-link">Flood Damage Cleanup</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
         <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
@@ -580,6 +620,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -628,6 +669,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -660,6 +702,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>

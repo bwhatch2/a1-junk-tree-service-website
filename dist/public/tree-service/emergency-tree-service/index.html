@@ -376,6 +376,33 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.prose > .service-image-section,
+.content-section .content-narrow > .service-image-section {
+  width: 100%;
+  max-width: 14rem;
+  margin: 2rem auto;
+}
+.prose > .service-image-section img,
+.content-section .content-narrow > .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.prose > .service-image-section .service-image-caption,
+.content-section .content-narrow > .service-image-section .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .prose > .service-image-section,
+  .content-section .content-narrow > .service-image-section {
+    max-width: 20rem;
+    margin: 2rem auto;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -412,6 +439,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+<a href="/flood-damage-cleanup/">Flood Damage Cleanup</a>
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -422,6 +450,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -461,7 +490,7 @@
 <p><strong>A1 Junk Removal and Tree Service</strong> provides emergency tree service across the Omaha metro area. When storms hit or trees fail, we respond fast. We've handled emergency calls in Dundee, Millard, Papillion, Bellevue, Elkhorn, and everywhere in between.</p>
 <p>Call us at <a class="text-[#7A9E7E] font-semibold hover:underline" href="tel:4026122373">(402) 612-2373</a> and we'll get a crew to you as quickly as possible.</p>
 <div class="service-image-section">
-<img alt="AI-generated illustration of emergency tree cutting service for A1 Junk Removal and Tree Service in Downtown, Nebraska" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png" data-ai-generated="true"/>
+<img alt="AI-generated illustration of emergency tree cutting service for A1 Junk Removal and Tree Service in Downtown, Nebraska" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png" data-ai-generated="true" width="432" height="536" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1783538460/storm-damage-tree-removal-omaha-chainsaw_s8gwlf.png 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
 <p class="service-image-caption">Emergency tree service and tree cutting — Downtown</p>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What Counts as an Emergency</h2>
@@ -523,6 +552,7 @@
       <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
+        <a href="/flood-damage-cleanup/" class="mobile-svc-link">Flood Damage Cleanup</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
         <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
@@ -533,6 +563,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -581,6 +612,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -613,6 +645,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>

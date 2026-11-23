@@ -395,6 +395,48 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  max-width: 224px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair.ba-single {
+  grid-template-columns: 1fr;
+  max-width: 14rem;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair.ba-single {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -431,6 +473,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+<a href="/flood-damage-cleanup/">Flood Damage Cleanup</a>
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -441,6 +484,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -477,15 +521,15 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>When a retail business closes, relocates, or a new tenant takes over, somebody has to deal with everything left behind — the shelving, the display cases, the signage, the back-room inventory, and all the random stuff that accumulates in a commercial space over the years. <strong>A1 Junk Removal and Tree Service</strong> handles retail space cleanouts across the Omaha metro. We strip the space down so it's ready for the next chapter, whether that's a new business moving in or a full renovation.</p>
 <p>We've cleared out storefronts in Papillion, strip mall units in La Vista, and standalone retail buildings across the Omaha area. Every retail cleanout is a little different — a clothing store has racks and mannequins, a restaurant has kitchen equipment and booths, a convenience store has coolers and shelving. We adapt to whatever the space throws at us and get it cleared on deadline.</p>
-<div class="before-after-pair ba-single">
+<div class="before-after-pair ba-single job-photo-pair">
 <div class="ba-image-container">
-<img alt="Before and after commercial debris removal outside retail store cleared by A1 Junk Removal in La Vista, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg"/>
+<img alt="Before and after commercial debris removal outside retail store cleared by A1 Junk Removal in La Vista, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg" width="432" height="288" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs_apifxt.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
 <p class="ba-caption">Retail cleanout and commercial debris removal — La Vista</p>
 </div>
 </div>
-<div class="before-after-pair ba-single">
+<div class="before-after-pair ba-single job-photo-pair">
 <div class="ba-image-container">
-<img alt="Before and after retail site cleanup with cardboard, furniture, and trash bags hauled away by A1 Junk Removal in Papillion, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg"/>
+<img alt="Before and after retail site cleanup with cardboard, furniture, and trash bags hauled away by A1 Junk Removal in Papillion, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg" width="432" height="288" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1776872124/Commercial-Debris-Removal-and-Retail-Site-Cleanup-Omaha-Council-Bluffs-01_vvnhv0.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
 <p class="ba-caption">Retail site cleanup and cardboard hauling — Papillion</p>
 </div>
 </div>
@@ -558,6 +602,7 @@
       <button>Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/junk-removal/" style="color: #E8611A; font-weight: 600;">Junk Removal</a>
+        <a href="/flood-damage-cleanup/" class="mobile-svc-link">Flood Damage Cleanup</a>
         <a href="/tree-service/" style="color: #7A9E7E; font-weight: 600;">Tree Services</a>
         <a href="/landscaping/" style="color: #7A9E7E; font-weight: 600;">Landscaping</a>
         <a href="/demolition/" style="color: #E8611A; font-weight: 600;">Demolition</a>
@@ -568,6 +613,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -616,6 +662,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -648,6 +695,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>
