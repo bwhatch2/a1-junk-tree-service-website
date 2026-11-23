@@ -414,6 +414,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 448px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -450,6 +487,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -460,6 +498,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -499,11 +538,11 @@
 <p class="text-lg text-gray-600 mb-8">Keeping your lawn looking its best in Omaha can feel like a constant battle. Between the unpredictable Nebraska weather, the surprisingly fast growth in the spring, and just the general busyness of life, finding time to mow is tough. My name is Bryan, and at A1 Junk Removal and Tree Service, we offer a straightforward, reliable lawn mowing service to take that chore off your hands.</p>
 <div class="before-after-pair job-photo-pair">
 <div class="ba-image-container">
-<img class="job-photo-image" alt="Lawn care crew, mower and equipment beside a front yard and work vehicles in Papillion, NE, with A1 Junk Removal and Tree Service." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg" width="800" height="1067"/>
+<img class="job-photo-image" alt="Lawn care crew, mower and equipment beside a front yard and work vehicles in Papillion, NE, with A1 Junk Removal and Tree Service." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg" width="432" height="576" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1795217633/lawn-care-mowing-crew-equipment-omaha-ne_dqogxa.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Lawn care and mowing services — Papillion</p>
 </div>
 <div class="ba-image-container">
-<img class="job-photo-image" alt="Green lawn with mowing stripes beside a house and patio in Blair, NE, from A1 Junk Removal and Tree Service's lawn care work." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg" width="800" height="1067"/>
+<img class="job-photo-image" alt="Green lawn with mowing stripes beside a house and patio in Blair, NE, from A1 Junk Removal and Tree Service's lawn care work." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg" width="432" height="576" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1795217633/lawn-care-mowing-striped-yard-omaha-ne_fwh07v.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Lawn mowing and yard maintenance — Blair</p>
 </div>
 </div>
@@ -612,6 +651,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -660,6 +700,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -692,6 +733,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>
@@ -714,8 +756,8 @@
 <div class="container footer-bottom-inner">
 <p>© 2026 A1 Junk Removal and Tree Service. All rights reserved.</p>
 <div class="footer-legal">
-<a href="/privacy-policy/">Privacy Policy</a>
-<a href="/terms-of-service/">Terms of Service</a>
+
+
 </div>
 </div>
 </div>

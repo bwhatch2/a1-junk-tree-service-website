@@ -460,6 +460,63 @@
   aspect-ratio: auto;
   object-fit: contain;
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 448px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+.prose > .service-image-section,
+.content-section .content-narrow > .service-image-section {
+  width: 100%;
+  max-width: 14rem;
+  margin: 2rem auto;
+}
+.prose > .service-image-section img,
+.content-section .content-narrow > .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.prose > .service-image-section .service-image-caption,
+.content-section .content-narrow > .service-image-section .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .prose > .service-image-section,
+  .content-section .content-narrow > .service-image-section {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -496,6 +553,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -506,6 +564,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -544,13 +603,17 @@
 <p>We've hauled fridges out of tight kitchens in Bennington, wrestled chest freezers up basement stairs in Papillion, and loaded commercial coolers from restaurants in downtown Omaha. Every fridge is different — some are wedged between cabinets with an inch of clearance on each side, others are sitting in a garage with a clear path to the driveway. Either way, we figure out the best approach and get it done without scratching your floors or dinging your walls.</p>
 <div class="before-after-pair job-photo-pair">
 <div class="ba-image-container">
-<img alt="Refrigerator removal in Gretna, NE: worker moving an old cream-colored refrigerator on a dolly beside a red truck and trailer" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg" width="800" height="600"/>
+<img alt="Refrigerator removal in Gretna, NE: worker moving an old cream-colored refrigerator on a dolly beside a red truck and trailer" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg" width="432" height="324" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-01_aqh4ca.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Refrigerator removal and dolly hauling — Gretna</p>
 </div>
 <div class="ba-image-container">
-<img alt="Refrigerator removal in Valley, NE: old cream-colored refrigerator with rust along its base standing beside shelves in a garage" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg" width="800" height="600"/>
+<img alt="Refrigerator removal in Valley, NE: old cream-colored refrigerator with rust along its base standing beside shelves in a garage" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg" width="432" height="324" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1794857815/refrigerator-removal-omaha-ne-old-fridge-disposal-02_j2xyx8.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 214px"/>
 <p class="ba-caption">Refrigerator pickup and garage appliance removal — Valley</p>
 </div>
+</div>
+<div class="service-image-section">
+<img class="job-photo-image" alt="Garage before and after refrigerator removal by A1 Junk Removal and Tree Service in Bellevue, NE, with a fridge and debris cleared." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg" width="432" height="540" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
+<p class="service-image-caption">Refrigerator removal and garage debris cleanup — Bellevue</p>
 </div>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">What We Haul</h2>
 <div class="space-y-4 not-prose">
@@ -559,10 +622,7 @@
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Mini-Fridges and Beverage Coolers</h3><p class="text-gray-600 mt-1">Dorm fridges, bar coolers, wine fridges. Smaller but still contain refrigerant that needs proper handling. We take them all.</p></div></div>
 <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg border border-gray-200"><svg class="w-6 h-6 text-[#E8611A] flex-shrink-0 mt-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg><div><h3 class="font-bold text-[#0A1628] text-lg">Commercial Refrigeration Units</h3><p class="text-gray-600 mt-1">Walk-in cooler components, restaurant display cases, and commercial reach-in units. We work with business owners who are closing, renovating, or upgrading equipment.</p></div></div>
 </div>
-<div class="service-image-section">
-<img class="job-photo-image" alt="Garage before and after refrigerator removal by A1 Junk Removal and Tree Service in Bellevue, NE, with a fridge and debris cleared." loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1795217636/refrigerator-removal-garage-before-after-gretna-ne_lrxp7c.jpg" width="800" height="1000"/>
-<p class="service-image-caption">Refrigerator removal and garage debris cleanup — Bellevue</p>
-</div>
+
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Why Refrigerators Require Special Disposal</h2>
 <p>Every refrigerator and freezer contains refrigerant — usually R-134a in newer models or R-12 (Freon) in older ones. Under EPA regulations, that refrigerant has to be recovered by a certified technician before the unit can be scrapped or recycled. You can't legally just dump a fridge at the landfill with the refrigerant still inside. On top of that, older units may contain foam insulation blown with ozone-depleting substances that also need to be handled carefully. When we pick up your fridge, we take it to a facility that does all of this properly. The steel, aluminum, copper, and plastic all get recycled. It's not just about getting rid of the thing — it's about getting rid of it the right way.</p>
 <h2 class="font-display text-2xl lg:text-3xl text-[#0A1628] font-bold mt-12 mb-6">Getting It Out of Tight Spaces</h2>
@@ -635,6 +695,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -683,6 +744,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -715,6 +777,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>
@@ -737,8 +800,8 @@
 <div class="container footer-bottom-inner">
 <p>© 2026 A1 Junk Removal and Tree Service. All rights reserved.</p>
 <div class="footer-legal">
-<a href="/privacy-policy/">Privacy Policy</a>
-<a href="/terms-of-service/">Terms of Service</a>
+
+
 </div>
 </div>
 </div>

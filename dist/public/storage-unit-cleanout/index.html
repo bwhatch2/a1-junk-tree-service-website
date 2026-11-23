@@ -395,6 +395,48 @@
   color: #6b7280;
   font-size: 0.8125rem;
 }
+
+/* Older service content photos: bounded natural-size cards. */
+.before-after-pair.job-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  max-width: 224px;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: start;
+}
+.before-after-pair.job-photo-pair.ba-single {
+  grid-template-columns: 1fr;
+  max-width: 14rem;
+}
+.before-after-pair.job-photo-pair .ba-image-container,
+.before-after-pair.job-photo-pair .service-image-section {
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.before-after-pair.job-photo-pair .ba-image-container img,
+.before-after-pair.job-photo-pair .service-image-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.before-after-pair.job-photo-pair .ba-caption,
+.before-after-pair.job-photo-pair .service-image-caption {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .before-after-pair.job-photo-pair,
+  .before-after-pair.job-photo-pair.ba-single {
+    max-width: 20rem;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 </style>
 </head>
 <body><a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -431,6 +473,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="services">Services <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-services">
 <a href="/junk-removal/">Junk Removal</a>
+
 <a href="/tree-service/">Tree Services</a>
 <a href="/landscaping/">Landscaping</a>
 <a href="/demolition/">Demolition</a>
@@ -441,6 +484,7 @@
 <button class="nav-dropdown-simple-btn" data-simplemenu="about">About Us <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg></button>
 <div class="nav-simple-menu" id="simple-about">
 <a href="/about/">About Us</a>
+<a href="/pricing/">Pricing</a>
 <a href="/service-areas/">Service Areas</a>
 <a href="/faq/">FAQ</a>
 <a href="/photos/">Photos</a>
@@ -477,9 +521,9 @@
 <section class="py-16 lg:py-20"><div class="container"><div class="max-w-3xl mx-auto"><div class="prose prose-lg max-w-none text-gray-700">
 <p>That storage unit was supposed to be temporary. A few months while you figured out what to do with everything after the move, the divorce, the estate. Now it's been two years and you're paying $150 a month to store stuff you haven't looked at since you locked the door. <strong>A1 Junk Removal and Tree Service</strong> cleans out storage units across the Omaha metro so you can stop throwing money at a padlock and get on with your life.</p>
 <p>We work at storage facilities all over La Vista, Bellevue, and the greater Omaha area. Our crew meets you at the unit, you tell us what stays and what goes, and we empty the thing out. Furniture, boxes, old electronics, holiday decorations, bags of clothes — whatever's in there, we load it up and haul it away. Most units take an hour or two, and then you're done. No more monthly bill, no more guilt every time you drive past the place.</p>
-<div class="before-after-pair ba-single">
+<div class="before-after-pair ba-single job-photo-pair">
 <div class="ba-image-container">
-<img alt="Storage unit packed with mattress, furniture, boxes, and equipment before cleanout by A1 Junk Removal in Omaha, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_800,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg"/>
+<img alt="Storage unit packed with mattress, furniture, boxes, and equipment before cleanout by A1 Junk Removal in Omaha, NE" loading="lazy" src="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg" width="432" height="324" srcset="https://res.cloudinary.com/dwq8sdbr7/image/upload/w_216,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg 216w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_432,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg 432w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_648,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg 648w, https://res.cloudinary.com/dwq8sdbr7/image/upload/w_960,f_auto,q_auto/v1776119443/Storage-unit-garage-clean-out-Omaha-NE_uxutll.jpg 960w" sizes="(max-width: 351px) calc(100vw - 34px), (max-width: 768px) 318px, 222px"/>
 <p class="ba-caption">Storage unit cleanout and furniture hauling — Omaha</p>
 </div>
 </div>
@@ -562,6 +606,7 @@
       <button>About Us <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button>
       <div class="mobile-dropdown-content">
         <a href="/about/" class="mobile-svc-link">About Us</a>
+        <a href="/pricing/" class="mobile-svc-link">Pricing</a>
         <a href="/service-areas/" class="mobile-svc-link">Service Areas</a>
         <a href="/faq/" class="mobile-svc-link">FAQ</a>
         <a href="/photos/" class="mobile-svc-link">Photos</a>
@@ -610,6 +655,7 @@
 <li><a href="/property-cleanouts/">Property Cleanout Services</a></li>
 <li><a href="/estate-cleanouts/">Estate Cleanout Services</a></li>
 <li><a href="/foreclosure-cleanouts/">Foreclosure Cleanouts</a></li>
+<li><a href="/flood-damage-cleanup/">Flood Damage Cleanup</a></li>
 <li><a class="footer-view-all" href="/sitemap/">View All Services →</a></li>
 </ul>
 </div>
@@ -642,6 +688,7 @@
 <li><a href="/reviews/">Reviews</a></li>
 <li><a href="/photos/">Photos</a></li>
 <li><a href="/about/">About Us</a></li>
+<li><a href="/pricing/">Pricing</a></li>
 <li><a href="/faq/">FAQ</a></li>
 <li><a href="/sitemap/">Sitemap</a></li>
 <li><a href="/help-wanted/">Help Wanted</a></li>
@@ -664,8 +711,8 @@
 <div class="container footer-bottom-inner">
 <p>© 2026 A1 Junk Removal and Tree Service. All rights reserved.</p>
 <div class="footer-legal">
-<a href="/privacy-policy/">Privacy Policy</a>
-<a href="/terms-of-service/">Terms of Service</a>
+
+
 </div>
 </div>
 </div>
