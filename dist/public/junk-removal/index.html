@@ -65,6 +65,27 @@
     display: none;
   }
 }
+/* Alphabetical services flow top to bottom through responsive columns. */
+.service-list > ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  line-height: 1.8;
+  column-count: 1;
+  column-gap: 2rem;
+}
+.service-list li {
+  break-inside: avoid;
+}
+@media (min-width: 768px) {
+  .service-list > ul {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .service-list > ul {
+    column-count: 3;
+  }
+}
 .service-list a {
   color: #E8611A;
   text-decoration: underline;
@@ -444,11 +465,10 @@
 <p class="hero-intro-text">A1 handles junk removal across the Omaha metro—from a single appliance or piece of furniture to full estate and property cleanouts. Same-day service is available most days. Browse the services below or call Bryan at <a class="hero-intro-phone" href="tel:4026122373">(402) 612-2373</a> for a free estimate.</p>
 </div></div>
 <section class="py-16"><div class="container">
-<div class="service-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-<div>
-<ul style="list-style-type: disc; margin-left: 2rem; line-height: 1.8;">
+<div class="service-list">
+<ul>
+<li><a href="/apartment-cleanouts/">Apartment Junk Removal</a></li>
 <li><a href="/appliance-removal/">Appliance Removal</a></li>
-<li><a href="/apartment-cleanouts/">Apartment Complex Junk Removal</a></li>
 <li><a href="/attic-cleanout/">Attic Cleanout</a></li>
 <li><a href="/basement-cleanout/">Basement Cleanout</a></li>
 <li><a href="/bulk-trash-pickup/">Bulk Trash Pickup</a></li>
@@ -469,12 +489,8 @@
 <li><a href="/trash-hauling/">Garbage &amp; Trash Hauling</a></li>
 <li><a href="/hoarder-cleanup/">Hoarder Cleanup</a></li>
 <li><a href="/hot-tub-removal/">Hot Tub Removal</a></li>
-</ul>
-</div>
-<div>
-<ul style="list-style-type: disc; margin-left: 2rem; line-height: 1.8;">
 <li><a href="/house-cleanout-services/">House Cleanout Services</a></li>
-<li><a href="/demolition/">Demolition</a></li>
+<li><a href="/demolition/">Light Demolition</a></li>
 <li><a href="/mattress-disposal/">Mattress Disposal</a></li>
 <li><a href="/office-furniture-removal/">Office Furniture Removal</a></li>
 <li><a href="/piano-removal/">Piano Removal</a></li>
@@ -494,7 +510,6 @@
 <li><a href="/warehouse-cleanout/">Warehouse Cleanout</a></li>
 <li><a href="/yard-waste-removal/">Yard Waste Removal</a></li>
 </ul>
-</div>
 </div>
 </div></section>
 <section class="customer-reviews-snippet" aria-label="Customer reviews"><div class="container">
@@ -612,8 +627,8 @@
 <div class="container footer-bottom-inner">
 <p>© 2026 A1 Junk Removal and Tree Service. All rights reserved.</p>
 <div class="footer-legal">
-<a href="/privacy-policy/">Privacy Policy</a>
-<a href="/terms-of-service/">Terms of Service</a>
+
+
 </div>
 </div>
 </div>

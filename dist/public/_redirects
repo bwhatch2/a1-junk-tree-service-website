@@ -243,3 +243,9 @@ http://www.a1junkremovalofomaha.com/* https://www.a1junkandtree.com/:splat 301!
 # Sod service retired; original retained outside the publish directory.
 /landscaping/sod-installation/    /landscaping/    301
 /landscaping/sod-installation    /landscaping/    301
+
+# Retired legal pages preserved outside the deployment directory
+/privacy-policy    /    301!
+/privacy-policy/    /    301!
+/terms-of-service    /    301!
+/terms-of-service/    /    301!
